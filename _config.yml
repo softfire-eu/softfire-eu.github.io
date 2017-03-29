@@ -1,1 +1,2 @@
-theme: jekyll-theme-slate
+#theme: jekyll-theme-slate
+theme_dir: material/material
