@@ -27,13 +27,48 @@
         }, 
         {
             "location": "/wiki/", 
-            "text": "Nice done wiki!", 
+            "text": "Registration to the Tools\n\n\n\n\nregister at the portal (alredy done)\n\n\nregister to redmine (this page) and create an account (Introduction to the redmine tool: \nREDMINE\n)\n\n\ninstall and configure openvpn (details below)\n\n\nconfigure jfed (details below)\n\n\nprepare your experiment (details below)\n\n\nexecute the experiment (details below)\n\n\nretrieve the results\n\n\n\n\nWe invite the experimenters to use the Issues to address specific problems or support requests. You can also visit the \nForums\n section to open a new discussion or to find useful information shared in the community\n\n\nOpenVPN setup\n\n\n\n\nNote\n\n\nif the download does not work create the configuration file manually (\nOpenVpnConfig\n)\n\n\n\n\n\n\nstart OpenVPN client with administrative rights (or sudo on linux) using the configuration file\n\n\n\n\njFed setup\n\n\nHere is described the small procedure to follow in order to get \njFed\n up and running.\n\n\nPre-requisites\n\n\n\n\nJava 8 installed\n\n\nOpenVPN installed and connected\n\n\nDownload the jFed.zip from \nhere\n. Password for the download is \nsoftfire\n\n\nunzip the jFed.zip\n\n\nCertificate and private key for jFed in one file, called e.g. \ncert.pem\n\n\n\n\nSteps\n\n\n\n\nGet the following files:\n\n\nauthorities.xml\n\n\nconfig.xml\n\n\n\n\nPut the authorities.xml to \nyour_home_folder>/.jfed/\n\n\n\n\n\n\nStart jFed:  \njava -jar experimenter-gui-5.6.3-jfx.jar --config=\npath to your config.xml>\n\n\n\n\nPoint to your certificate and enter the chosen password\n\n\n\n\nDesign your experiment\n\n\nThis document\n  provides a detailed tutorial on how to implement your experiment\n\n\nExecute your Experiments\n\n\n\n\n\n\n\n\nOption 1 using jFed\n\n\nOption 2 direct usage of OpenBaton\n\n\n\n\n\n\n\n\n\n\nStart jFed: \njava -jar experimenter-gui-5.6.3-jfx.jar --config=\npath to your config.xml>\n\n\naccess openbaton machine at \nopenbaton.vpn.softfire.eu:5081\n\n\n\n\n\n\nPoint to your certificate and enter the chosen password\n\n\nrequest credential to your mentor if you don't have it yet\n\n\n\n\n\n\nGo to the \nSoftfire Software Portal\n and log in\n\n\nyou have full rights in your project\n\n\n\n\n\n\nUpload your package\n\n\nupload the VNFPackage in the correct page from the menu\n\n\n\n\n\n\nIn jFed click \nNew\n\n\nif the package is correct, it will result in a new VNF Descriptor\n\n\n\n\n\n\nDrag and drop a \nGeneric Node\n to the topology canvas\n\n\ncombine multiple VNF Descriptor in the NSD create page, creating then the NSD\n\n\n\n\n\n\nDoubleclick or Rightclick and select \nConfigure Node\n  the node (Properties window should appear)\n\n\nlaunch the NSD. This will result in the NSR, your experiment\n\n\n\n\n\n\nName the node as you like\n\n\n-\n\n\n\n\n\n\nSelect testbed \nfiteagle.vpn.softfire.eu\n from the \nSelect Testbed\n dropdown\n\n\n-\n\n\n\n\n\n\nSelect \nSpecific Node\n\n\n-\n\n\n\n\n\n\nSelect your package from the dropdown\n\n\n-\n\n\n\n\n\n\nClick \nSave\n\n\n-\n\n\n\n\n\n\nClick the green arrow \nRun\n button\n\n\n-\n\n\n\n\n\n\nName your experiment (experiment names should be unique!)\n\n\n-\n\n\n\n\n\n\nRemove the check from \nProject\n\n\n-\n\n\n\n\n\n\nClick \nStart Experiment\n\n\n-\n\n\n\n\n\n\nWait for some seconds until your Node is coloured dark green\n\n\n-\n\n\n\n\n\n\nYour experiment should be ready and you can connect to the node via SSH\n\n\n-\n\n\n\n\n\n\n\n\nTestbeds Information and usage\n\n\n\n\nSoftFIRE infrastructure monitoring \nZABBIX\n\n\nInterconnection Benchmarks: \nVPNBenachmark", 
             "title": "Wiki"
         }, 
         {
-            "location": "/wiki/#nice-done-wiki", 
-            "text": "", 
-            "title": "Nice done wiki!"
+            "location": "/wiki/#registration-to-the-tools", 
+            "text": "register at the portal (alredy done)  register to redmine (this page) and create an account (Introduction to the redmine tool:  REDMINE )  install and configure openvpn (details below)  configure jfed (details below)  prepare your experiment (details below)  execute the experiment (details below)  retrieve the results   We invite the experimenters to use the Issues to address specific problems or support requests. You can also visit the  Forums  section to open a new discussion or to find useful information shared in the community", 
+            "title": "Registration to the Tools"
+        }, 
+        {
+            "location": "/wiki/#openvpn-setup", 
+            "text": "Note  if the download does not work create the configuration file manually ( OpenVpnConfig )    start OpenVPN client with administrative rights (or sudo on linux) using the configuration file", 
+            "title": "OpenVPN setup"
+        }, 
+        {
+            "location": "/wiki/#jfed-setup", 
+            "text": "Here is described the small procedure to follow in order to get  jFed  up and running.", 
+            "title": "jFed setup"
+        }, 
+        {
+            "location": "/wiki/#pre-requisites", 
+            "text": "Java 8 installed  OpenVPN installed and connected  Download the jFed.zip from  here . Password for the download is  softfire  unzip the jFed.zip  Certificate and private key for jFed in one file, called e.g.  cert.pem", 
+            "title": "Pre-requisites"
+        }, 
+        {
+            "location": "/wiki/#steps", 
+            "text": "Get the following files:  authorities.xml  config.xml   Put the authorities.xml to  your_home_folder>/.jfed/    Start jFed:   java -jar experimenter-gui-5.6.3-jfx.jar --config= path to your config.xml>   Point to your certificate and enter the chosen password", 
+            "title": "Steps"
+        }, 
+        {
+            "location": "/wiki/#design-your-experiment", 
+            "text": "This document   provides a detailed tutorial on how to implement your experiment", 
+            "title": "Design your experiment"
+        }, 
+        {
+            "location": "/wiki/#execute-your-experiments", 
+            "text": "Option 1 using jFed  Option 2 direct usage of OpenBaton      Start jFed:  java -jar experimenter-gui-5.6.3-jfx.jar --config= path to your config.xml>  access openbaton machine at  openbaton.vpn.softfire.eu:5081    Point to your certificate and enter the chosen password  request credential to your mentor if you don't have it yet    Go to the  Softfire Software Portal  and log in  you have full rights in your project    Upload your package  upload the VNFPackage in the correct page from the menu    In jFed click  New  if the package is correct, it will result in a new VNF Descriptor    Drag and drop a  Generic Node  to the topology canvas  combine multiple VNF Descriptor in the NSD create page, creating then the NSD    Doubleclick or Rightclick and select  Configure Node   the node (Properties window should appear)  launch the NSD. This will result in the NSR, your experiment    Name the node as you like  -    Select testbed  fiteagle.vpn.softfire.eu  from the  Select Testbed  dropdown  -    Select  Specific Node  -    Select your package from the dropdown  -    Click  Save  -    Click the green arrow  Run  button  -    Name your experiment (experiment names should be unique!)  -    Remove the check from  Project  -    Click  Start Experiment  -    Wait for some seconds until your Node is coloured dark green  -    Your experiment should be ready and you can connect to the node via SSH  -", 
+            "title": "Execute your Experiments"
+        }, 
+        {
+            "location": "/wiki/#testbeds-information-and-usage", 
+            "text": "SoftFIRE infrastructure monitoring  ZABBIX  Interconnection Benchmarks:  VPNBenachmark", 
+            "title": "Testbeds Information and usage"
         }
     ]
 }

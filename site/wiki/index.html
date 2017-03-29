@@ -225,12 +225,90 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Wiki
+      </label>
     
     <a href="./" title="Wiki" class="md-nav__link md-nav__link--active">
       Wiki
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registration-to-the-tools" title="Registration to the Tools" class="md-nav__link">
+    Registration to the Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openvpn-setup" title="OpenVPN setup" class="md-nav__link">
+    OpenVPN setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jfed-setup" title="jFed setup" class="md-nav__link">
+    jFed setup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisites" title="Pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps" title="Steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-your-experiment" title="Design your experiment" class="md-nav__link">
+    Design your experiment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execute-your-experiments" title="Execute your Experiments" class="md-nav__link">
+    Execute your Experiments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testbeds-information-and-usage" title="Testbeds Information and usage" class="md-nav__link">
+    Testbeds Information and usage
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -254,8 +332,75 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registration-to-the-tools" title="Registration to the Tools" class="md-nav__link">
+    Registration to the Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openvpn-setup" title="OpenVPN setup" class="md-nav__link">
+    OpenVPN setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jfed-setup" title="jFed setup" class="md-nav__link">
+    jFed setup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisites" title="Pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps" title="Steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-your-experiment" title="Design your experiment" class="md-nav__link">
+    Design your experiment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execute-your-experiments" title="Execute your Experiments" class="md-nav__link">
+    Execute your Experiments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testbeds-information-and-usage" title="Testbeds Information and usage" class="md-nav__link">
+    Testbeds Information and usage
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -268,7 +413,140 @@
               
                 
                 
-                <h1 id="nice-done-wiki">Nice done wiki!<a class="headerlink" href="#nice-done-wiki" title="Permanent link">&para;</a></h1>
+                  <h1>Wiki</h1>
+                
+                <h2 id="registration-to-the-tools">Registration to the Tools<a class="headerlink" href="#registration-to-the-tools" title="Permanent link">&para;</a></h2>
+<ol>
+<li>register at the portal (alredy done)</li>
+<li>register to redmine (this page) and create an account (Introduction to the redmine tool: <a href="https://redmine.softfire.eu/documents/3">REDMINE</a>)</li>
+<li>install and configure openvpn (details below)</li>
+<li>configure jfed (details below)</li>
+<li>prepare your experiment (details below)</li>
+<li>execute the experiment (details below)</li>
+<li>retrieve the results</li>
+</ol>
+<p>We invite the experimenters to use the Issues to address specific problems or support requests. You can also visit the <a href="https://redmine.softfire.eu/projects/softfire/boards">Forums</a> section to open a new discussion or to find useful information shared in the community</p>
+<h2 id="openvpn-setup">OpenVPN setup<a class="headerlink" href="#openvpn-setup" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>if the download does not work create the configuration file manually (<a href="../linktoopenvpnfile">OpenVpnConfig</a>)</p>
+</div>
+<ol>
+<li>start OpenVPN client with administrative rights (or sudo on linux) using the configuration file</li>
+</ol>
+<h2 id="jfed-setup">jFed setup<a class="headerlink" href="#jfed-setup" title="Permanent link">&para;</a></h2>
+<p>Here is described the small procedure to follow in order to get <em>jFed</em> up and running.</p>
+<h3 id="pre-requisites"><em>Pre-requisites</em><a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Java 8 installed</li>
+<li>OpenVPN installed and connected</li>
+<li>Download the jFed.zip from <a href="https://owncloud.tu-berlin.de/index.php/s/tB1eKv8yCRUheTR">here</a>. Password for the download is <em>softfire</em></li>
+<li>unzip the jFed.zip</li>
+<li>Certificate and private key for jFed in one file, called e.g. <em><em>cert.pem</em></em></li>
+</ul>
+<h3 id="steps"><em>Steps</em><a class="headerlink" href="#steps" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Get the following files:</li>
+<li><a href="https://redmine.softfire.eu/redmine/attachments/download/68/authorities.xml">authorities.xml</a></li>
+<li><a href="https://redmine.softfire.eu/redmine/attachments/download/69/config.xml">config.xml</a></li>
+<li>
+<p>Put the authorities.xml to <em>&lt;your_home_folder>/.jfed/</em></p>
+</li>
+<li>
+<p>Start jFed:  <em>java -jar experimenter-gui-5.6.3-jfx.jar --config=&lt;path to your config.xml></em></p>
+</li>
+<li>Point to your certificate and enter the chosen password</li>
+</ul>
+<h2 id="design-your-experiment">Design your experiment<a class="headerlink" href="#design-your-experiment" title="Permanent link">&para;</a></h2>
+<p><a href="https://redmine.softfire.eu/attachments/download/197/design_the_nfv_solution.pdf">This document</a>  provides a detailed tutorial on how to implement your experiment</p>
+<h2 id="execute-your-experiments">Execute your Experiments<a class="headerlink" href="#execute-your-experiments" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Option 1 using jFed</th>
+<th>Option 2 direct usage of OpenBaton</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start jFed: <em>java -jar experimenter-gui-5.6.3-jfx.jar --config=&lt;path to your config.xml></em></td>
+<td>access openbaton machine at <a href="http://openbaton.vpn.softfire.eu:5081">openbaton.vpn.softfire.eu:5081</a></td>
+</tr>
+<tr>
+<td>Point to your certificate and enter the chosen password</td>
+<td>request credential to your mentor if you don't have it yet</td>
+</tr>
+<tr>
+<td>Go to the <a href="http://172.20.30.52:5083">Softfire Software Portal</a> and log in</td>
+<td>you have full rights in your project</td>
+</tr>
+<tr>
+<td>Upload your package</td>
+<td>upload the VNFPackage in the correct page from the menu</td>
+</tr>
+<tr>
+<td>In jFed click <em>New</em></td>
+<td>if the package is correct, it will result in a new VNF Descriptor</td>
+</tr>
+<tr>
+<td>Drag and drop a <em>Generic Node</em> to the topology canvas</td>
+<td>combine multiple VNF Descriptor in the NSD create page, creating then the NSD</td>
+</tr>
+<tr>
+<td>Doubleclick or Rightclick and select <em>Configure Node</em>  the node (Properties window should appear)</td>
+<td>launch the NSD. This will result in the NSR, your experiment</td>
+</tr>
+<tr>
+<td>Name the node as you like</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Select testbed <em>fiteagle.vpn.softfire.eu</em> from the <em>Select Testbed</em> dropdown</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Select <em>Specific Node</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Select your package from the dropdown</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Click <em>Save</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Click the green arrow <em>Run</em> button</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Name your experiment (experiment names should be unique!)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Remove the check from <em>Project</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Click <em>Start Experiment</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Wait for some seconds until your Node is coloured dark green</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Your experiment should be ready and you can connect to the node via SSH</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="testbeds-information-and-usage">Testbeds Information and usage<a class="headerlink" href="#testbeds-information-and-usage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>SoftFIRE infrastructure monitoring <a href="https://zabbix.softfire.eu">ZABBIX</a></li>
+<li>Interconnection Benchmarks: <a href="../vpnbenchmarklink">VPNBenachmark</a></li>
+</ul>
                 
                   
                 
