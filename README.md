@@ -49,4 +49,5 @@ limitations under the License.
 ## Support
 The SoftFIRE project provides community support through the SoftFIRE Public Mailing List and through slack ([join us on Slack][slack]).
 
-[slack][https://softfire.slack.com/signup]
+[slack]: https://softfire.slack.com/signup
+[softfire]: https://www.softfire.eu/
