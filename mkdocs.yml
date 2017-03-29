@@ -1,7 +1,7 @@
 site_name: SoftFIRE Documentation
 pages:
 - ['index.md', 'Get Started', 'SoftFIRE']
-- ['wiki.md', 'Wiki', 'SoftFIRE']
+- ['wiki.md', 'Get Started', 'Wiki']
 
 theme_dir: material/material
 repo_url: https://github.com/softfre-eu
