@@ -4,7 +4,7 @@ pages:
 - ['wiki.md', 'Get Started', 'Wiki']
 
 theme_dir: material/material
-repo_url: https://github.com/softfre-eu
+repo_url: https://github.com/SoftFIRE-eu
 repo_name: SoftFIRE docs
 site_favicon: favicon.ico
 markdown_extensions:
