@@ -1,0 +1,9 @@
+site_name: SoftFIRE Documentation
+pages:
+- ['index.md', 'Get Started', 'Get Started']
+
+theme: readthedocs
+repo_url: https://github.com/softfre-eu
+repo_name: SoftFIRE docs
+site_favicon: favicon.ico
+copyright: Copyright (c) 2016-2017 SoftFIRE (http://softfire.eu)
