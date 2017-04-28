@@ -11,8 +11,6 @@ SoftFIRE is an European project providing a federated infrastructure composed by
 * Subscribing to our mailing list: []
 * Sending us an email to: [info-at-softfire-dot-eu]
 
-## Supported by
-
 [softfire-architecture]:images/softfire-architecture.png
 
 <!---
