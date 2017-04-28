@@ -1,11 +1,11 @@
 ## Registration to the Tools
 
 1. register at the portal (alredy done)
-1. register to redmine (this page) and create an account (Introduction to the redmine tool: [REDMINE](https://redmine.softfire.eu/documents/3))
-1. install and configure openvpn (details below)
-1. configure jfed (details below)
-1. prepare your experiment (details below)
-1. execute the experiment (details below)
+1. register to redmine [this page](https://redmine.softfire.eu/) and create an account (Introduction to the redmine tool: [REDMINE](https://redmine.softfire.eu/documents/3))
+1. install and configure [openvpn](#openvpn-setup)
+1. configure [jfed](#jfed-setup)
+1. [prepare your experiment](#design-your-experiment)
+1. [execute the experiment](#execute-your-experiment)
 1. retrieve the results
 
 We invite the experimenters to use the Issues to address specific problems or support requests. You can also visit the [Forums](https://redmine.softfire.eu/projects/softfire/boards) section to open a new discussion or to find useful information shared in the community
@@ -14,9 +14,10 @@ We invite the experimenters to use the Issues to address specific problems or su
 
 1. Install openVPN for your platform
 1. use the configuration file downloaded from the portal
-!!! note
-    if the download does not work create the configuration file manually ([OpenVpnConfig](linktoopenvpnfile))
 1. start OpenVPN client with administrative rights (or sudo on linux) using the configuration file
+
+!!! note
+    if the download does not work create the configuration file manually ([OpenVpnConfig](openvpnconfig))
 
 ## jFed setup
 
@@ -33,8 +34,8 @@ Here is described the small procedure to follow in order to get *jFed* up and ru
 ### *Steps*
 
 * Get the following files:
-  * [authorities.xml](https://redmine.softfire.eu/redmine/attachments/download/68/authorities.xml)
-  * [config.xml](https://redmine.softfire.eu/redmine/attachments/download/69/config.xml)
+  * [authorities.xml](etc/authorities.xml)
+  * [config.xml](etc/config.xml)
 * Put the authorities.xml to *<your_home_folder\>/.jfed/*
 
 * Start jFed:  _java -jar experimenter-gui-5.6.3-jfx.jar --config=<path to your config.xml\>_
@@ -42,9 +43,9 @@ Here is described the small procedure to follow in order to get *jFed* up and ru
 
 ## Design your experiment
 
-[This document](https://redmine.softfire.eu/attachments/download/197/design_the_nfv_solution.pdf)  provides a detailed tutorial on how to implement your experiment
+[This document](etc/design_the_nfv_solution.pdf)  provides a detailed tutorial on how to implement your experiment
 
-## Execute your Experiments
+## Execute your experiment
 | Option 1 using jFed                                                                               | Option 2 direct usage of OpenBaton                                                                  |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Start jFed: *java -jar experimenter-gui-5.6.3-jfx.jar --config=<path to your config.xml\>*        | access openbaton machine at [openbaton.vpn.softfire.eu:5081](http://openbaton.vpn.softfire.eu:5081) |
@@ -70,3 +71,18 @@ Here is described the small procedure to follow in order to get *jFed* up and ru
 
 * SoftFIRE infrastructure monitoring [ZABBIX](https://zabbix.softfire.eu)
 * Interconnection Benchmarks: [VPNBenachmark](vpnbenchmarklink)
+
+<!---
+ Script for open external links in a new tab
+-->
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>

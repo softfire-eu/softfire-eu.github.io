@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jFed-configuration>
+    <node-descriptions>
+        <node-description id="generic-node" friendlyName="Generic Node" type="raw_pc">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+wall1.ilabt.iminds.be+authority+cm</component_manager_id>
+                <exclusive>true</exclusive>
+                <sliver_type>raw-pc</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+bonfire-project.eu+authority+cm</urn>
+                    <enabled-componentIds>
+                        <urn>urn:publicid:IDN+bonfire-project.eu+node+uk-epcc</urn>
+                        <urn>urn:publicid:IDN+bonfire-project.eu+node+fr-inria</urn>
+                        <!--<urn>urn:publicid:IDN+bonfire-project.eu+node+be-ibbt</urn>-->
+                    </enabled-componentIds>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+172.20.30.13+authority+sa</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wilab2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+ple:ibbtple+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall1.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+ocf:univbris:vtam+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+ple:ibbtple+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:rcivmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:bbnvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:fiuvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uhvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:dukevmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uvanlvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:nictavmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:ncsuvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uflvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:osfvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:slvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:ucdvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:wvnvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:tamuvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:cienavmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uafvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.illinois.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.maxgigapop.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.northwestern.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.stanford.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.wisc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+genirack.nyu.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.kettering.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.clemson.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.gpolab.bbn.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.it.cornell.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.ku.gpeni.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+pks2.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nps.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nysernet.org+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rutgers.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.sox.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.idre.ucla.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+lan.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+utahddc.geniracks.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.uchicago.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+bbn-cam-ctrl-1.gpolab.bbn.com+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+clemson-clemson-control-1.clemson.edu+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.metrodatacenter.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cenic.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.case.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.umkc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.iu.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wilab2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+clab+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+omf:nitos+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+omf:netmode+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+it.uc3m.es+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+koren+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+203.255.254.100+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+stanford.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+utah.cloudlab.us+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+apt.emulab.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+www.performlte.morse.uma.es+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+trescimo+authority+root</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+localhost+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+uky.emulab.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+pllab.pl+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="physical-node" friendlyName="Physical Node"  type="raw_pc">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+wall1.ilabt.iminds.be+authority+cm</component_manager_id>
+                <exclusive>true</exclusive>
+                <sliver_type>raw-pc</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall1.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+emulab.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+emulab.kreonet.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+it.uc3m.es+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+stanford.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+utah.cloudlab.us+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+apt.emulab.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+uky.emulab.net+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="vm" friendlyName="Virtual Machine"  type="vm">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm</component_manager_id>
+                <exclusive>false</exclusive>
+                <sliver_type>default-vm</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall1.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+bonfire-project.eu+authority+cm</urn>
+                    <enabled-componentIds>
+                        <urn>urn:publicid:IDN+bonfire-project.eu+node+uk-epcc</urn>
+                        <urn>urn:publicid:IDN+bonfire-project.eu+node+fr-inria</urn>
+                        <!--<urn>urn:publicid:IDN+bonfire-project.eu+node+be-ibbt</urn>-->
+                    </enabled-componentIds>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+ocf:univbris:vtam+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+ple:ibbtple+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:rcivmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:bbnvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:fiuvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uhvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:dukevmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uvanlvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:nictavmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:ncsuvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uflvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:osfvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:slvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:ucdvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:wvnvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:tamuvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:cienavmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+exogeni.net:uafvmsite+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.illinois.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.maxgigapop.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.northwestern.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.stanford.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.wisc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+genirack.nyu.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.kettering.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.clemson.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.gpolab.bbn.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.it.cornell.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.ku.gpeni.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+pks2.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nps.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nysernet.org+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rutgers.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.sox.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.idre.ucla.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+lan.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+utahddc.geniracks.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.uchicago.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+bbn-cam-ctrl-1.gpolab.bbn.com+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+clemson-clemson-control-1.clemson.edu+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.metrodatacenter.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cenic.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.case.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.umkc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.iu.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+ocf:i2cat:vtam+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+uky.emulab.net+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="vm-xen" friendlyName="XEN VM" type="vm">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm</component_manager_id>
+                <exclusive>false</exclusive>
+                <sliver_type>emulab-xen</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall1.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.illinois.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.maxgigapop.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.northwestern.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.stanford.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.wisc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+genirack.nyu.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.kettering.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.clemson.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.gpolab.bbn.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.it.cornell.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.ku.gpeni.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+pks2.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nps.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nysernet.org+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rutgers.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.sox.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.idre.ucla.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+lan.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+utahddc.geniracks.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.uchicago.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.metrodatacenter.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cenic.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.case.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.umkc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.iu.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+uky.emulab.net+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="vm-openvz" friendlyName="OpenVZ VM" type="vm">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+instageni.illinois.edu+authority+cm</component_manager_id>
+                <exclusive>false</exclusive>
+                <sliver_type>emulab-openvz</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+emulab.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.illinois.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.maxgigapop.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.northwestern.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.stanford.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.wisc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+genirack.nyu.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.kettering.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.clemson.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.gpolab.bbn.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.it.cornell.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.ku.gpeni.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+pks2.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nps.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.nysernet.org+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.rutgers.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.sox.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.idre.ucla.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+lan.sdn.uky.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+utahddc.geniracks.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.uchicago.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.metrodatacenter.com+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.cenic.net+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+geni.case.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.umkc.edu+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+instageni.iu.edu+authority+cm</urn>
+                </enabled-testbed>
+
+
+            </enabled-testbeds>
+        </node-description>
+
+        <node-description id="wireless" friendlyName="Wireless Node" type="raw_pc">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+wilab2.ilabt.iminds.be+authority+cm</component_manager_id>
+                <exclusive>true</exclusive>
+                <sliver_type>raw-pc</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+wilab2.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+clab+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+omf:nitos+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+omf:netmode+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+twist.tu-berlin.de+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+portable.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="physical-router" friendlyName="Physical Router" type="physical-router">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+pllab.pl+authority+cm</component_manager_id>
+                <exclusive>true</exclusive>
+                <sliver_type>raw-router</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+pllab.pl+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="gateway" friendlyName="Gateway" type="gateway">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+performlte.morse.uma.es+authority+am</component_manager_id>
+                <exclusive>false</exclusive>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+performlte.morse.uma.es+authority+am</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+log-a-tec+authority+am</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="programmable-switching-device" friendlyName="Programmable Switching Device" type="programmable-switching-device">
+            <type-definition name="NetFPGA">
+                <component_manager_id>urn:publicid:IDN+pllab.pl+authority+cm</component_manager_id>
+                <exclusive>true</exclusive>
+                <sliver_type>raw-pc</sliver_type>
+                <hardware_type>netfpga</hardware_type>
+            </type-definition>
+            <type-definition name="EZAppliance">
+                <component_manager_id>urn:publicid:IDN+pllab.pl+authority+cm</component_manager_id>
+                <exclusive>true</exclusive>
+                <sliver_type>raw-ezappliance</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+pllab.pl+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+        <node-description id="network" friendlyName="Dedicated Ext. Network Connection"  type="port">
+            <type-definition>
+                <component_manager_id>urn:publicid:IDN+i2cat197-edge.ilabt.iminds.be+authority+cm</component_manager_id>
+                <exclusive>false</exclusive>
+                <sliver_type>fake</sliver_type>
+            </type-definition>
+            <enabled-testbeds>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat197-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat186-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat187-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat188-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat189-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat190-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat687-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat688-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat690-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat693-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+i2cat694-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+epcc-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+netmode-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+nitos-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+bristol-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+psnc1202-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+psnc1203-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+koren1009-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+japan1280-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+gts1175-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+                <enabled-testbed>
+                    <urn>urn:publicid:IDN+gts1225-edge.ilabt.iminds.be+authority+cm</urn>
+                </enabled-testbed>
+            </enabled-testbeds>
+        </node-description>
+    </node-descriptions>
+    <testbed-descriptions>
+        <testbed urn="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" color="magenta">
+            <sliver-types>
+                <sliver-type exclusive="true">raw-pc</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+            <has-addresspools>true</has-addresspools>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+wall1.ilabt.iminds.be+authority+cm" color="orchid">
+            <sliver-types>
+                <sliver-type exclusive="true">raw-pc</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+            <has-addresspools>true</has-addresspools>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+wilab2.ilabt.iminds.be+authority+cm" color="springgreen">
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+portable.ilabt.iminds.be+authority+cm" color="teal">
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+ple:ibbtple+authority+cm" color="tomato">
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+            <allow-links>false</allow-links>
+            <sliver-types>
+                <sliver-type exclusive="false">plab-vserver</sliver-type>
+            </sliver-types>
+            <nodes-visualization>map</nodes-visualization>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+clab+authority+cm" color="salmon">
+            <nodes-visualization>map</nodes-visualization>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+omf:nitos+authority+cm" color="darkorange">
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+            <allow-links>false</allow-links>
+            <has-channels>true</has-channels>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+omf:netmode+authority+cm" color="brown">
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+            <allow-links>false</allow-links>
+            <has-channels>true</has-channels>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+bonfire-project.eu+authority+cm" logo="BonFIRE.png">
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+            <allow-links>false</allow-links>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+ocf:univbris:vtam+authority+cm" color="cornflowerblue">
+            <require-fixed-node-assignment>false</require-fixed-node-assignment>
+            <allow-links>false</allow-links>
+            <sliver-types>
+                <sliver-type>VM</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" color="dodgerblue">
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+            <supports-list-diskimages>true</supports-list-diskimages>
+            <allow-links>false</allow-links>
+            <sliver-types>
+                <sliver-type disk-image-name="fed4fireNightlyTest">m1.tiny</sliver-type>
+                <sliver_type>m1.large</sliver_type>
+                <sliver_type>m1.tiny</sliver_type>
+                <sliver_type>m1.medium</sliver_type>
+                <sliver_type>GE.small</sliver_type>
+                <sliver_type>raw-pc</sliver_type>
+                <sliver_type>m1.small</sliver_type>
+                <sliver_type>m1.xlarge</sliver_type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat197-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat186-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat187-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat188-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat189-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat190-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat687-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat688-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat690-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat693-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+i2cat694-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+
+        <testbed urn="urn:publicid:IDN+epcc-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+netmode-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+nitos-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+bristol-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+psnc1202-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+psnc1203-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+koren1009-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+japan1280-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+gts1175-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+gts1225-edge.ilabt.iminds.be+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type>fake</sliver-type>
+            </sliver-types>
+        </testbed>
+
+        <testbed urn="urn:publicid:IDN+emulab.net+authority+cm" color="blue">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="true">raw-pc</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+            <has-addresspools>true</has-addresspools>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net+authority+am" color="orange">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:rcivmsite+authority+am" color="coral">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:bbnvmsite+authority+am" color="firebrick">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:fiuvmsite+authority+am" color="indianred">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:uhvmsite+authority+am" color="mistyrose">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:dukevmsite+authority+am" color="peachpuff">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:nictavmsite+authority+am" color="fuchsia">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:uvanlvmsite+authority+am" color="hotpink">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:ncsuvmsite+authority+am" color="lightpink">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:uflvmsite+authority+am" color="lightsalmon">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:osfvmsite+authority+am" color="pink">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:slvmsite+authority+am" color="tomato">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:ucdvmsite+authority+am" color="salmon">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:wvnvmsite+authority+am" color="red">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:tamuvmsite+authority+am" color="orangered">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:cienavmsite+authority+am" color="moccasin">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+exogeni.net:uafvmsite+authority+am" color="navajowhite">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <!--<sliver-type>exogeni-m4</sliver-type> --> <!-- exogeni-m4 = bare metal -->
+                <sliver-type exclusive="false">xo.small</sliver-type>
+                <sliver-type exclusive="false">xo.medium</sliver-type>
+                <sliver-type exclusive="false">xo.large</sliver-type>
+                <sliver-type exclusive="false">xo.xlarge</sliver-type>
+            </sliver-types>
+        </testbed>
+
+        <testbed urn="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm" color="steelblue">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.illinois.edu+authority+cm" color="slateblue">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.maxgigapop.net+authority+cm" color="skyblue">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm" color="slategrey">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.northwestern.edu+authority+cm" color="mediumblue">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.cs.princeton.edu+authority+cm" color="mediumslateblue">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+genirack.nyu.edu+authority+cm" color="olivedrab">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.stanford.edu+authority+cm" color="mediumpurple">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.wisc.edu+authority+cm" color="plum">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed_description urn="urn:publicid:IDN+wisc.cloudlab.us+authority+cm" color="plum">
+            <sliver_types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+                <sliver_type exclusive="false">emulab-xen</sliver_type>
+                <sliver_type exclusive="false">emulab-openvz</sliver_type>
+            </sliver_types>
+            <has-addresspools>true</has-addresspools>
+        </testbed_description>
+        <testbed urn="urn:publicid:IDN+geni.kettering.edu+authority+cm" color="navy">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.clemson.edu+authority+cm" color="violet">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed_description urn="urn:publicid:IDN+clemson.cloudlab.us+authority+cm" color="violet">
+            <sliver_types>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver_types>
+            <has-addresspools>true</has-addresspools>
+        </testbed_description>
+        <testbed urn="urn:publicid:IDN+instageni.gpolab.bbn.com+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+lan.sdn.uky.edu+authority+cm" color="saddlebrown">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+geni.it.cornell.edu+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.ku.gpeni.net+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+pks2.sdn.uky.edu+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.nps.edu+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.nysernet.org+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.rutgers.edu+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.sox.net+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.idre.ucla.edu+authority+cm" color="yellowgreen">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+lan.sdn.uky.edu+authority+cm" color="saddlebrown">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+utahddc.geniracks.net+authority+cm" color="sienna">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+geni.uchicago.edu+authority+cm" color="papayawhip">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+bbn-cam-ctrl-1.gpolab.bbn.com+authority+am" color="palegoldenrod">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver_type>m1.large</sliver_type>
+                <sliver_type>m1.tiny</sliver_type>
+                <sliver_type>m1.medium</sliver_type>
+                <sliver_type>default-vm</sliver_type>
+                <sliver_type>m1.small</sliver_type>
+                <sliver_type>m1.super</sliver_type>
+                <sliver_type>m1.xlarge</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+clemson-clemson-control-1.clemson.edu+authority+am" color="mintcream">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.metrodatacenter.com+authority+cm " color="peru">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.cenic.net+authority+cm " color="thistle">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+geni.case.edu+authority+cm" color="mediumaquamarine">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.umkc.edu+authority+cm" color="powderblue">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+instageni.iu.edu+authority+cm" color="palevioletred">
+            <sliver-types>
+                <sliver-type>default-vm</sliver-type>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+                <sliver-type exclusive="false">emulab-openvz</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+ocf:i2cat:vtam+authority+cm" color="#f37321">
+            <sliver-types>
+                <sliver-type exclusive="false">emulab-xen</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+utah.cloudlab.us+authority+cm" color="#cc0000">
+            <sliver-types>
+                <sliver_type>raw-pc</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+            <has-addresspools>true</has-addresspools>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+apt.emulab.net+authority+cm" color="#00cc00">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+                <sliver_type exclusive="false">emulab-xen</sliver_type>
+                <sliver_type exclusive="false">emulab-openvz</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+            <has-addresspools>true</has-addresspools>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+uky.emulab.net+authority+cm" color="#005DAA">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+                <sliver_type exclusive="false">emulab-xen</sliver_type>
+                <sliver_type exclusive="false">emulab-openvz</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+            <has-addresspools>true</has-addresspools>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+emulab.kreonet.net+authority+cm" color="#0000cc">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+                <sliver_type>raw-pc</sliver_type>
+                <sliver_type exclusive="false">emulab-xen</sliver_type>
+                <sliver_type exclusive="false">emulab-openvz</sliver_type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+stanford.edu+authority+cm" color="#BD2031">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+trescimo+authority+root" color="#f2a932">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+smartsantander+authority+cm" color="#00ffff">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+it.uc3m.es+authority+cm" color="#87cefa">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+localhost+authority+cm" color="yellow">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+203.255.254.100+authority+cm" color="#ff8c00">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+koren+authority+cm" color="#ffa500">
+            <sliver-types>
+                <sliver-type exclusive="false">default-vm</sliver-type>
+            </sliver-types>
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+twist.tu-berlin.de+authority+am" color="#f37321">
+            <show-as-bindable>true</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+www.performlte.morse.uma.es+authority+cm" color="firebrick">
+            <show-as-bindable>false</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+log-a-tec+authority+am" color="tan">
+            <sliver-types>
+                <sliver-type exclusive="true">log-a-tec-cluster</sliver-type>
+            </sliver-types>
+            <require-fixed-node-assignment>true</require-fixed-node-assignment>
+            <show-as-bindable>false</show-as-bindable>
+        </testbed>
+        <testbed urn="urn:publicid:IDN+pllab.pl+authority+cm" color="deepskyblue">
+            <sliver-types>
+                <sliver-type exclusive="true">raw-pc</sliver-type>
+                <sliver-type exclusive="true">raw-router</sliver-type>
+            </sliver-types>
+            <show-as-bindable>false</show-as-bindable>
+        </testbed>
+
+        <testbed urn="urn:publicid:IDN+172.20.30.13+authority+sa" color="deepskyblue">
+            <sliver-types>
+                <sliver-type exclusive="true">raw-pc</sliver-type>
+            </sliver-types>
+            <show-as-bindable>false</show-as-bindable>
+        </testbed>
+    </testbed-descriptions>
+</jFed-configuration>

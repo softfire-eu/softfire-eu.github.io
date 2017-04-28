@@ -1,11 +1,16 @@
-site_name: SoftFIRE Documentation
+site_name: SoftFIRE Software Documentation
 pages:
-- ['index.md', 'Get Started', 'SoftFIRE']
-- ['wiki.md', 'Get Started', 'Wiki']
+- ['index.md', 'SoftFIRE', 'Introduction']
+- ['wiki.md', 'Wiki', 'Getting Started']
+- ['openvpnconfig.md', 'Extras', 'OpenVPN Manual configuration']
 
-theme_dir: material/material
-repo_url: https://github.com/SoftFIRE-eu
-repo_name: SoftFIRE docs
+theme_dir: material
+extra:
+  palette:
+    primary: 'deep orange'
+    accent: 'orange'
+repo_url: https://github.com/SoftFIRE-eu/experiment-manager
+repo_name: SoftFIRE Experiment Manager
 site_favicon: favicon.ico
 markdown_extensions:
           - admonition
@@ -25,6 +30,5 @@ markdown_extensions:
           - pymdownx.superfences
           - pymdownx.tasklist(custom_checkbox=true)
           - pymdownx.tilde
-extra_css:
-          - 'stylesheets/extra.css'
+
 copyright: Copyright (c) 2016-2017 SoftFIRE (http://softfire.eu)
