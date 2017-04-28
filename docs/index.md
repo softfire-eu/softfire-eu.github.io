@@ -7,7 +7,7 @@ SoftFIRE is an European project providing a federated infrastructure composed by
 
 ## Get in contact 
 
-* Via twitter: [twitter][]
+* Via twitter: 
 * Subscribing to our mailing list: []
 * Sending us an email to: [info-at-softfire-dot-eu]
 
