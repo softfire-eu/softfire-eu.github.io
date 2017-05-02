@@ -177,13 +177,13 @@ tBeOMiadvRRQ2fhNuKCpgVUgyUyts0fFvDwJhLTnUqEbdgr19HbLO8GwqPbk
 </ca>
 <cert>
 -----BEGIN CERTIFICATE-----
-**Paste Your Cert Text Here**
+**Paste Your Cert Text here**
 
 -----END CERTIFICATE-----
 </cert>
 <key>
 -----BEGIN PRIVATE KEY-----
-**Paste Your Cert Private Key Here**
+**Paste Your Cert Private Key here**
 
 -----END PRIVATE KEY-----
 </key>
