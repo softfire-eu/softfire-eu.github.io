@@ -5,6 +5,7 @@ pages:
         - Wiki:
                 - Getting Started: 'wiki.md'
                 - Softfire Middleware: 'softfire-middleware.md'
+                - SDN Manager: 'sdn-manager.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
 
