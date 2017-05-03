@@ -1,9 +1,12 @@
 site_name: SoftFIRE Software Documentation
 pages:
-- ['index.md', 'SoftFIRE', 'Introduction']
-- ['wiki.md', 'Wiki', 'Getting Started']
-- ['softfire-middleware.md', 'Wiki', 'SoftFIRE Middleware']
-- ['openvpnconfig.md', 'Extras', 'OpenVPN Manual configuration']
+        - SoftFIRE:
+                - Introduction: 'index.md'
+        - Wiki:
+                - Getting Started: 'wiki.md'
+                - Softfire Middleware: 'softfire-middleware.md'
+        - Extras:
+                - OpenVPN Manual configuration: 'openvpnconfig.md'
 
 theme_dir: material
 extra:
