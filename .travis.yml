@@ -1,23 +1,22 @@
 language: python
 python: 2.7
-
 sudo: false
 cache: pip
 before_cache:
-  - rm -f $HOME/.cache/pip/log/debug.log
-
+- rm -f $HOME/.cache/pip/log/debug.log
 install: pip install -r requirements.txt
 script: mkdocs build --clean
-
 branches:
   only: sitecode
-
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  github_token: $GITHUB_TOKEN
   on:
     branch: sitecode
   target_branch: master
   local_dir: site
   fqdn: docs.softfire.eu
+notifications:
+  slack:
+    secure: hzLrkvh/7/mRfzGRhjKhzYfOfcr3bGrOPQCSSBlBkmdRGyPe+sv2xO6zkpNH33cyeh9FXP735ULMA6fr25cMP3mbvptrr1ndwx0ks0KWv787/alnNgRvKxbNgUzaRAv42qwML2OPbQxIe5uyUgxrCHLnsjSCVhO33+qwBfoi0gWn/pkwMNUx6MBjiYllapSHToimE+QOLEprRLfz3F23eC/C7Y/k4kS3nnUPt+HOfMZmL2Bxk2g/Su14UHt5Gt0ZjHrmEAmG79cZNZ1pdDJdBdv+8IF9BGeXpeiAD1xSANj7M25H4dJuPFEUGgsKY2KnrTD+T/te217o79M7fvtfC/+9wWzNgHByGKfvKQfNXyAxyDkQar6+R1JCLpLWDGUQrkY3i3YANUBqI6rL3RnoG6zQAyHm0sJTPKLB8rtCguRwiLShRjfypbPqf5f1DV8gJhcEQmVqMIlBPMN656riY8vQJ2nDtLRaMff0urvqyevc4FgtsysNJNH7cEGMSFYiH6Z71WAHNnR0QnnakauSpqQnJai32cuOcX6/97ndBHjawZi5n4R4SQ1U/kmBC3cHpc1Dgrj3a9LwukDnnwLFK9EDV3ORRBo3JP7Dpz7sdfePq5yaW7AbGcCc33lqsltIajx6HhyQQM4If1LYzx6714dEJrzrWeiQkhUb1kFiQkU=
