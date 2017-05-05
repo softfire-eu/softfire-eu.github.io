@@ -1,0 +1,29 @@
+tosca_definitions_version: tosca_simple_yaml_1_0
+
+description: Node Types definitions
+
+node_types:
+  ODLController:
+    derived_from: tosca.nodes.Root
+    properties:
+      testbed: string
+
+  OSDNController:
+    derived_from: tosca.nodes.Root
+
+  VTNController:
+    derived_from: tosca.nodes.Root
+
+  MonitoringNode:
+    derived_from: tosca.nodes.Root
+    properties:
+      user_paramreters: list
+
+  SecurityResource:
+    derived_from: tosca.nodes.Root
+
+  NfvResource:
+    derived_from: tosca.nodes.Root
+    properties:
+      testbed: string
+      nsd_name: string
