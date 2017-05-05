@@ -6,7 +6,8 @@ node_types:
   ODLController:
     derived_from: tosca.nodes.Root
     properties:
-      testbed: string
+      testbed:
+        type: string
 
   OSDNController:
     derived_from: tosca.nodes.Root
@@ -17,7 +18,8 @@ node_types:
   MonitoringNode:
     derived_from: tosca.nodes.Root
     properties:
-      user_paramreters: list
+      user_paramreters:
+        type: list
 
   SecurityResource:
     derived_from: tosca.nodes.Root
@@ -25,5 +27,7 @@ node_types:
   NfvResource:
     derived_from: tosca.nodes.Root
     properties:
-      testbed: string
-      nsd_name: string
+      testbed:
+        type: string
+      nsd_name:
+        type: string
