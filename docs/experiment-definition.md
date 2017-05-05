@@ -33,8 +33,7 @@ tosca_definitions_version: tosca_simple_yaml_1_0
 description: Template for SoftFIRE yaml resource request definition
 
 imports:
-  - softfire_node_types:
-    file: http://docs.softfire.eu/etc/softfire_node_types.yaml
+  - softfire_node_types: http://docs.softfire.eu/etc/softfire_node_types.yaml
 
 topology_template:
   node_templates:
@@ -73,6 +72,10 @@ The topology template describe the actual experiment. The required nodes are lis
 
 ## Files
 
+
+## Example
+
+A full example can be found [here](etc/example.csar)
 <!--
 References
 -->
