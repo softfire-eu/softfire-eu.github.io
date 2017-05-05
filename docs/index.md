@@ -13,7 +13,7 @@ SoftFIRE is an European project providing a federated infrastructure composed by
 
 
 
-[softfire-architecture]:images/general-softfire-arch.png
+[softfire-architecture]:img/general-softfire-arch.png
 
 <!---
  Script for open external links in a new tab
