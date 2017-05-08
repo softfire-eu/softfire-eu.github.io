@@ -11,16 +11,30 @@ The experiment is defined using [_Topology and Orchestration Specification for C
     ├── Metadata.yaml
     └── TOSCA.meta
 ```
+There are three two mandatory folders plus one optional. _Definitions_ and _TOSCA-Metadata_ are mandatory folder containing the metadata files and the experiment definition, as described in the following sections. the _Files_ folder contains some additional files needed in case some resources specifies extra requirements.
 
 ## TOSCA-Metadata
 
-The TOSCA-Metadata folder contains the TOSCA.meta file. This file must contain the reference to the template in this case `:::yaml Entry-Definitions: Definitions/experiment.yaml`.
+The TOSCA-Metadata folder contains the TOSCA.meta file and the Metadata.yaml file. The TOSCA.meta file must contain the reference to the template in this case `:::yaml Entry-Definitions: Definitions/experiment.yaml`. For example:
 
 ```yaml
 TOSCA-Meta-File-Version: 1.0
 CSAR-Version: 1.1
 Created-By: MyCompany
 Entry-Definitions: Definitions/experiment.yaml
+```
+
+The Metadata.yaml contains experiment meta information:
+
+* the name
+* the start date
+* the end date
+
+As follows:
+```yaml
+name: Experiment Name
+start-data: "9/5/17 10:00"
+end-data: "10/5/17 10:00"
 ```
 
 ## Definitions
@@ -39,36 +53,37 @@ topology_template:
   node_templates:
     zabbix_server:
       type: MonitoringNode
+      properties:
+        resource_id: monitoring
 
     sdn_ericsson:
-      type: ODLController
+      type: SDNResource
       properties:
+        resource_id: sdn_ericsson
         testbed: ericsson
 
     iperf:
-      type: NfvResource
+      type: NFVResource
       properties:
-        nsd_name: iperf
-        testbed: ericsson
+        resource_id: iperf
+        nsd_name: The Iperf NSD
+        testbeds: { ALL: ericsson }
 ```
 
 As shown in the example, the SoftFIRE experiment yaml file must contain the TOSCA definition version as `:::yaml tosca_definitions_version: tosca_simple_yaml_1_0`. This line is followed by a description of the experiment.
 
 The imports section must be specified as in the example because the EM will only accept specific node types defined in [this document][node_types]
 
+Each node type specifies a `:::text resource_id` that must be chosen from the available resources. The node name is arbitrary. Each node type can have some additional properties and they can be different from each others. Check the [node type specification][node_types] to understand all the node types. However, each node type is specified in the specific manager page:
+
+* **SDNResource**: [SDN Manager](sdn-manager.md)
+* **NFVResource**: [NFV Manager](nfv-manager.md)
+* **MonitoringResource**: [Monitoring Manager](monitoring-manager.md)
+* **SecurityResource**: [Security Manager](security-manager.md)
+
 ### Topology Template
 
-The topology template describe the actual experiment. The required nodes are listed in this section. The types are defined in the [node types][node_types] definitions.
-
-#### MonitoringNode
-
-#### ODLController
-
-#### NfvResource
-
-#### OSDNController
-
-#### SecurityResource
+The topology template describe the actual experiment. The required nodes are listed in this section. The types are defined in the [node types][node_types] definitions, please refer to the specific manager page for the description of the type.
 
 ## Files
 

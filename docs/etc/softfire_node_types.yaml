@@ -16,7 +16,7 @@ node_types:
       testbed:
         type: string
 
-  MonitoringNode:
+  MonitoringResource:
     derived_from: eu.softfire.BaseResource
     properties:
       user_paramreters:
@@ -33,10 +33,13 @@ node_types:
     derived_from: eu.softfire.BaseResource
     description: Defines a NFV resoruce request in the SoftFIRE Middleware
     properties:
-      testbed:
+      testbeds:
         type: map
         entry_schema:
-          description: mapping between vnf and testbed. Or 'all':<testbed_name> for all in one
+          description: mapping between vnf types and testbed. Or 'all':<testbed_name> for all in one
           type: string
       nsd_name:
         type: string
+      file_name:
+        type: string
+        required: false
