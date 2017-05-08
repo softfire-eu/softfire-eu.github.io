@@ -63,3 +63,7 @@ Request (EM->SM):
 List or resource-id(s) to release
  * respurce-id
  * token
+ 
+Request (SM->proxie(s)):
+REST request to resouce /SDNproxyRemove witgh JSON body
+ * token
