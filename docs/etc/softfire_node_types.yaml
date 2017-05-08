@@ -3,31 +3,40 @@ tosca_definitions_version: tosca_simple_yaml_1_0
 description: Node Types definitions
 
 node_types:
-  ODLController:
+  eu.softfire.BaseResource:
     derived_from: tosca.nodes.Root
+    properties:
+      resource_id:
+        type: string
+        required: true
+
+  SDNResource:
+    derived_from: eu.softfire.BaseResource
     properties:
       testbed:
         type: string
 
-  OSDNController:
-    derived_from: tosca.nodes.Root
-
-  VTNController:
-    derived_from: tosca.nodes.Root
-
   MonitoringNode:
-    derived_from: tosca.nodes.Root
+    derived_from: eu.softfire.BaseResource
     properties:
       user_paramreters:
         type: list
+        required: false
+        entry_schema:
+          description: listen port entry (simple integer type)
+          type: string
 
   SecurityResource:
-    derived_from: tosca.nodes.Root
+    derived_from: eu.softfire.BaseResource
 
   NfvResource:
-    derived_from: tosca.nodes.Root
+    derived_from: eu.softfire.BaseResource
+    description: Defines a NFV resoruce request in the SoftFIRE Middleware
     properties:
       testbed:
-        type: string
+        type: map
+        entry_schema:
+          description: mapping between vnf and testbed. Or 'all':<testbed_name> for all in one
+          type: string
       nsd_name:
         type: string
