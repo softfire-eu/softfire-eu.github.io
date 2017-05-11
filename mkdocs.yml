@@ -2,15 +2,17 @@ site_name: SoftFIRE Software Documentation
 pages:
         - SoftFIRE:
                 - Introduction: 'intro.md'
+                - Softfire Middleware: 'softfire-middleware.md'
         - Wiki:
                 - Getting Started: 'getting-started.md'
-                - Softfire Middleware: 'softfire-middleware.md'
                 - Experiment Manager: 'experiment-manager.md'
                 - Define your experiment: 'experiment-definition.md'
                 - NFV Manager: 'nfv-manager.md'
                 - SDN Manager: 'sdn-manager.md'
                 - Security Manager: 'security-manager.md'
                 - Monitoring Manager: 'monitoring-manager.md'
+        - Dev:
+                - SDN Manager: 'sdn-manager.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
 
