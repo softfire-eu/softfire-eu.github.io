@@ -4,14 +4,14 @@ After having won the Open Call you are officially an Experimenter. First of all,
 
 ![Experimenter Manager Login page][ex-man-login-page]
 
-## Registration
+## Login
 
-If it is the first time you access you must register first. Enter your username and a chosen password plus your email.
+Enter your username and password, the password is the same used in the SoftFIRE Web Portal and the username is your _name+surname_. The _Signup_ is currently disabled
 
 !!! note
     The username must be the same that the one you used while registering.
 
-If the signup works correctly you will be redirected on the Experimenter page that looks like the following picture.
+If the login works correctly you will be redirected on the Experimenter page that looks like the following picture.
 
 ![Experimenter Manager Experimenter page][ex-man-experimenter-page]
 
