@@ -1,14 +1,14 @@
 ## Registration to the Tools
 
-1. register at the portal (alredy done)
-1. register to redmine [this page](https://redmine.softfire.eu/) and create an account (Introduction to the redmine tool: [REDMINE](https://redmine.softfire.eu/documents/3))
-1. install and configure [openvpn](#openvpn-setup)
-1. configure [jfed](#jfed-setup)
-1. [prepare your experiment](#design-your-experiment)
-1. [execute the experiment](#execute-your-experiment)
-1. retrieve the results
+1. Register at the Web Portal (and win the open call :stuck_out_tongue_winking_eye:)
+1. Register to redmine [this page](https://redmine.softfire.eu/) and create an account
+1. Install and configure [openvpn](#openvpn-setup)
+1. Design your experiment
+1. Execute the experiment
+1. Retrieve the results
+1. Terminate the experiment
 
-We invite the experimenters to use the Issues to address specific problems or support requests. You can also visit the [Forums](https://redmine.softfire.eu/projects/softfire/boards) section to open a new discussion or to find useful information shared in the community
+We invite the experimenters to use the SoftFIRE [Slack channel]() the Issues to address specific problems or support requests. You can also visit the [Forums](https://redmine.softfire.eu/projects/softfire/boards) section to open a new discussion or to find useful information shared in the community
 
 ## OpenVPN setup
 
