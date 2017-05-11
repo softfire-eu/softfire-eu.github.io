@@ -101,3 +101,18 @@ References
 [tosca]:http://docs.oasis-open.org/tosca/TOSCA/v1.0/TOSCA-v1.0.html
 [tosca-node-types]:http://docs.oasis-open.org/tosca/TOSCA-Simple-Profile-YAML/v1.0/csprd01/TOSCA-Simple-Profile-YAML-v1.0-csprd01.html#DEFN_TYPE_CAPABILITIES_NODE
 [node_types]:etc/softfire_node_types.yaml
+
+<!---
+ Script for open external links in a new tab
+-->
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>
