@@ -1,7 +1,7 @@
 site_name: SoftFIRE Software Documentation
 pages:
         - SoftFIRE:
-                - Introduction: 'intro.md'
+                - Introduction: 'index.md'
                 - Softfire Middleware: 'softfire-middleware.md'
         - Wiki:
                 - Getting Started: 'getting-started.md'
