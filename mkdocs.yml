@@ -1,9 +1,9 @@
 site_name: SoftFIRE Software Documentation
 pages:
         - SoftFIRE:
-                - Introduction: 'index.md'
+                - Introduction: 'intro.md'
         - Wiki:
-                - Getting Started: 'wiki.md'
+                - Getting Started: 'getting-started.md'
                 - Softfire Middleware: 'softfire-middleware.md'
                 - Experiment Manager: 'experiment-manager.md'
                 - Define your experiment: 'experiment-definition.md'
@@ -19,6 +19,15 @@ extra:
   palette:
     primary: 'deep orange'
     accent: 'orange'
+  feature:
+    tabs: false
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  social:
+    - type: 'github'
+      link: 'https://github.com/SoftFIRE-eu'
+
 repo_url: https://github.com/SoftFIRE-eu/experiment-manager
 repo_name: SoftFIRE Experiment Manager
 site_favicon: favicon.ico

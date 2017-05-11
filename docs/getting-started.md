@@ -21,7 +21,7 @@ We invite the experimenters to use the Issues to address specific problems or su
 
 ## The Experiment Manager
 
-Good, now you are in! You should be able to reach now the [Experiment Manager Web page][ex-man-link]. Follow this tutorial on the [next page][ex-manager]
+Good, now you are in :smile: You should be able to reach now the [Experiment Manager Web page][ex-man-link]. Follow this tutorial on the [next page][ex-man-link] for getting more knowledge on how to proceed with your experiment.
 
 ## Testbeds Information and usage
 
