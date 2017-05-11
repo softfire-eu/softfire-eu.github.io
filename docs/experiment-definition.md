@@ -55,6 +55,7 @@ topology_template:
       type: MonitoringNode
       properties:
         resource_id: monitoring
+        testbed: ericsson
 
     sdn_ericsson:
       type: SDNResource
