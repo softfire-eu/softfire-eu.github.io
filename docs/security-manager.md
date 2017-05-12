@@ -44,8 +44,8 @@ SecurityResource:
 * **testbed**: Defines where to deploy the Security Resource selected. It is ignored if want_agent is True
 * **want_agent**: Defines if the Experimenter wants the security resource to be an agent directly installed on the VM that she wants to monitor
 * **logging**: Defines if the Experimenter wants the security resource to send its log messages to a collector and she wants to see them on a dashboard
-* **allowed_ips**: List of IPs (or CIDR  masks) allowed by the firewall. [allow from <IP>]
-* **denied_ips**: List of IPs (or CIDR masks) denied by the firewall [deny from <IP>]
+* **allowed_ips**: List of IPs (or CIDR  masks) allowed by the firewall. [allow from \<IP\>]
+* **denied_ips**: List of IPs (or CIDR masks) denied by the firewall [deny from \<IP\>]
 * **default_rule**: Default rule applied by the firewall (allow/deny)
 
  <!--
