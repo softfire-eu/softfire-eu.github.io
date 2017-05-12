@@ -19,12 +19,10 @@ node_types:
   MonitoringResource:
     derived_from: eu.softfire.BaseResource
     properties:
-      user_paramreters:
-        type: list
+      testbed:
+        type: string
         required: false
-        entry_schema:
-          description: listen port entry (simple integer type)
-          type: string
+        description: Location where to deploy the monitoring server
 
   SecurityResource:
     derived_from: eu.softfire.BaseResource

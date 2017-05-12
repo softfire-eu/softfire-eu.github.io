@@ -55,6 +55,7 @@ topology_template:
       type: MonitoringNode
       properties:
         resource_id: monitoring
+        testbed: ericsson
 
     sdn_ericsson:
       type: SDNResource
@@ -87,6 +88,7 @@ The topology template describe the actual experiment. The required nodes are lis
 
 ## Files
 
+This folder contains an inner CSAR of a NS. This is only used in case the NFV Resource you want to deploy is not one of the preconfigured one. In this case, the how to build this CSAR is explained in the [Open Baton CSAR tutorial][openbaton-tosca]. And the NfvResource _file_name_ field must point to this file.
 
 ## Example
 

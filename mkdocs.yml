@@ -2,15 +2,17 @@ site_name: SoftFIRE Software Documentation
 pages:
         - SoftFIRE:
                 - Introduction: 'index.md'
-        - Wiki:
-                - Getting Started: 'wiki.md'
                 - Softfire Middleware: 'softfire-middleware.md'
-                - Define your experiment: 'experiment-definition.md'
+        - Wiki:
+                - Getting Started: 'getting-started.md'
                 - Experiment Manager: 'experiment-manager.md'
+                - Define your experiment: 'experiment-definition.md'
                 - NFV Manager: 'nfv-manager.md'
                 - SDN Manager: 'sdn-manager.md'
                 - Security Manager: 'security-manager.md'
                 - Monitoring Manager: 'monitoring-manager.md'
+        - Dev:
+                - SDN Manager: 'sdn-manager.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
 
@@ -19,6 +21,15 @@ extra:
   palette:
     primary: 'deep orange'
     accent: 'orange'
+  feature:
+    tabs: false
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  social:
+    - type: 'github'
+      link: 'https://github.com/SoftFIRE-eu'
+
 repo_url: https://github.com/SoftFIRE-eu/experiment-manager
 repo_name: SoftFIRE Experiment Manager
 site_favicon: favicon.ico
