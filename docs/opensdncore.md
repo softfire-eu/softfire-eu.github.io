@@ -9,9 +9,13 @@ The details of the provided api function calls are described in the [Northbound 
 
 ## Architecture
 
+![controller_color__1_](img/osdnc-controller1.png)
+
+More Details please refer to the [OpenSDNCore Controller documentation][osdnc-controller]
 
 <!--
 References
 -->
 
 [osdnc-api]:opensdncore-nb-api.md
+[osdnc-controller]:osdnc-controller.md
