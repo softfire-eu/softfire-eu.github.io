@@ -2,79 +2,65 @@
 
 The SDN manager is in charge of managing access to the SDN resources provided by some testbeds.
 
-The SDN manager keeps track of the API endpoints towards the SDN proxy services that are used to filter requests 
-from experimenters to enabe multi tenancy that is by default not provided by the used SDN controllers.
+The SDN manager keeps track of the API endpoints towards the SDN proxy services.
 
 The SDN manager uses the following Experiment LifeCycles:
- 
+
  * List
  * Provision
  * Release
 
-## Message contents
+Upon list resources the SDN manager returns a list of available SDN endpoints to the Experimenter.
 
-There are three parties involved into the communication:
+To actually use an SDN resopurce in an experiment a SDNResource has to be included into the experiment descripton that matches an resource id returned by list resources.
 
- * Experimet Manager (EM)
- * SDN Manager (SM)
- * SDN Proxie(s)
+## SDN Resource type
 
-### List Resources
+The SDNResource node type is defined as follows, as per [node types page][node_types]:
 
-Involved: Experiment manager, SDN Manager 
+```yaml
+eu.softfire.BaseResource:
+  derived_from: tosca.nodes.Root
+  properties:
+    resource_id:
+      type: string
+      required: true
 
-Response (SM->EM): 
-TOSCA encoded object of type SDNResource for each supported SDN endpoint (e.g. for each testbed)
+SDNResource:
+  derived_from: eu.softfire.BaseResource
+  description: Defines a SDN resource request in the SoftFIRE Middleware
 
- * resource-id
- * testbed-id
- * description text
+```
 
-### Provision Resources
+This Resource has the following properties:
 
-Involved: Experiment manager, SDN Manager, SDN Proxy
+* **resource_id**: Defines the type of the SDN Resource. Depending on this id the testbed that is used to provide the SDN resource implicit is chosen.
 
-Request (EM->SM):
-TOSCA encoded object with a list SDNResource types for each requested SDN resource. (Each testbed has its own resource.)
+## Assigned Resource data
 
- * resource-id(s)
- * UserInformation
-   * username
-   * password (can be used to create an account with the users password)
-   * tenant-id for each used testbed
-   * experiment-id (token used for this experiment)
+After successful instantiation of the resource the experimenter receives an JSON object with the following information to actually use the provided SDN resource.
 
-Request (SM->proxie(s)):
-REST request to resource /SDNroxySetup with JSON object in request-body:
-
- * token (experiment-id)
- * tenant-id (for the associated testbed)
- 
-Response (proxie->SM):
-REST response body JSON encoded:
-
- * endpoint URL
- * flow-table-range (list of decimals)
- 
-Response (SM->EM):
 List of resource objects
 
- * resource-id
- * URI
- * flow-table-range
- * token?
+ * **resource-id**: the ID of the allocated resource
+ * **URI**: An URL that is used to interact with the actual SDN resource according to the API specification of this particular Type.
+ * **flow-table-range**: List of flow table id's that can be used by the Experimenter to place its own flow-rules.
+ * **token**: A security token that needs to be send with every request to the API endpoint specified by the URI property. This token is used to identify the Experiment ad to allow access the the networking resources associated with this experiment.
 
+## Currently supported SDN endpoints
 
-### Release Resources
-Involved: Experiment manager, SDN Manager, SDN Proxy
+Each testbed can provide a different imlementation of SDN resources. The current version of the SoftFIRE sdn middleware provides access to two types of SDN controllers:
 
-Request (EM->SM):
-List or resource-id(s) to release
+* The Frauhofer FOKUS testbed uses its own Implementation of an SDN controller named [OpenSDNCore][opensdncore-www].
+  Specification of the provided API features can be found in its [Documentation pages][opensdncore]
+* The Testbed of Ericsson and University of Surrey will provide access to [OpenDayLight][odl-www] SDN controllers.
 
- * respurce-id
- * token
- 
-Request (SM->proxie(s)):
-REST request to resouce /SDNproxyRemove witgh JSON body
+<!--
+References
+-->
 
- * token
+[opensdncore-www]:http://www.opensdncore.org/
+[odl-www]:https://www.opendaylight.org/
+[opensdncore]:opensdncore.md
+[openvpnconfig]:openvpnconfig.md
+[node_types]:etc/softfire_node_types.yaml

@@ -12,12 +12,12 @@ node_types:
 
   SDNResource:
     derived_from: eu.softfire.BaseResource
-    properties:
-      testbed:
-        type: string
+    description: Defines a SDN resource request in the SoftFIRE Middleware
+
 
   MonitoringResource:
     derived_from: eu.softfire.BaseResource
+    description: Defines the Zabbix monitoring resource requested
     properties:
       testbed:
         type: string
@@ -26,36 +26,6 @@ node_types:
 
   SecurityResource:
     derived_from: eu.softfire.BaseResource
-    description: Defines a Security agent to be deployed. More details on <docu_URL>
-    properties:
-      resource_id:
-        type: string
-        required: true
-        default: firewall
-      testbed:
-        type: string
-        required: false
-      want_agent:
-        type: boolean
-        required: true
-        default: true
-      logging:
-        type: boolean
-        required: true
-        default: true
-      allowed_ips:
-        type: list
-        entry_schema:
-          type: string
-        required: false
-      denied_ips:
-        type: list
-        entry_schema:
-          type: string
-        required: false
-      default_rule:
-        type: string
-        required: true
 
   NfvResource:
     derived_from: eu.softfire.BaseResource

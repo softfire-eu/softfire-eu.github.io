@@ -9,10 +9,14 @@ pages:
                 - Define your experiment: 'experiment-definition.md'
                 - NFV Manager: 'nfv-manager.md'
                 - SDN Manager: 'sdn-manager.md'
+                - OpenSDNCore:
+                  - Intriduction: 'opensdncore.md'
+                  - API Documentation: 'opensdncore-nb-api.md'
+                - OpenDayLight: 'opendaylight.md'
                 - Security Manager: 'security-manager.md'
                 - Monitoring Manager: 'monitoring-manager.md'
         - Dev:
-                - SDN Manager: 'sdn-manager.md'
+                - SDN Manager: 'sdn-manager-dev.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
 
