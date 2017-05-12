@@ -1,6 +1,6 @@
 # Monitoring Manager
 
-This is a SDN Manager page
+This is Monitoring Manager page
 
 ## Monitoring resource
 
