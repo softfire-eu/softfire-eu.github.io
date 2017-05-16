@@ -58,13 +58,13 @@ topology_template:
         testbed: ericsson
 
     sdn_ericsson:
-      type: SDNResource
+      type: SdnResource
       properties:
         resource_id: sdn_ericsson
         testbed: ericsson
 
     iperf:
-      type: NFVResource
+      type: NfvResource
       properties:
         resource_id: iperf
         nsd_name: The Iperf NSD

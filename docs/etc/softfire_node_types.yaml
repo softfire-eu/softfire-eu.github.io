@@ -10,7 +10,7 @@ node_types:
         type: string
         required: true
 
-  SDNResource:
+  SdnResource:
     derived_from: eu.softfire.BaseResource
     description: Defines a SDN resource request in the SoftFIRE Middleware
 
