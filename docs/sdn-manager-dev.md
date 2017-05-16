@@ -23,7 +23,7 @@ There are three parties involved into the communication:
 
 Involved: Experiment manager, SDN Manager
 
-Response (SM->EM):
+**Response (SM->EM)**:
 TOSCA encoded object of type SDNResource for each supported SDN endpoint (e.g. for each testbed)
 
  * resource-id
@@ -34,7 +34,7 @@ TOSCA encoded object of type SDNResource for each supported SDN endpoint (e.g. f
 
 Involved: Experiment manager, SDN Manager, SDN Proxy
 
-Request (EM->SM):
+**Request (EM->SM)**:
 TOSCA encoded object with a list SDNResource types for each requested SDN resource. (Each testbed has its own resource.)
 
  * resource-id(s)
@@ -44,19 +44,40 @@ TOSCA encoded object with a list SDNResource types for each requested SDN resour
    * tenant-id for each used testbed
    * experiment-id (token used for this experiment)
 
-Request (SM->proxie(s)):
+**Request (SM->proxie(s))**:
 REST request to resource /SDNroxySetup with JSON object in request-body:
 
  * token (experiment-id)
  * tenant-id (for the associated testbed)
 
-Response (proxie->SM):
+```
+method: POST
+path: /SDNproxySetup
+Header: Auth-Secret: <xx>
+Body: JSON
+```
+
+ ```json
+  {
+      "experiment_id": "a5cfaf1e81f35fde41bef54e35772f2b",
+      "jsonrpc": "2.0",
+      "result": {
+          "msg_id": "0x01020304"
+      }
+  }
+ ```
+
+**Response (proxie->SM)**:
 REST response body JSON encoded:
 
- * endpoint URL
- * flow-table-range (list of decimals)
+```json
+  {
+  	"endpoint_url": "http:/foo.bar",
+  	"user-flow-tables": [10,11,12,13,14,15]
+  }
+```
 
-Response (SM->EM):
+**Response (SM->EM)**:
 List of resource objects
 
  * resource-id
@@ -68,13 +89,20 @@ List of resource objects
 ### Release Resources
 Involved: Experiment manager, SDN Manager, SDN Proxy
 
-Request (EM->SM):
+**Request (EM->SM)**:
 List or resource-id(s) to release
 
  * respurce-id
  * token
 
-Request (SM->proxie(s)):
+**Request (SM->proxie(s))**:
 REST request to resouce /SDNproxyRemove witgh JSON body
 
- * token
+```
+method: DELETE
+path: /SDNproxy/<token>
+Header: Auth-Secret: <xx>
+
+Response: HTTP 200
+Body: none
+```
