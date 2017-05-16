@@ -1,5 +1,6 @@
-
 # JSON-RPC-OpenFlow
+
+[[_TOC_]]
 
 ## Notations
 
@@ -416,7 +417,7 @@ null
 
 ## Switch Management
 
-### list_switches
+### list.channels
 
 list datapath id of switches connecting to this controller
   Params
@@ -434,7 +435,7 @@ a JSON array consists of dpids(64-bit hex number given as string)
         {
             "id": 1,
             "jsonrpc": "2.0",
-            "method": "list_switches",
+            "method": "list.channels",
             "params": null
         }
 
@@ -731,10 +732,10 @@ a JSON object consists of ofp_flow_stats object, whose format is introduced belo
 |--------|---------------|-------------|--------|------------|
 | table_id | table id | hybrid | a 8-bit hex number between [0, 0xfe] or "all" for all tables | true |
 | out_port | Require matching entries to include this as an output port. | hybrid | a 32-bit hex number as described in ofp_port object, or "any" which indicates no restriction | false |
-| out_group | Require matching entries to include this as an output group | hybrid | a 32-bit hex number, or "any" which indicates no restriction | true |
+| out_group | Require matching entries to include this as an output group | hybrid | a 32-bit hex number, or "any" which indicates no restriction | false |
 | cookie | Require matching entries to contain this cookie value | hex | a 64-bit hex number | false |
 | cookie_mask | Require matching entries to contain this cookie value | hex | a 64-bit hex number,mask used to restrict the cookie bits that must match. | false |
-| ofp_match | matching rules | array | consists of ofp_oxm objects | true |
+| ofp_match | matching rules | array | consists of ofp_oxm objects | false |
 
  Properties of "ofp_flow_stats" object
 
@@ -983,598 +984,93 @@ get aggregate statistic information about ports
 
 ------------------------------------
 
+### ofc.send.multipart.port_description
 
-## OpenFlow Events Delivery
-
-This part introduces the basic events supported by the controller.
-The user are allowed to make subscription to different kinds of events and get corresponding notifications.
-
-
-
-### OpenFlow Event
-
-Every instance of an OpenFlow controller event has a common dada field named "type" to mark the type of the event. The "type" is an enumeration of OFCEV.
-
-  OFCEV
-
-| value | description |
-|---------|---------------|
-| Packet_In | packet in events |
-| Flow_Removed | flow removed events |
-| Port_Status | port status changed events |
-| Role_Status | controller role changed events |
-| Table_Status | table status changed events |
-| Requestforward | events informing modifications made by other controllers |
-| Channel_Opened | new switch attached events |
-| Channel_Closed | switch detached events |
-| Connection_Opened | new connection opened, could be either a main connection or a auxiliary connection |
-| Connection_Closed | new connection closed, could be either a main connection or a auxiliary connection |
-
-The JSON properties of each event type are listed below
-
-### Packet_In
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | switch datapath id | hex | 64-bit hex number given as string |
-| xid | xid appears in the OpenFlow message header | hex | 32-bit hex number |
-| buffer_id | buffer id of the packet | hybrid | a 32-bit hex number or "no_buffer" |
-| reason | reason packet has been sent | enum | one of OFPR enumeration |
-| table_id | table id that was looked up | hybrid | a 8-bit hex number between [0, 0xfe] or "all" for all tables |
-| cookie | cookie of the flow entry that was looked up | hex | a 64-bit hex number |
-| ofp_match | containing context info that cannot be determined from the packet data | array | consists of ofp_oxm objects |
-| data | packet data | bytearray | a byte array |
-
-  OFPR
-
-| value | description |
-|---------|---------------|
-| no_match | No matching flow (table-miss flow entry) |
-| action | Action explicitly output to controller. |
-| invalid_ttl | Packet has invalid TTL. |
-
-  Example
-
-
-        {
-            "type": "Packet_In",
-            "dpid": "0xaabb000102030405",
-            "buffer_id": "no_buffer",
-            "reason": "no_match",
-            "table_id": "0x01",
-            "cookie": "0x0102030405060708",
-            "ofp_match": [
-                {
-                    "match_class": "openflow_basic",
-                    "field": "in_port",
-                    "value": "0x05"
-                },
-                {
-                    "match_class": "openflow_basic",
-                    "field": "in_phy_port",
-                    "value": "0x01"
-                },
-                {
-                    "match_class": "openflow_basic",
-                    "field": "arp_op",
-                    "value": "0x01"
-                }
-            ],
-            "data": "0xffffffffffff001ff344e53908060001080006040001001ff344e5390a93418b"
-        }
-
-#### Flow_Removed
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | switch datapath id | hex | 64-bit hex number given as string |
-| xid | xid appears in the OpenFlow message header | hex | 32-bit hex number |
-| buffer_id | buffered packet to apply to. Not meaningful for delete commands | hybrid | a 32-bit hex number or "no_buffer" |
-| reason | reason flow is being removed | enum | one of OFPRR enumeration |
-| table_id | table id containing the flow | hybrid | a 8-bit hex number between [0, 0xfe] or "all" for all tables |
-| cookie | cookie of the flow entry being removed | hex | a 64-bit hex number |
-| priority | priority level of flow entry | number |  |
-| packet_count | number of packet in flow | number | |
-| byte_count | number of byte in flow | number | |
-| idle_timeout | idle time before discarding (seconds) | number |  |
-| hard_timeout | max time before discarding (seconds) | number |  |
-| duration_sec | time flow has been alive in seconds | number |  |
-| duration_nsec | time flow has been alive in nanoseconds beyond duration_sec | number |  |
-| ofp_match | description of fields | array | consists of ofp_oxm objects |
-
-  OFPRR
-
-| value | description |
-|---------|---------------|
-| idle_timeout | Flow idle time exceeded idle_timeout. |
-| hard_timeout | ATime exceeded hard_timeout. |
-| delete | Evicted by a DELETE flow mod. |
-| group_delete | Group was removed. |
-
-  Example
-
-
-        {
-            "type": "Flow_Removed",
-            "dpid": "0xaabb000102030405",
-            "table_id": "0xe0",
-            "cookie": "0x0102030405060708",
-            "reason": "delete",
-            "packet_count": 29348,
-            "byte_count": 7039684,
-            "idle_timeout": 3,
-            "hard_timeout": 15,
-            "duration_sec": 10,
-            "duration_nsec": 56,
-            "priority": 19,
-            "ofp_match": [
-                {
-                    "match_class": "openflow_basic",
-                    "field": "ipv4_src",
-                    "mask": "255.255.255.0",
-                    "value": "192.168.1.1"
-                },
-                {
-                    "match_class": "openflow_basic",
-                    "field": "tcp_src",
-                    "value": "5566"
-                }
-            ]
-        }    
-
-#### Port_Status
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | switch datapath id | hex | 64-bit hex number given as string |
-| xid | xid appears in the OpenFlow message header | hex | 32-bit hex number |
-| reason | reason flow is being removed | enum | one of OFPPR enumeration |
-| ofp_port | description of the port | object | the same as ofp_port object |
-
-  OFPPR
-
-| value | description |
-|---------|---------------|
-| add | The port was added. |
-| delete | The port was delete. |
-| modify | Some attribute of the port has changed. |
-
-  Example
-
-
-        {
-            "type": "Port_Status",
-            "dpid": "0xaabb000102030405",
-            "port_no": "0xe0",
-            "reason": "modify"
-        }
-
-#### Role_Status
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | switch datapath id | hex | 64-bit hex number given as string |
-| reason | reason role is being changed | enum | one of OFPCRR enumeration |
-| generation_id | Master Election Generation Id | hex | 32-bit hex number given as string |
-| properties | role property list | array | an array of ofp_role_prop objects |
-
- Properties of "ofp_role_prop" object
-
-| name | description | JSON type | note |
-|--------|---------------|-------------|--------|
-| type | port type | enum | only valid value is OFPRPT_EXPERIMENTER |
-| exp_id | id of the Experimenter | hex | a 32-bit hex number, only valid for type OFPRPT_EXPERIMENTER |
-| exp_type | experimenter defined type | hex | a 32-bit hex number, only valid for type OFPRPT_EXPERIMENTER |
-| exp_data | experiment data | bytearray | only valid for type OFPRPT_EXPERIMENTER |
-
-  OFPCRR
-
-| value | description |
-|---------|---------------|
-| master_request | Another controller asked to be master. |
-| config | Configuration changed on the switch. |
-| experimenter | Experimenter data changed. |
-
-  Example
-
-
-        {
-            "type": "Port_Status",
-            "dpid": "0xaabb000102030405",
-            "port_no": "0xe0",
-            "reason": "modify"
-        }
-
-#### Table_Status
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | switch datapath id | hex | 64-bit hex number given as string |
-| reason | reason table is being changed | enum | one of OFPTR enumeration |
-| ofp_table_desc | new table config | object | an ofp_table_desc objects |
-
- Properties of "ofp_table_desc" object
-
-| name | description | JSON type | note |
-|--------|---------------|-------------|--------|
-| table_id | identifier of table | hybrid | a hex number between [0, 0xfe] or "all" |
-| config | table configuration | bitmap | possible values in OFPTC enumeration |
-| properties | table properties | array | an array of ofp_table_mod_prop objects |
-
-  OFPTR
-
-| value | description |
-|---------|---------------|
-| eviction | authorise table to evict flows. |
-| vacancy_events | enable vacancy events. |
-
-  OFPTC
-
-| value | description |
-|---------|---------------|
-| vacancy_down | vacancy down threshold event. |
-| vacancy_up | vacancy up threshold event. |
-
- Properties of ofp_table_mod_prop object
-
-| name | description | JSON type | note |
-|--------|---------------|-------------|--------|
-| type | port type | enum | one of OFPTMPT enumeration |
-
-| flags | eviction types implemented by the switch | bitmap | possible values enumerated in OFPTMPER, only valid for type OFPTMPT_EVICTION |
-|-------|------------------------------------------|--------|------------------------------------------------------------------------------|
-
-| vacancy_down | Vacancy threshold when space decreases (%) | number | number bewteen 0 and 100 , only valid for type OFPTMPT_VACANCY|
-|--------------|--------------------------------------------|--------|---------------------------------------------------------------|
-| vacancy_up | Vacancy threshold when space increases (%) | number | number bewteen 0 and 100 , only valid for type OFPTMPT_VACANCY|
-| vacancy | Current vacancy (%) | number |  number bewteen 0 and 100 , only valid for type OFPTMPT_VACANCY|
-
-| exp_id | id of the Experimenter | hex | a 32-bit hex number, only valid for type OFPTMPER_EXPERIMENTER |
-|--------|------------------------|-----|----------------------------------------------------------------|
-| exp_type | experimenter defined type | hex | a 32-bit hex number, only valid for type OFPTMPER_EXPERIMENTER |
-| exp_data | experiment data | bytearray | only valid for type OFPTMPER_EXPERIMENTER |
-
- OFPTMPT
-
-| value | description |
-|---------|---------------|
-| eviction | evict properties |
-| vacancy | vacancy properties|
-| experimenter | experimenter property |
-
- OFPTMPER
-
-| value | description |
-|---------|---------------|
-| other | using other factors |
-| importance | using flow entry importance |
-| lifetime | using flow entry lifetime |
-
-  Example
-
-
-        {
-            "type": "Table_Status",
-            "dpid": "0xaabb000102030405",
-            "table_id": "0xe0",
-            "reason": "vacancy",
-            "ofp_table_desc": {
-                "table_id": "0xe0",
-                "config": [
-                    "vacancy_up"
-                ],
-                "properties": [
-                    {
-                        "type": "vacancy",
-                        "vacancy_up": 89,
-                        "vacancy_down": 10,
-                        "vacancy": 40
-                    }
-                ]
-            }
-        }
-
-#### Channel_Opened
-
-#### Channel_Closed
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | switch datapath id | hex | 64-bit hex number given as string |
-
-  Example
-
-
-        {
-            "type": "Channel_Opened",
-            "dpid": "0xaabb000102030405"
-        }
-
-#### Connection_Opened
-
-#### Connection_Closed
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | switch datapath id | hex | 64-bit hex number given as string |
-| version | the current used openflow version | hex | a valid openflow version number |
-| n_buffers | max packets buffered at once | number | number between [0, 2^32] |
-| n_tables | number of tables supported | number | number between [0, 255] |
-| capabilities | set of capability flags | bitmap | possible values enumerated in OFPC |
-| reserved | reserved value | hex | 32-bit hex number |
-
-  OFPC
-
-| value | description |
-|---------|---------------|
-| flow_stats | flow statistics |
-| table_stats | table statistics |
-| port_stats | port statistics |
-| group_stats | group statistics |
-| ip_reasm | can reassemble IP fragments |
-| queue_stats | queue statistics |
-| port_blocked | switch will block looping ports |
-
- Example
-
-
-        {
-            "type": "Connection_Opened",
-            "dpid": "0xaabb000102030405",
-            "capabilities": [
-                "flow_stats",
-                "table_stats",
-                "port_stats"
-            ],
-            "n_buffers": 65536,
-            "n_tables": 128,
-            "version": "0x05",
-            "reserved": "0x0"
-        }
-
----------------------------------------------
-
-
-### Publish/Subscribe-like System
-
-#### ofc.sub.register
-
-handshake procedure issued by subscribers to register themselves before making any subscription
+ get a description of all the ports in the system that support OpenFlow
 
   Params
 
 | name | description | JSON type | note | required |
 |--------|---------------|-------------|--------|------------|
-| type | the protocol type used to send back notification, if not provided and the connection used to make this request is a permanent TCP connection, then the notification will be sent over the same connection | enum | one of TCP, UDP and HTTP | true |
-| ip | the ip address used to send back notification, if not provided and the connection used to make this request is a permanent TCP connection, then the notification will be sent over the same connection | string | conventional ip representation | false |
-| port | the port used to send back notificationif not provided and the connection used to make this request is a permanent TCP connection, then the notification will be sent over the same connection | number | a valid port number | false |
-| notify_method | the name of notify method when sending back a notification, default is | string | default is "notify" | false |
+| dpid | switch datapath id | hex | 64-bit hex number given as string | true |
 
   Result
 
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| sub_id | a unique ID identifying the subscriber, used when add or delete subscriptions | hex | 32-bit hex number that global unique to the controller |
+| name | description | JSON type | note |
+|--------|---------------|-------------|--------|
+| port_no | port that this queue attaching to, should refer to a valid physical port | hybrid | a 32-bit number between [0, 0xffffff00) or "any" for all ports |
+| hw_addr |  Hardware address of the interface| number | |
+| name | Name of the interface | number | |
+| config | Bitmap of OFPPC_* flags| number | |
+| state | Bitmap of OFPPS_* flags | number | |
+| properties | property list of port type specific statistics | array | consists of ofp_port_desc_prop objects |
 
- Error
+ Properties of ofp_port_desc_prop object
 
-self-defined error type(not JSON-RPC standard error)
-
-  Example
-
-
-        -->
-        {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "method": "ofc.sub.register",
-            "params": {
-                "type": "udp",
-                "ip": "127.0.0.1",
-                "port": 9999,
-                "notify_method": "My_handler"
-            }
-        }
-
-        <--
-        {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "result": {
-                "sub_id": "0x12345678"
-            }
-        }
-
-
-#### ofc.sub.deregister
-
-used by subscribers to deregister
-
-  Params
-
-| name | description | JSON type | restriction | optional |
-|--------|---------------|-------------|---------------|------------|
-| sub_id | a unique ID identifying the subscriber | hex | must be the same as returned by register method | false |
-
- Result
-
-a JSON string. "OK" on success.
-
+| name | description | JSON type | note |
+|--------|---------------|-------------|--------|
+| type | port type | enum |  |
+| curr | number of frame alignment errors | number |  |
+| advertised | Features being advertised by the port | number |  |
+| supported |  Features supported by the port | number |  |
+| peer |  Features advertised by peer| number |  |
+| curr_speed |  Current port bitrate in kbps | number |  |
+| max_speed | Max port bitrate in kbps | number |  |
 
   Example
 
 
         -->
-        {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "method": "ofc.sub.deregister",
-            "params": {
-                "sub_id": "0x12345678"
-            }
-        }
+       {
+         "jsonrpc": "2.0",
+         "method": "ofc.send.multipart.port_description",
+         "params": {
+            "dpid": "0x0000000000000001"
+         },
+         "id": 1
+       }
 
         <--
+       {
+      "jsonrpc": "2.0",
+      "result": [
         {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "result": "OK"
-        }
-
-
-#### ofc.sub.subscribe
-
-subscribe to events
-
-  Params
-
-| name | description | JSON type | restriction | optional |
-|--------|---------------|-------------|---------------|------------|
-| sub_id | a unique ID identifying the subscriber | hex | must be the same value as returned by register method | false |
-| subscriptions | interested events | array | consists of ofc_subscription objects | false |
-
-  ofc_subscription
-
-| name | description | JSON type | restriction |
-|--------|---------------|-------------|---------------|
-| dpid | interested switch | hex | a 64-bit hex number given as string |
-| subscriptions | interested events | bitmap | an array of interested event types, possible values in OFCEV |
-
- Result
-
-a JSON string. "OK" on success.
-
-  OFCEV
-
-| value | description |
-|---------|---------------|
-| Packet_In | packet in events |
-| Flow_Removed | flow removed events |
-| Port_Status | port status changed events |
-| Role_Status | controller role changed events |
-| Table_Status | table status changed events |
-| Requestforward | events informing modifications made by other controllers |
-| Channel_Opened | new switch attached events |
-| Channel_Closed | switch detached events |
-| Connection_Opened | new connection opened, could be either a main connection or a auxiliary connection |
-| Connection_Closed | new connection closed, could be either a main connection or a auxiliary connection |
-
-  Example
-
-
-        -->
-        {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "method": "ofc.sub.subscribe",
-            "params": {
-                "sub_id": "0x12345678",
-                "subscriptions": [
-                    {
-                        "dpid": "0xaabb000102030405",
-                        "subscriptions": [
-                            "Channel_Closed",
-                            "Packet_in"
-                        ]
-                    }
-                ]
+          "port_no": "1",
+          "hw_addr": "ea:68:7d:44:9:75",
+          "name": "s1-eth1",
+          "config": [],
+          "state": [],
+          "properties": [
+            {
+              "type": "ETHERNET",
+              "curr": [],
+              "advertised": [],
+              "supported": [],
+              "peer": [],
+              "curr_speed": 0,
+              "max_speed": 102400
             }
-        }
-
-        <--
+          ]
+        },
         {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "result": "OK"
-        }
-
-
-If later comes a packet_in message, the controller will try to connect to the subscriber and send a json-rpc notification (through tcp://127.0.0.1:9999 in this case)
-
-        <--
-        {
-            "jsonrpc": "2.0",
-            "method": "notify",
-            "params": {
-                "type": "Packet_In",
-                "dpid": "0xaabb000102030405",
-                "xid": "0x01020304",
-                "buffer_id": "no_buffer",
-                "reason": "no_match",
-                "table_id": "0x01",
-                "cookie": "0x0102030405060708",
-                "ofp_match": [
-                    {
-                        "match_class": "openflow_basic",
-                        "field": "in_port",
-                        "value": "0x05"
-                    },
-                    {
-                        "match_class": "openflow_basic",
-                        "field": "in_phy_port",
-                        "value": "0x01"
-                    },
-                    {
-                        "match_class": "openflow_basic",
-                        "field": "arp_op",
-                        "value": "0x01"
-                    }
-                ],
-                "data": "0xffffffffffff00
-                         1ff344e539080600
-                         0108000604000100
-                         1ff344e5390a9341"
+          "port_no": "2",
+          "hw_addr": "22:9d:cb:f9:97:cd",
+          "name": "s1-eth2",
+          "config": [],
+          "state": [],
+          "properties": [
+            {
+              "type": "ETHERNET",
+              "curr": [],
+              "advertised": [],
+              "supported": [],
+              "peer": [],
+              "curr_speed": 0,
+              "max_speed": 102400
             }
+          ]
         }
-
-
-
-#### ofc.sub.unsubscribe
-
-unsubscribe to events
-
-  Params
-
-| name | description | JSON type | restriction | optional |
-|---------|---------------|---------|---------|---------------|
-| sub_id | a unique ID identifying the subscriber | hex | must be the same value as returned by register method | false |
-| subscriptions | interested events | array | consists of ofc_subscription objects | false |
-
-  ofc_subscription
-
-| name | description | JSON type | restriction |
-|---------|---------------|---------|---------|
-| dpid | interested switch | hex | a 64-bit hex number given as string |
-| subscriptions | subscriptions to delete | bitmap | an array of event types, possible values in OFCEV |
-
-Result
-
-a JSON string. "OK" on success.
-
-Example
-
-        -->
-        {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "method": "ofc.sub.unsubscribe",
-            "params": {
-                "sub_id": "0x12345678",
-                "subscriptions": [
-                    {
-                        "dpid": "0xaabb000102030405",
-                        "subscriptions": [
-                            "Channel_Closed",
-                            "Packet_in"
-                        ]
-                    }
-                ]
-            }
-        }
-
-        <--
-        {
-            "id": 1,
-            "jsonrpc": "2.0",
-            "result": "OK"
-        }
+      ],
+      "id": 1
+    }
+------------------------------------
