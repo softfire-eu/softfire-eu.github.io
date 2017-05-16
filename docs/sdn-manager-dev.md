@@ -1,9 +1,26 @@
 # SDN Manager Developer Details
 
+## Overview
+
 The SDN manager is in charge of managing access to the SDN resources provided by some testbeds.
+
+```ascii
++-------------+   REST   +-----------+                    +--------------+
+| SDN manager | +------+ | SDN proxy | +----------------> |  OpenSDNcore |
++-----------+-+          |   FOKUS   |    JSON-RPC        |   controller |
+            |            +-----------+                    +--------------+
+            |
+            |            +-----------+                    +--------------+
+            |     REST   | SDN proxy | +----------------> | OpenDayLight |
+            +----------+ | Ericsson  |    RESTCONF        |   controller |
+                         +-----------+                    +--------------+
+```
 
 The SDN manager keeps track of the API endpoints towards the SDN proxy services that are used to filter requests
 from experimenters to enabe multi tenancy that is by default not provided by the used SDN controllers.
+
+The communication between the SDN manager and the individual SDN proxy services is authorized by a secret that needs to be passed as a HTTP header field with every request.
+The URL endpoint used for rest communication between manager and proxy is statically stored inside the configuration file of the SDN manager.
 
 The SDN manager uses the following Experiment LifeCycles:
 
@@ -50,7 +67,7 @@ REST request to resource /SDNroxySetup with JSON object in request-body:
  * token (experiment-id)
  * tenant-id (for the associated testbed)
 
-```
+```properties
 method: POST
 path: /SDNproxySetup
 Header: Auth-Secret: <xx>
@@ -98,7 +115,7 @@ List or resource-id(s) to release
 **Request (SM->proxie(s))**:
 REST request to resouce /SDNproxyRemove witgh JSON body
 
-```
+```properties
 method: DELETE
 path: /SDNproxy/<token>
 Header: Auth-Secret: <xx>
