@@ -4,7 +4,7 @@
 
 The SDN manager is in charge of managing access to the SDN resources provided by some testbeds.
 
-```ascii
+```text
 +-------------+   REST   +-----------+                    +--------------+
 | SDN manager | +------+ | SDN proxy | +----------------> |  OpenSDNcore |
 +-----------+-+          |   FOKUS   |    JSON-RPC        |   controller |
