@@ -1,6 +1,5 @@
 # JSON-RPC-OpenFlow
 
-[[_TOC_]]
 
 ## Notations
 

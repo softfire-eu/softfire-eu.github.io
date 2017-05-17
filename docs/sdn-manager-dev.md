@@ -77,10 +77,7 @@ Body: JSON
  ```json
   {
       "experiment_id": "a5cfaf1e81f35fde41bef54e35772f2b",
-      "jsonrpc": "2.0",
-      "result": {
-          "msg_id": "0x01020304"
-      }
+      "tenant_id": "fed0b52c7e034d5785880613e78d4411"
   }
  ```
 
