@@ -33,9 +33,6 @@ required: false
 description: Location where to deploy the monitoring server
 
  
-Explain MonitoringResource as per [node types page][node_types]
-
-
 <!--
 MonitoringResource:   
 -->
