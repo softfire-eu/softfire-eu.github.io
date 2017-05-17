@@ -10,7 +10,7 @@ server according the specific needs of the experimenter.
 ## Monitoring resource
 
 
-The MonitoringResource node type is defined as follows, as per node types page:
+The MonitoringResource node type is defined as follows, as per node types page: node types page
 
 MonitoringResource:
 
