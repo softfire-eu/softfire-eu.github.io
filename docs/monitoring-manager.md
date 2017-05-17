@@ -43,7 +43,6 @@ MonitoringResource:  
 -->
 This node type has a single property:
 
-testbeds: 
-in case the experimenter requires deployment of VMs on more than one testbed is it possible to define on which testbed the Zabbix Server VM will be deployed. 
+***testbeds**: in case the experimenter requires deployment of VMs on more than one testbed is it possible to define on which testbed the Zabbix Server VM will be deployed. 
  
 [node_types]:etc/softfire_node_types.yaml
