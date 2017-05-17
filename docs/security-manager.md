@@ -32,7 +32,7 @@ SecurityResource:
         denied_ips:
             type: list
             entry_schema:
-            type: string
+                type: string
             required: false
         default_rule:
             type: string
@@ -41,7 +41,7 @@ SecurityResource:
  
 This node type has different properties:
 
-* **resource_id**: Defines the type of the Security Resource. To date only *firewall* is accepted
+* **resource_id**: Defines the type of the Security Resource. To date only [firewall][firewall] is accepted
 * **testbed**: Defines where to deploy the Security Resource selected. It is ignored if want_agent is True
 * **want_agent**: Defines if the Experimenter wants the security resource to be an agent directly installed on the VM that she wants to monitor
 * **logging**: Defines if the Experimenter wants the security resource to send its log messages to a collector and she wants to see them on a dashboard
@@ -54,4 +54,5 @@ This node type has different properties:
 -->
  
 [node_types]:etc/softfire_node_types.yaml
+[firewall]:firewall.adoc
 
