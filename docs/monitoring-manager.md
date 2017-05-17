@@ -12,29 +12,38 @@ server according the specific needs of the experimenter.
 
 The MonitoringResource node type is defined as follows, as per node types page: node types page
 
-MonitoringResource:
 
-   
+
+```yaml
+
+MonitoringResource:
+  
 derived_from: eu.softfire.BaseResource
 
-    description:
-Defines the Zabbix monitoring resource requested
+    description: Defines the Zabbix monitoring resource requested
 
     properties:
 
       testbed:
 
-        type: string
-
+        type: string
        
-required: false
-
+        required: false
        
-description: Location where to deploy the monitoring server
+        description: Location where to deploy the monitoring server
+
+
+
+```
+
 
  
 <!--
 MonitoringResource:   
 -->
-This node type has a single property:testbed: in case the experimenter requires deployment of VMs on more than one testbed is it possible to define on which testbed the Zabbix Server VM will be deployed. 
+This node type has a single property:
+***testbeds**: in case the experimenter requires deployment of VMs on more than one
+     testbed is it possible to define on which testbed the Zabbix Server VM
+     will be deployed. 
+ 
 [node_types]:etc/softfire_node_types.yaml
