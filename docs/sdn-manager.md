@@ -14,6 +14,8 @@ Upon list resources the SDN manager returns a list of available SDN endpoints to
 
 To actually use an SDN resopurce in an experiment a SDNResource has to be included into the experiment descripton that matches an resource id returned by list resources.
 
+![svg](img/sdn-man-seq-dia.svg)
+
 ## SDN Resource type
 
 The SDNResource node type is defined as follows, as per [node types page][node_types]:
