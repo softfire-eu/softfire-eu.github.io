@@ -38,6 +38,7 @@ derived_from: eu.softfire.BaseResource
 
 This node type has a single property:
 * **testbed**: in case the experimenter requires deployment of VMs on more than one testbed is it possible to define on which testbed the Zabbix Server VM will be deployed
+* **pippo** ....
  
 <!--
 References:   
