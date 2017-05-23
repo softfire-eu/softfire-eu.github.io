@@ -18,6 +18,7 @@ pages:
                 - Security Manager: 'security-manager.md'
                 - Monitoring Manager: 'monitoring-manager.md'
         - Dev:
+                - Write a sub manager: 'sub-manager.md'
                 - SDN Manager developers: 'sdn-manager-dev.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
