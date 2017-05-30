@@ -28,10 +28,6 @@ node_types:
     derived_from: eu.softfire.BaseResource
     description: Defines a Security agent to be deployed. More details on *docu_URL*
     properties:
-    	resource_id:
-        type: string
-        required: true
-        default: firewall
       testbed:
         type: string
         required: false
