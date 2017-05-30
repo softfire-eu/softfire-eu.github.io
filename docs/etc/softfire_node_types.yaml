@@ -1,69 +1,62 @@
+description: "SoftFIRE Node Types definitions"
 tosca_definitions_version: tosca_simple_yaml_1_0
-
-description: Node Types definitions
-
 node_types:
+  MonitoringResource:
+    derived_from: eu.softfire.BaseResource
+    description: "Defines the Zabbix monitoring resource requested"
+    properties:
+      testbed:
+        description: "Location where to deploy the monitoring server"
+        required: false
+        type: string
+  NfvResource:
+    derived_from: eu.softfire.BaseResource
+    description: "Defines a NFV resoruce request in the SoftFIRE Middleware"
+    properties:
+      file_name:
+        required: false
+        type: string
+      nsd_name:
+        type: string
+      testbeds:
+        entry_schema:
+          description: "mapping between vnf types and testbed. Or 'all':<testbed_name> for all in one"
+          type: string
+        type: map
+  SdnResource:
+    derived_from: eu.softfire.BaseResource
+    description: "Defines a SDN resource request in the SoftFIRE Middleware"
+  SecurityResource:
+    derived_from: eu.softfire.BaseResource
+    description: "Defines a Security agent to be deployed. More details on *docu_URL*"
+    properties:
+      allowed_ips:
+        entry_schema:
+          type: string
+        required: false
+        type: list
+      default_rule:
+        required: true
+        type: string
+      denied_ips:
+        entry_schema:
+          type: string
+        required: false
+        type: list
+      logging:
+        default: true
+        required: true
+        type: boolean
+      testbed:
+        required: false
+        type: string
+      want_agent:
+        default: true
+        required: true
+        type: boolean
   eu.softfire.BaseResource:
     derived_from: tosca.nodes.Root
     properties:
       resource_id:
-        type: string
         required: true
-
-  SdnResource:
-    derived_from: eu.softfire.BaseResource
-    description: Defines a SDN resource request in the SoftFIRE Middleware
-
-
-  MonitoringResource:
-    derived_from: eu.softfire.BaseResource
-    description: Defines the Zabbix monitoring resource requested
-    properties:
-      testbed:
         type: string
-        required: false
-        description: Location where to deploy the monitoring server
-
-  SecurityResource:
-    derived_from: eu.softfire.BaseResource
-    description: Defines a Security agent to be deployed. More details on *docu_URL*
-    properties:
-      testbed:
-        type: string
-        required: false
-      want_agent:
-        type: boolean
-        required: true
-        default: true
-      logging:
-        type: boolean
-        required: true
-        default: true
-      allowed_ips:
-        type: list
-        entry_schema:
-          type: string
-        required: false
-      denied_ips:
-        type: list
-        entry_schema:
-          type: string
-        required: false
-      default_rule:
-        type: string
-        required: true
-
-  NfvResource:
-    derived_from: eu.softfire.BaseResource
-    description: Defines a NFV resoruce request in the SoftFIRE Middleware
-    properties:
-      testbeds:
-        type: map
-        entry_schema:
-          description: mapping between vnf types and testbed. Or 'all':<testbed_name> for all in one
-          type: string
-      nsd_name:
-        type: string
-      file_name:
-        type: string
-        required: false
