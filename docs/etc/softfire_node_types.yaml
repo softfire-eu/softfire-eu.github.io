@@ -26,6 +26,9 @@ node_types:
   SdnResource:
     derived_from: eu.softfire.BaseResource
     description: "Defines a SDN resource request in the SoftFIRE Middleware"
+  PhysicalResource:
+    derived_from: eu.softfire.BaseResource
+    description: "Defines a Physical resource request in the SoftFIRE Middleware"
   SecurityResource:
     derived_from: eu.softfire.BaseResource
     description: "Defines a Security agent to be deployed. More details on *docu_URL*"
