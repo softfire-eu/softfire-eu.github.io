@@ -9,13 +9,13 @@ The NfvResource node type is defined as follows, as per [node types page][node_t
 ```yaml
 NfvResource:
     derived_from: eu.softfire.BaseResource
-    description: Defines a NFV resource request in the SoftFIRE Middleware
+    description: "Defines a NFV resource request in the SoftFIRE Middleware"
     properties:
       testbeds:
         type: map
         entry_schema:
-          description: mapping between vnf types and testbed. Or
-                       'all':<testbed_name> for all in one
+          description: "mapping between vnf types and testbed. Or
+                       'ANY':<testbed_name> for all in one"
           type: string
       nsd_name:
         type: string
@@ -28,10 +28,20 @@ NfvResource:
 This node type has different properties:
 
 * **resource_id**: The resource id that can be found from the list resource table.
-* **testbeds**: a map where you can define the testbed where each VNF will be deployed. It is defined as vnf type and testbed name
+* **testbeds**: a map where you can define the testbed where each VNF will be deployed. It is defined as vnf **name** and **testbed name**
 * **nsd_name**: the name of the NS
 * **file_name**: in case the preconfigured NS are not sufficient for your experiment you can upload your own NS in CSAR format and place it in the Files folder. This field contains the name of the file
 
+##### Testbed Names
+
+| Alias    | Testbed                          |
+|----------|----------------------------------|
+| fokus    | FOKUS testbed, Berlin            |
+| ericsson | ERICSSON testbed, Rome           |
+| surrey   | SURREY testbed, Surrey           |
+| ads      | ADS testbed, Rome                |
+| dt       | Deutsche Telekom testbed, Berlin |
+| any      | No difference                    |
 
 <!--
 References

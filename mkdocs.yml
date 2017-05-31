@@ -8,15 +8,19 @@ pages:
                 - Experiment Manager: 'experiment-manager.md'
                 - Define your experiment: 'experiment-definition.md'
                 - NFV Manager: 'nfv-manager.md'
-                - SDN Manager: 'sdn-manager.md'
-                - OpenSDNCore:
-                  - Introduction: 'opensdncore.md'
-                  - Controller: 'osdnc-controller.md'
-                  - API Documentation: 'opensdncore-nb-api.md'
-                  - OpenStack Integration: 'osdnc-openstack.md'
-                - OpenDayLight: 'opendaylight.md'
+                - SDN Manager:
+                  - General: 'sdn-manager.md'
+                  - OpenSDNCore:
+                    - Introduction: 'opensdncore.md'
+                    - Controller: 'osdnc-controller.md'
+                    - API Documentation: 'opensdncore-nb-api.md'
+                    - OpenStack Integration: 'osdnc-openstack.md'
+                  - OpenDayLight: 'opendaylight.md'
+                - Physical Device Manager: 'pd-manager.md'
                 - Security Manager: 'security-manager.md'
                 - Monitoring Manager: 'monitoring-manager.md'
+
+
         - Dev:
                 - Write a sub manager: 'sub-manager.md'
                 - SDN Manager developers: 'sdn-manager-dev.md'
