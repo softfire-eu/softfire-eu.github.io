@@ -36,8 +36,8 @@ The Metadata.yaml contains experiment meta information:
 As follows:
 ```yaml
 name: Experiment Name
-start-data: "2017-07-28 10:00"
-end-data: "2017-07-30 10:00"
+start-date: "2017-07-28 10:00"
+end-date: "2017-07-30 10:00"
 ```
 
 ## Definitions
