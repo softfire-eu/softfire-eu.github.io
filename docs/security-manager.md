@@ -12,18 +12,15 @@ SecurityResource:
         resource_id:
             type: string
             required: true
-            default: firewall
         testbed:
             type: string
             required: false
         want_agent:
             type: boolean
             required: true
-            default: true
         logging:
             type: boolean
             required: true
-            default: true
         allowed_ips:
             type: list
             entry_schema:

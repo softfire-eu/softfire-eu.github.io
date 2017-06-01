@@ -24,38 +24,35 @@ node_types:
         required: false
         description: Location where to deploy the monitoring server
 
-	SecurityResource:
+  SecurityResource:
     derived_from: eu.softfire.BaseResource
     description: Defines a Security agent to be deployed. More details on *docu_URL*
     properties:
-    	resource_id:
-				type: string
-				required: true
-				default: firewall
-			testbed:
-				type: string
-				required: false
-			want_agent:
-				type: boolean
-				required: true
-				default: true
-			logging:
-				type: boolean
-				required: true
-				default: true
-			allowed_ips:
-				type: list
-				entry_schema:
-					type: string
-				required: false
-			denied_ips:
-				type: list
-				entry_schema:
-						type: string
-				required: false
-			default_rule:
-				type: string
-				required: true 
+      resource_id:
+        type: string
+        required: true
+      testbed:
+        type: string
+        required: false
+      want_agent:
+        type: boolean
+        required: true
+      logging:
+        type: boolean
+        required: true
+      allowed_ips:
+        type: list
+        entry_schema:
+          type: string
+        required: false
+      denied_ips:
+        type: list
+        entry_schema:
+            type: string
+        required: false
+      default_rule:
+        type: string
+        required: true 
 
   NfvResource:
     derived_from: eu.softfire.BaseResource
