@@ -12,28 +12,15 @@ server according the specific needs of the experimenter.
 
 The MonitoringResource node type is defined as follows, as per node types page: [node_types]:
 
-
-
 ```yaml
-
 MonitoringResource:
-  
-derived_from: eu.softfire.BaseResource
-
-    description: Defines the Zabbix monitoring resource requested
-
-    properties:
-
-      testbed:
-
-        type: string
-       
-        required: false
-       
-        description: Location where to deploy the monitoring server
-
-
-
+  derived_from: eu.softfire.BaseResource
+  description: "Defines the Zabbix monitoring resource requested"
+  properties:
+    testbed:
+      type: string
+      required: false
+      description: "Location where to deploy the monitoring server"
 ```
 
 This node type has a single property:
@@ -42,8 +29,8 @@ This node type has a single property:
 
  
 <!--
-References:   
+References:  
 -->
- 
- 
+
+
 [node_types]:etc/softfire_node_types.yaml

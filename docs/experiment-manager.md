@@ -25,9 +25,11 @@ For reserving resources, you must define an experiment using the [TOSCA archive]
 
 ## Resource provisioning
 
-
+Once you have uploaded your experiment CSAR file, you will have a list of chosen resources in the bottom table. The _**value**_ of the resources will be empty until deployed. By clicking to the "Deploy" button, you will trigger the deployment in the SoftFIRE middleware. The status will change to deployed and you will actually see the content of the deployed resource in the value column.
 
 ## Resource Termination
+
+By clicking to the "Delete" button, you will trigger the removal of all the resources created. You will have to reserve the experiment again in case you want to redeploy
 <!--
 References
 -->

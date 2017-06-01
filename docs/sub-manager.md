@@ -13,29 +13,56 @@ This guide is intended for internal developer of SoftFIRE middleware. The easies
 ```python
 from sdk.softfire.manager import AbstractManager
 from sdk.softfire.grpc import messages_pb2
+from sdk.softfire.utils import TESTBED_MAPPING
 
-class Manager(AbstractManager):
-  def refresh_resources(self, user_info):
+class NfvManager(AbstractManager):
+    def __init__(self, config_file_path):
+        super().__init__(config_file_path)
+
+    def validate_resources(self, user_info=None, payload=None) -> None:
+        """
+        Validate the resources
+
+        :param user_info:
+        :param payload:
+        :raise any exception for error
+        """
+        pass
+
+    def refresh_resources(self, user_info):
         """
             List all available images for this tenant
 
-            :param tenant_name: the tenant name
-             :type tenant_name: str
+            :param user_info:
             :return: the list of ResourceMetadata
              :rtype list
             """
         result = []
-
-        result.append(messages_pb2.ResourceMetadata(resource_id=resource_id,
+        ob_client = OBClient(user_info.name)
+        for image in available_resources():
+            testbed = image.get('testbed')
+            resource_id = image.get('name')
+            result.append(messages_pb2.ResourceMetadata(resource_id=resource_id,
                                                         description='',
                                                         cardinality=-1,
                                                         node_type='NodeType',
-                                                        testbed=messages_pb2.ANY)
+                                                        testbed=TESTBED_MAPPING.get(testbed)))
         return result
 
     def provide_resources(self, user_info, payload=None):
         """
-            Deploy the selected resources
+            Deploy the selected resources. Payload looks like:
+            {
+                'properties': {
+                    'nsd_name': 'my_nsd',
+                    'resource_id': 'open5gcore',
+                    'testbeds': {
+                        'ANY':
+                        'fokus'
+                    }
+                },
+                'type': 'NfvResource'
+            }
 
             :param payload: the resources to be deployed
              :type payload: dict
@@ -43,27 +70,18 @@ class Manager(AbstractManager):
             :return: the nsr deployed
              :rtype: ProvideResourceResponse
             """
-        return messages_pb2.ProvideResourceResponse(resources="content")
+        resource='{}'
+        return [resource]
 
-    def create_user(self, username, password):
+    def create_user(self, user_info):
         """
             Create project in Open Stack and upload the new vim to Open Baton
 
-            :param name: the username of the user, used here also as tenant name
-             :type name: string
-            :param password: the password of the user
-             :type password: string
+            :param user_info:
             :return: the new user info updated
              :rtype: UserInfo
 
             """
-
-        user_info = messages_pb2.UserInfo(
-            name=username,
-            password=password,
-            ob_project_id='id',
-            testbed_tenants={}
-        )
 
         return user_info
 
@@ -72,16 +90,22 @@ class Manager(AbstractManager):
             list all available resources
 
             :param payload: Not used
-            :param user_info: the user info requesting, if None only the shared resources will be returned
+            :param user_info: the user info requesting, if None only the shared
+              resources will be returned
             :return: list of ResourceMetadata
             """
-        result = []
 
-        result.append(messages_pb2.ResourceMetadata(resource_id=resource_id,
+        for k, v in get_resources().items():
+            testbed = v.get('testbed')
+            node_type = v.get('node_type')
+            cardinality = int(v.get('cardinality'))
+            description = v.get('description')
+            resource_id = k
+            result.append(messages_pb2.ResourceMetadata(resource_id=resource_id,
                                                         description=description,
                                                         cardinality=cardinality,
                                                         node_type=node_type,
-                                                        testbed=messages_pb2.ANY)
+                                                        testbed=TESTBED_MAPPING.get(testbed)))
 
         return result
 
@@ -94,6 +118,19 @@ class Manager(AbstractManager):
             :type user_info: UserInfo
            :return: None
            """
+
+    def _update_status(self) -> dict:
+      """
+      update the status of the experiments in case of value change
+
+      :return: dict as
+      {
+          'test':[],
+          'test2':[]
+      }
+      """
+      return dict()
+
 ```
 
 ## Start the manager:
@@ -107,7 +144,7 @@ from sdk.softfire.main import start_manager
 
 def start():
 
-    start_manager(Manager(), '/etc/softfire/my-manager.ini')
+    start_manager(Manager('/etc/softfire/my-manager.ini'))
 
 
 if __name__ == '__main__':
