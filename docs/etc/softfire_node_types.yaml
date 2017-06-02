@@ -60,3 +60,9 @@ node_types:
       resource_id:
         required: true
         type: string
+      start-date:
+        required: false
+        type: string
+      end-date:
+        required: false
+        type: string
