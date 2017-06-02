@@ -43,6 +43,13 @@ This node type has different properties:
 | dt       | Deutsche Telekom testbed, Berlin |
 | any      | No difference                    |
 
+
+## Technical details
+
+In the following image you can understand the life cycle of the Nfv Manager based on the sequence diagram
+
+![NfvManager sequence diagram](img/nfv-manager.svg)
+
 <!--
 References
 -->
