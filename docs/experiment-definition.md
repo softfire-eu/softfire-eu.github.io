@@ -31,7 +31,10 @@ The Metadata.yaml contains experiment meta information:
 * the end date
 
 !!! note
-    Please use ISO format dates (YYYY-MM-DD HH:MM)
+    Please use ISO format dates (YYYY-MM-DD HH:MM).
+
+!!! note
+    These dates are general for the whole experiment, but you can specify specific dates per resource. The specific dates of the resources override these ones.
 
 As follows:
 ```yaml
@@ -39,6 +42,13 @@ name: Experiment Name
 start-date: "2017-07-28 10:00"
 end-date: "2017-07-30 10:00"
 ```
+
+Where:
+
+* **name**: simple name of your experiment
+* **start-date**: start date of your experiment.
+* **end-date**: end date of your experiment.
+
 
 ## Definitions
 
