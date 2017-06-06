@@ -12,6 +12,9 @@ node_types:
     derived_from: eu.softfire.BaseResource
     description: "Defines a NFV resoruce request in the SoftFIRE Middleware"
     properties:
+      ssh_pub_key:
+        required: false
+        type: string
       file_name:
         required: false
         type: string
