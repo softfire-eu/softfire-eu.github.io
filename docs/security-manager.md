@@ -108,4 +108,4 @@ This sequence diagram specifies the operations performed by the Security Manager
 [node_types]:etc/softfire_node_types.yaml
 [firewall]:firewall.md
 [docu_url]:http://docs.softfire.eu/security-manager/
-[sequence]: img/sec_manager.png
+[sequence]: img/security-manager.png
