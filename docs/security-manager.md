@@ -23,6 +23,7 @@ collector, which makes them available in a simple web page reserved to her. The 
 could easily access it through its web browser and check the behaviour of her all security agents, 
 and to see some statistics. 
 The Experimenter can get the Security Resource in two different formats: 
+
 * As an agent directly installed in the VM that she wants to monitor. The system will 
 provide her a script that the Experimenter has just to run inside the VM. It will be already 
 configured as required in the TOSCA description of the resource. The output of the script 
