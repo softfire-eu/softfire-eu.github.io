@@ -19,9 +19,9 @@ The created flows can forward packets only to other experimenter owned tables or
 All the requests that not satisfy the above requirements, will be rejected with an http status code = 403
 
 ## Official Documentation and Examples
-The official OpenDaylight OpenFlow Plugin can be found  [here](https://wiki.opendaylight.org/view/OpenDaylight_OpenFlow_Plugin:End_to_End_Flows)
+The official OpenDaylight OpenFlow Plugin documentation can be found  [here](https://wiki.opendaylight.org/view/OpenDaylight_OpenFlow_Plugin:End_to_End_Flows)
 
-Examples for XML for various flow matches, instructions & actions can be found [here](https://wiki.opendaylight.org/view/Editing_OpenDaylight_OpenFlow_Plugin:End_to_End_Flows:Example_Flows), but remember, the SoftFIRE OpenDaylight controller accept only JSON requests
+Examples for XML for various flow matches, instructions & actions can be found [here](https://wiki.opendaylight.org/view/Editing_OpenDaylight_OpenFlow_Plugin:End_to_End_Flows:Example_Flows), but remember, the SoftFIRE OpenDaylight controller accepts only JSON requests
 
 ## References
 [1]: https://wiki.opendaylight.org/view/OpenDaylight_Controller:MD-SAL:Restconf "OpenDaylight MD-SAL"
