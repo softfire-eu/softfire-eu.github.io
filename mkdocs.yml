@@ -15,7 +15,9 @@ pages:
                     - Controller: 'osdnc-controller.md'
                     - API Documentation: 'opensdncore-nb-api.md'
                     - OpenStack Integration: 'osdnc-openstack.md'
-                  - OpenDayLight: 'opendaylight.md'
+                  - OpenDaylight:
+                    - Introduction: 'opendaylight.md'
+                    - API Documentation: 'opendaylight-openflow-api.md'
                 - Physical Device Manager: 'pd-manager.md'
                 - Security Manager: 'security-manager.md'
                 - Monitoring Manager: 'monitoring-manager.md'
