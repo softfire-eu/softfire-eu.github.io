@@ -106,7 +106,7 @@ This folder contains an inner CSAR of a NS. This is only used in case the NFV Re
 
 ## Example
 
-A full example can be found [here](etc/example.csar)
+A full example using iperf can be found [here](etc/example.csar). A full example uploading two simple Ubuntu VNFs can be found [here][nfv-example]
 <!--
 References
 -->
@@ -117,7 +117,7 @@ References
 [tosca]:http://docs.oasis-open.org/tosca/TOSCA/v1.0/TOSCA-v1.0.html
 [tosca-node-types]:http://docs.oasis-open.org/tosca/TOSCA-Simple-Profile-YAML/v1.0/csprd01/TOSCA-Simple-Profile-YAML-v1.0-csprd01.html#DEFN_TYPE_CAPABILITIES_NODE
 [node_types]:etc/softfire_node_types.yaml
-[nfv-example]:etc/softfire_node_types.yaml
+[nfv-example]:etc/nfv-resource-example.csar
 
 <!---
  Script for open external links in a new tab
