@@ -40,6 +40,8 @@ extra:
   social:
     - type: 'github'
       link: 'https://github.com/SoftFIRE-eu'
+    - type: 'slack'
+      link: 'https://softfire.slack.com/'
 
 repo_url: https://github.com/SoftFIRE-eu/experiment-manager
 repo_name: SoftFIRE Experiment Manager
