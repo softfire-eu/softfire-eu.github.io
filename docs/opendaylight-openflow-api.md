@@ -16,14 +16,21 @@ Then, the experimenter can make JSON Restconf requests to the proxied SDN contro
 
 The created flows can forward packets only to other experimenter owned tables or to the table 17.
 
+As action, in the attribute **"output-node-connector"** are **allowed** only the values **"TABLE"** and **"IN_PORT"**, or a **port_id**
+The values **"ALL"**, **"CONTROLLER"**, **"ANY"**, **"LOCAL"**, **"NORMAL"**, **"FLOOD"** are **not allowed**.
+
+For further information about these values, you can read the [official Openflow documentation](https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-spec-v1.3.0.pdf)
+
+
+
 All the requests that not satisfy the above requirements, will be rejected with an http status code = 403
 
-## Official Documentation and Examples
+## Examples
 The official OpenDaylight OpenFlow Plugin documentation can be found  [here](https://wiki.opendaylight.org/view/OpenDaylight_OpenFlow_Plugin:End_to_End_Flows)
 
 Examples for XML for various flow matches, instructions & actions can be found [here](https://wiki.opendaylight.org/view/Editing_OpenDaylight_OpenFlow_Plugin:End_to_End_Flows:Example_Flows), but remember, the SoftFIRE OpenDaylight controller accepts only JSON requests
 
 ## References
-[1]: https://wiki.opendaylight.org/view/OpenDaylight_Controller:MD-SAL:Restconf "OpenDaylight MD-SAL"
+[1]: https://wiki.opendaylight.org/view/OpenDaylight_Controller:MD-SAL:Restconf OpenDaylight MD-SAL Documentation
 
 
