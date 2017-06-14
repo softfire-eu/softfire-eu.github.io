@@ -21,9 +21,8 @@ pages:
                 - Physical Device Manager: 'pd-manager.md'
                 - Security Manager: 'security-manager.md'
                 - Monitoring Manager: 'monitoring-manager.md'
-
-
         - Dev:
+                - Install the SoftFIRE Middleware: 'install-softfire-middleware.md'
                 - Write a sub manager: 'sub-manager.md'
                 - SDN Manager developers: 'sdn-manager-dev.md'
         - Extras:
