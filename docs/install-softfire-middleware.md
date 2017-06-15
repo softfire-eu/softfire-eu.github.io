@@ -8,6 +8,8 @@ The SoftFIRE Middleware already provides a set of bash functions that will help 
 !!! note
       The SoftFIRE Middleware is OS independent, however the bootstrap procedure assumes that the underlying OS is Debian based.
 
+In case you want just to play around with the Experiment Manger, you can use the docker installation
+
 ## Prerequisites
 
 Both procedures needs to have git installed
@@ -101,3 +103,19 @@ In both cases, a tmux session will run in background and you can check the outpu
 ```sh
 tmux a
 ```
+
+## Docker installation
+
+After having installed [Docker](https://www.docker.com/) you can run:
+
+```sh
+docker pull softfire/softfire-middleware
+```
+
+and then run the container by typing:
+
+```sh
+docker run --rm -i --name soffifire --env "LC_ALL=C" -p 5180:5080 -t softfire-middleware
+```
+
+then you should be able to access http://localhost:5180
