@@ -36,6 +36,61 @@ There are three parties involved into the communication:
  * SDN Manager (SM)
  * SDN Proxie(s)
 
+### User Creation
+
+Called when a new tenant is created on the testbed
+
+Involved: Experiment manager, SDN Manager, (SDN Proxy)
+
+**Request(EM->SM)**:
+
+* UserInformation
+  * username
+  * password (can be used to create an account with the users password)
+  * tenant-id for each used testbed
+  * experiment-id (token used for this experiment)
+
+**Request(SM->proxie(s))**:
+
+!!! note
+        this request is currently only used for OpenSDNCore proxy
+
+REST request to resource /PrepareTenant with JSON object in request-body:
+
+ * token (experiment-id)
+ * tenant-id (for the associated testbed)
+
+```properties
+method: POST
+path: /PrepareTenant
+Header: Auth-Secret: <xx>
+Body: JSON
+```
+
+ ```json
+  {
+      "tenant_id": "fed0b52c7e034d5785880613e78d4411"
+  }
+ ```
+
+ **Response (proxie->SM)**:
+ REST response body JSON encoded:
+
+ ```json
+   {
+   	"flow-table-offset": 10
+   }
+ ```
+
+ **Response (SM->EM)**:
+ List of resource objects
+
+  * resource-id
+  * URI
+  * flow-table-range
+  * token?
+
+
 ### List Resources
 
 Involved: Experiment manager, SDN Manager

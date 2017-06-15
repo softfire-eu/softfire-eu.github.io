@@ -18,7 +18,7 @@ To actually use an SDN resopurce in an experiment a SDNResource has to be includ
 
 ## SDN Resource type
 
-The SDNResource node type is defined as follows, as per [node types page][node_types]:
+The SdnResource node type is defined as follows, as per [node types page][node_types]:
 
 ```yaml
 eu.softfire.BaseResource:
@@ -28,7 +28,7 @@ eu.softfire.BaseResource:
       type: string
       required: true
 
-SDNResource:
+SdnResource:
   derived_from: eu.softfire.BaseResource
   description: Defines a SDN resource request in the SoftFIRE Middleware
 
