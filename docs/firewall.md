@@ -8,7 +8,8 @@ The rules that can be defined on this type of firewall are stateless (they do no
 information about the context). It works as a packet filter, which looks at network addresses, 
 ports and protocols.  
 
-Services specifically available for the firewall Resource are:  
+Services specifically available for the firewall Resource are: 
+
 1. The Experimenter can statically define a list of allowed IP addresses (or CIDR masks) 
 2. The Experimenter can statically define a list of denied IP addresses (or CIDR masks) 
 3. The Experimenter can statically define the default behaviour of the firewall  

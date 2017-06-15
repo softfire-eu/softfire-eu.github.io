@@ -18,6 +18,7 @@ pages:
                   - OpenDayLight: 'opendaylight.md'
                 - Physical Device Manager: 'pd-manager.md'
                 - Security Manager: 'security-manager.md'
+                  - Firewall: 'firewall.md'
                 - Monitoring Manager: 'monitoring-manager.md'
 
 
