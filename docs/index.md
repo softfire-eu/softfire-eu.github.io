@@ -35,6 +35,7 @@ Experimenters can access the available resources through a single access-point, 
 
 * Our website: http://softfire.eu
 * Sending us an email to [our mailing list](mailto:info@softfire.eu)
+* Slack channel: [SoftFIRE](https://softfire.slack.com/). If you are not registered to this channel, obtain an invitation [here](https://softfire-slacking.herokuapp.com/)
 
 
 

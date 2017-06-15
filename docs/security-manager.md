@@ -34,11 +34,11 @@ will provide to the Experimenter information on how to access the deployed resou
 * As a standalone VM the Security Resource will be deployed directly by the Security 
 Manager in the testbed chosen by the Experimenter. The Security Manager will take 
 care of the initial configuration of the resource. 
-The Experimenter has to set up on her own the redirection of the network traffic that she wants 
+The Experimenter has to set up on her own the redirection of the network traffic that he wants 
 to control through the Security Resource VM (by means of tunnelling or SDN capabilities).  
 
 
-To date the only Security Resource available on the SoftFIRE environment is the [firewall][firewall].  
+Today, the only Security Resource available on the SoftFIRE environment is the [firewall][firewall].  
 
 
 ## Security Resource definition
@@ -46,7 +46,7 @@ To date the only Security Resource available on the SoftFIRE environment is the 
 ```yaml
 SecurityResource:
     derived_from: eu.softfire.BaseResource
-    description: Defines a Security agent to be deployed. More details on [docu_url]
+    description: "Defines a Security agent to be deployed. More details on [docu_url]"
     properties:
         resource_id:
             type: string
@@ -74,13 +74,13 @@ SecurityResource:
             type: string
             required: true
 ```
- 
+
 This node type has different properties:
 
 * **resource_id**: Defines the type of the Security Resource. To date only [firewall][firewall] is accepted
 * **testbed**: Defines where to deploy the Security Resource selected. It is ignored if want_agent is True
-* **want_agent**: Defines if the Experimenter wants the security resource to be an agent directly installed on the VM that she wants to monitor
-* **logging**: Defines if the Experimenter wants the security resource to send its log messages to a collector and she wants to see them on a dashboard
+* **want_agent**: Defines if the Experimenter wants the security resource to be an agent directly installed on the VM that he wants to monitor
+* **logging**: Defines if the Experimenter wants the security resource to send its log messages to a collector and he wants to see them on a dashboard
 * **allowed_ips**: List of IPs (or CIDR  masks) allowed by the firewall. [allow from *IP*]
 * **denied_ips**: List of IPs (or CIDR masks) denied by the firewall [deny from *IP*]
 * **default_rule**: Default rule applied by the firewall (allow/deny)
@@ -106,7 +106,7 @@ This sequence diagram specifies the operations performed by the Security Manager
 <!--
  References
 -->
- 
+
 [node_types]:etc/softfire_node_types.yaml
 [firewall]:firewall.md
 [docu_url]:http://docs.softfire.eu/security-manager/

@@ -15,14 +15,15 @@ pages:
                     - Controller: 'osdnc-controller.md'
                     - API Documentation: 'opensdncore-nb-api.md'
                     - OpenStack Integration: 'osdnc-openstack.md'
-                  - OpenDayLight: 'opendaylight.md'
+                  - OpenDaylight:
+                    - Introduction: 'opendaylight.md'
+                    - API Documentation: 'opendaylight-openflow-api.md'
                 - Physical Device Manager: 'pd-manager.md'
                 - Security Manager: 'security-manager.md'
                   - Firewall: 'firewall.md'
                 - Monitoring Manager: 'monitoring-manager.md'
-
-
         - Dev:
+                - Install the SoftFIRE Middleware: 'install-softfire-middleware.md'
                 - Write a sub manager: 'sub-manager.md'
                 - SDN Manager developers: 'sdn-manager-dev.md'
         - Extras:
@@ -41,6 +42,8 @@ extra:
   social:
     - type: 'github'
       link: 'https://github.com/SoftFIRE-eu'
+    - type: 'slack'
+      link: 'https://softfire.slack.com/'
 
 repo_url: https://github.com/SoftFIRE-eu/experiment-manager
 repo_name: SoftFIRE Experiment Manager
