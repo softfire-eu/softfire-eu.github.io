@@ -19,7 +19,8 @@ pages:
                     - Introduction: 'opendaylight.md'
                     - API Documentation: 'opendaylight-openflow-api.md'
                 - Physical Device Manager: 'pd-manager.md'
-                - Security Manager: 'security-manager.md'
+                - Security Manager:
+                  - General: 'security-manager.md'
                   - Firewall: 'firewall.md'
                 - Monitoring Manager: 'monitoring-manager.md'
         - Dev:
