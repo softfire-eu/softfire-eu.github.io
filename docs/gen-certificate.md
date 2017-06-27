@@ -22,15 +22,15 @@ def get_certificate():
     return bottle.HTTPResponse(openvpn_config, 200, **headers)
 ```
 
-From the code is easy to understand the this is a POST method with body parameters:
+From the code we see that this is a POST method with the following body parameters:
 
 * username: the username of the openvpn user
 * password: in case you want to encrypt the private key with passphrase
 * days: number of validity days (starting from today)
 
-It is also clear that your user need to belong to the _portal_ role or higher.
+The requesting user need to belong to the _portal_ role or higher.
 
-the following shell commands can be used to retreive the certificate file, a more verbose example can be found [here](https://github.com/softfire-eu/bootstrap/blob/master/gen_ovpn.sh)
+The following shell commands can be used to retrieve the certificate file, a complete example can be found [here](https://github.com/softfire-eu/bootstrap/blob/master/gen_ovpn.sh)
 
 ```sh
 COOKIE_FILE=$(tempfile)
@@ -38,5 +38,3 @@ curl -X POST --cookie-jar $COOKIE_FILE --form "username=$API_USER" --form "passw
 curl -s -X POST --cookie $COOKIE_FILE --form "username=${USERNAME}" --form "password=${PASSWORD}" --form "days=$VALID" ${API_URL}/certificates
 curl -X GET --cookie-jar $COOKIE_FILE --cookie $COOKIE_FILE ${API_URL}/logout
 ```
-
-The ```$COOKIE_FILE``` variable contains the authentication info that should be used as cookie and that are retrieved after authentication
