@@ -30,10 +30,13 @@ From the code is easy to understand the this is a POST method with body paramete
 
 It is also clear that your user need to belong to the _portal_ role or higher.
 
-a list of curl commands are listed as example
+the following shell commands can be used to retreive the certificate file, a more verbose example can be found [here](https://github.com/softfire-eu/bootstrap/blob/master/gen_ovpn.sh)
 
 ```sh
-curl -v -X POST --cookie $COOKIE_FILE --form 'username=foobar23' --form 'password=123456' --form 'days=1' http://experiment.manager.ip:5080/certificates
+COOKIE_FILE=$(tempfile)
+curl -X POST --cookie-jar $COOKIE_FILE --form "username=$API_USER" --form "password=$API_PW" ${API_URL}/login
+curl -s -X POST --cookie $COOKIE_FILE --form "username=${USERNAME}" --form "password=${PASSWORD}" --form "days=$VALID" ${API_URL}/certificates
+curl -X GET --cookie-jar $COOKIE_FILE --cookie $COOKIE_FILE ${API_URL}/logout
 ```
 
 The ```$COOKIE_FILE``` variable contains the authentication info that should be used as cookie and that are retrieved after authentication
