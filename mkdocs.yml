@@ -26,6 +26,7 @@ pages:
         - Dev:
                 - Install the SoftFIRE Middleware: 'install-softfire-middleware.md'
                 - Write a sub manager: 'sub-manager.md'
+                - How to generate a certificate: 'gen-certificate.md'
                 - SDN Manager developers: 'sdn-manager-dev.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
