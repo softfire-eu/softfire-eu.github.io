@@ -123,10 +123,11 @@ class NfvManager(AbstractManager):
       """
       update the status of the experiments in case of value change
 
-      :return: dict as
+      :return: dict
+      key is "username" and value is a list of str representing the resources of this user
       {
-          'test':[],
-          'test2':[]
+          'username1':[],
+          'username2':[]
       }
       """
       return dict()
