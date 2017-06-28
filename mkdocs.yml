@@ -28,6 +28,7 @@ pages:
                 - Write a sub manager: 'sub-manager.md'
                 - How to generate a certificate: 'gen-certificate.md'
                 - SDN Manager developers: 'sdn-manager-dev.md'
+                - SoftFIRE Integration Tests: 'integration-test.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
 
