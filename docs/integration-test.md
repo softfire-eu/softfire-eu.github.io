@@ -8,8 +8,8 @@ Python 3.5 or higher.
 
 ## Installation
 
-Git clone the [repository][integration-test-github] and change into the project’s directory. Execute `pip install .` for installing the integration test. Afterwards you can start it with the command `softfire-integration-test`.
-Alternatively you can start it by running the project’s *softfire-integration-test* file with ` python softfire-integration-test`.
+Git clone the [repository][integration-test-github] and change into the project’s directory. Execute ```pip install .``` for installing the integration test. Afterwards you can start it with the command ```softfire-integration-test```.
+Alternatively you can start it by running the project’s *softfire-integration-test* file with ```python softfire-integration-test```.
 
 ## Preparation
 
@@ -45,14 +45,29 @@ The last phase removes the experiment from the experiment-manager.
 
 ## Adding validators for other NfvResource types
 
-Not all of the different resource types can be validated currently. This section describes how you can add the validation functionality for a certain NfvResource to the integration test.
+Not all of the different resource types can be validated currently. This section describes how you can add the validation functionality for a certain node type to the integration test.
 
-For this you have to create a new class in the softfire-integration-test project's *validators.py* module. This class has to inherit from the AbstractValidator class and implement the *validate* method which gets the resource ID of the resource to test as an argument. In this method you can implement the validation of the resource. If the validation is successful, the method should simply return, otherwise it should raise an Exception with the reason of failure as the Exception argument.
+For this you have to create a new module and a new class in the softfire-integration-test project. In particular:
 
-With the *get_experiment_status()* method you can get the status of the deployed experiment and by using the resource ID (which is given as a parameter to the *validate* method) you can retrieve from the experiment status the resource which you want to validate.
+1. create a sub-module in the *eu.softfire.integrationtest.validators* module **called as the node type you want to validate** (for instance _NfvResource_ for the Nfv Resource)
+1. create a class in the sub-module you just created called _NodeTypeValidator_ (for instance NfvResourceValidator)
+1. the class must extend the _eu.softfire.integrationtest.validators.AbstractValidator_ class and implement the abstrac method _validate_
+
+The abstrac class is:
+
+```python
+class AbstractValidator(metaclass=ABCMeta):
+    @abstractmethod
+    def validate(self, resource, resource_id):
+        pass
+```
+
+
+The Validator class has to inherit from the AbstractValidator class and implement the *validate* method which gets the resource and the resource ID of the resource to test as an argument. In this method you can implement the validation of the resource. If the validation is successful, the method should simply return, otherwise it should raise an **Exception** (class of subclass of _Exception_)with the reason of failure as the Exception argument.
+
+With the *get_resource_from_id(resource_id)* method you can get the _new_ status of the deployed experiment.
 
 If you need an example look at the already existing *NfvResourceValidator* class in the *validators.py* module.
-The last step is to add the new validator class to the *get_validator(resource_type)* method.
 
 
 [integration-test-github]: https://github.com/softfire-eu/softfire-integration-test
