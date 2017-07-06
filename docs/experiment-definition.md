@@ -81,7 +81,7 @@ topology_template:
       properties:
         resource_id: iperf
         nsd_name: The Iperf NSD
-        testbeds: { ALL: ericsson }
+        testbeds: { ANY: ericsson }
 ```
 
 As shown in the example, the SoftFIRE experiment yaml file must contain the TOSCA definition version as `:::yaml tosca_definitions_version: tosca_simple_yaml_1_0`. This line is followed by a description of the experiment.
