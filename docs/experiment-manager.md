@@ -36,7 +36,7 @@ References
 
 [tosca-csar]:http://docs.oasis-open.org/tosca/TOSCA-Simple-Profile-YAML/v1.0/csd03/TOSCA-Simple-Profile-YAML-v1.0-csd03.html#_Toc419746172
 [openvpnconfig]:openvpnconfig.md
-[ex-man-link]:http://experimenter-manager.vpn.softfire.eu
+[ex-man-link]:http://experiment.vpn.softfire.eu:5080/login
 [ex-man-login-page]:img/em-login.png
 [ex-man-experimenter-page]:img/em-experimenter.png
 

@@ -8,6 +8,7 @@ node_types:
       testbed:
         description: "Location where to deploy the monitoring server"
         required: false
+        type: string
   NfvResource:
     derived_from: eu.softfire.BaseResource
     description: "Defines a NFV resoruce request in the SoftFIRE Middleware"
