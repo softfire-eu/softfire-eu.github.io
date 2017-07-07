@@ -28,7 +28,7 @@ The protocol in between the managers is [**gRPC**](http://www.grpc.io/). For tha
 
 ### Interactions
 
-The following image is only for personal knowledge, it is not relevant for the execution of the experiment. The figure defines the high level interactions between the experimenter, the Experiment Manager adn the other Managers, through a sequence diagrams.
+The following image is only for personal knowledge, it is not relevant for the execution of the experiment. The figure defines the high level interactions between the experimenter, the Experiment Manager and the other Managers, through a sequence diagrams.
 
 ![Managers Interactions](img/ex-man-seq-dia.svg)
 
