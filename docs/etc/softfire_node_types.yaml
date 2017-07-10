@@ -5,6 +5,9 @@ node_types:
     derived_from: eu.softfire.BaseResource
     description: "Defines the Zabbix monitoring resource requested"
     properties:
+      lan_name:
+        description: "Network to attach the server"
+        type: string
       testbed:
         description: "Location where to deploy the monitoring server"
         required: false
