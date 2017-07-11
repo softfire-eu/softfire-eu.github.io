@@ -55,7 +55,7 @@ Each testbed can provide a different imlementation of SDN resources. The current
 
 * The Frauhofer FOKUS testbed uses its own Implementation of an SDN controller named [OpenSDNCore][opensdncore-www].
   Specification of the provided API features can be found in its [Documentation pages][opensdncore]
-* The Testbed of Ericsson and University of Surrey will provide access to [OpenDayLight][odl-www] SDN controllers.
+* The Testbed of Ericsson and Assembly Data Systems (ADS) will provide access to [OpenDayLight][odl-www] SDN controllers.
 
 <!--
 References

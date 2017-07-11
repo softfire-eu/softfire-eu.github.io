@@ -17,7 +17,7 @@ The controller-to-Switch Message Pusher constructs new messages and push them to
 For asynchronous and symmetric messages coming from switch, the corresponding message handler will be invoked,
 which pre-processes the message and dispatches it to functions in northbound interface or other user defined applications outside the core space.
 
-The northbound interface is the key enabler of network programmability. The presented open design enables network developers to develop applications by using two different kinds of API exposed by the controller.  
+The northbound interface is the key enabler of network programmability. The presented open design enables network developers to develop applications by using two different kinds of API exposed by the controller.
 With the local API, applications are hosted in the same machine as the controller, and use the same programming language.
 However, it is not always the case to keep the application and controller in the same environment.
 Thus as an alternative solution, the network API provides the possibility of remote communication.

@@ -14,7 +14,7 @@ pages:
                     - Introduction: 'opensdncore.md'
                     - Controller: 'osdnc-controller.md'
                     - API Documentation: 'opensdncore-nb-api.md'
-                    - OpenStack Integration: 'osdnc-openstack.md'
+                    - Examples: 'osdnc-examples.md'
                   - OpenDaylight:
                     - Introduction: 'opendaylight.md'
                     - API Documentation: 'opendaylight-openflow-api.md'
