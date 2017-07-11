@@ -11,8 +11,8 @@ Fraunhofer FOKUS provides two datacenter as part of its testbed for the SoftFIRE
 {
 	"resource_id": "sdn-controller-opensdncore-fokus",
 	"flow-table-range": [30, 31, 32],
-	"token": "asdfjkdsf059928bbd937967b405779714dc57f48",
-	"URI": "http://localhost:8001/api"
+	"token": "secret",
+	"URI": "http://172.20.30.5:8001/api"
 }
 ```
 1. Copy the `token` value and navigate to the provided `URI` using a web browser. The website provides the needed information and an simple user interface to run JSON-RPC request against the OpenSDNcore [Northbound-API](opensdncore-nb-api). Use the provided token value to identify your experiment when doing API requests.
