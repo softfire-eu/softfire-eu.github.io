@@ -57,6 +57,9 @@ SecurityResource:
         want_agent:
             type: boolean
             required: true
+        lan_name: 
+            type: string
+            required: false
         logging:
             type: boolean
             required: true
@@ -80,6 +83,7 @@ This node type has different properties:
 * **resource_id**: Defines the type of the Security Resource. To date only [firewall][firewall] is accepted
 * **testbed**: Defines where to deploy the Security Resource selected. It is ignored if want_agent is True
 * **want_agent**: Defines if the Experimenter wants the security resource to be an agent directly installed on the VM that he wants to monitor
+* **lan_name**: Select the network on which the VM is deployed (if __want_agent__ is False). If no value is entered, __softfire-internal__ is chosen
 * **logging**: Defines if the Experimenter wants the security resource to send its log messages to a collector and he wants to see them on a dashboard
 * **allowed_ips**: List of IPs (or CIDR  masks) allowed by the firewall. [allow from *IP*]
 * **denied_ips**: List of IPs (or CIDR masks) denied by the firewall [deny from *IP*]
@@ -95,7 +99,6 @@ This node type has different properties:
 | surrey   | SURREY testbed, Surrey           |
 | ads      | ADS testbed, Rome                |
 | dt       | Deutsche Telekom testbed, Berlin |
-| any      | No difference                    |
 
 ## Technical details
 This sequence diagram specifies the operations performed by the Security Manager based on the inputs received by the Experimenter.
