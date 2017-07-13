@@ -3,11 +3,11 @@ Slack is the tool defined by the SoftFIRE partners to manage discussion and supp
 You can find [here](https://slack.com/is) all the info about this tool.
 
 # User Registration and Policy
-First at all, join our community from [here](https://softfire-slacking.herokuapp.com/)
+First at all, join our community from [here](https://softfire-slacking.herokuapp.com/).
 
 To do this, please keep in mind the following requirements:
 1. Use your organization/company email and register directly without our approval
-2. You can add all the members of your team by your own, registering them on the link provided.
+2. You can add all the members of your team by your own, registering them on the link provided
 3. Please, we require you use your real names only to create your SLACK account
 
 # Public Channels
