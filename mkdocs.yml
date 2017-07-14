@@ -31,7 +31,7 @@ pages:
                 - SoftFIRE Integration Tests: 'integration-test.md'
         - Extras:
                 - OpenVPN Manual configuration: 'openvpnconfig.md'
-                - Slack User Guide 'slack.md'
+                - Slack User Guide: 'slack.md'
 
 theme_dir: material
 extra:
