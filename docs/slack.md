@@ -20,4 +20,4 @@ If you want, you can also join #random: this is a place for non-work-related fli
 # Private Channel:
 Each Mentor will create a channel, naming it as expname-prv, inviting the proper users to join this channel to dive direct support during the wave. Please, use this channel priorly to ask for directions and starting support on your experimenter.
 
-Please, remember to use REDMINE to logging bugs you will find across the platform only.
+Please, remember to use REDMINE only to report any bugs you will find across the platform.
