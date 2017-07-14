@@ -14,9 +14,9 @@ To do this, please keep in mind the following requirements:
 
 # Public Channels
 
-Please, join - after registration - #general: this channel is used for generic chat among partners and all the experimenter. Take a look here also for news, update and communications from the consortium.
+Please, join - after registration - #general channel, it is used for generic chat among partners and all the experimenter. Take a look here also for news, update and communications from the consortium.
 
-Also, each Mentor will create a channel, naming it as expname-pub, inviting the proper reference from each team. Here, the mentor will invite the proper reference inside the partner to give you support on your experiment, case by case.
+Also, each Mentor will create a channel, naming it as expname-pub. Here, the mentor will invite the proper references from the partners to  support your experiment, case by case.
 
 If you want, you can also join #random: this is a place for non-work-related flimflam, faffing, hodge-podge or jibber-jabber you'd prefer to keep out of more focused work-related channels.
 
