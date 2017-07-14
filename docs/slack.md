@@ -24,4 +24,4 @@ If you want, you can also join #random: this is a place for non-work-related fli
 
 Each Mentor will create a channel, naming it as expname-prv, inviting the proper users to join this channel to dive direct support during the wave. Please, use this channel priorly to ask for directions and starting support on your experimenter.
 
-Please, remember to use REDMINE only to report any bugs you will find across the platform.
+Please, remember to use [REDMINE](https://redmine.softfire.eu/redmine/projects/softfire/issues/new) only to report any bugs you will find across the platform.
