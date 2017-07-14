@@ -11,14 +11,13 @@ To do this, please keep in mind the following requirements:
 3. Please, we require you use your real names only to create your SLACK account
 
 # Public Channels
-Please, join - after registration - #general: this channel is a channel used for the communication between project partners and experimenters.
+Please, join - after registration - #general: this channel is used for generic chat among partners and all the experimenter. Take a look here also for news, update and communications from the consortium.
+
+Also, each Mentor will create a channel, naming it as expname-pub, inviting the proper reference from each team. Here, the mentor will invite the proper reference inside the partner to give you support on your experiment, case by case.
 
 If you want, you can also join #random: this is a place for non-work-related flimflam, faffing, hodge-podge or jibber-jabber you'd prefer to keep out of more focused work-related channels.
 
-Also, each Mentor will create this channel, naming it as expname-pub, inviting you to use this channel for the following reasons only:
-* 
-* 
-* 
-
 # Private Channel:
-Each Mentor will create this channel, naming it as expname-prv, inviting the proper users to join this channel: please, we recommend to use this channel for the following reasons only:
+Each Mentor will create a channel, naming it as expname-prv, inviting the proper users to join this channel to dive direct support during the wave. Please, use this channel priorly to ask for directions and starting support on your experimenter.
+
+Please, remember to use REDMINE to logging bugs you will find across the platform only.
