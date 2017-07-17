@@ -21,12 +21,11 @@ We invite the experimenters to use the SoftFIRE [Slack channel]() the Issues to 
 
 ## The Experiment Manager
 
-Good, now you are in :smile: You should be able to reach now the [Experiment Manager Web page][ex-man-link]. Follow this tutorial on the [next page][ex-man-link] for getting more knowledge on how to proceed with your experiment.
+Good, now you are in :smile: You should be able to reach now the [Experiment Manager Web page][ex-man-link]. Follow this tutorial on the [next page][ex-manager] for getting more knowledge on how to proceed with your experiment.
 
 ## Testbeds Information and usage
 
 * SoftFIRE infrastructure monitoring [ZABBIX](https://zabbix.softfire.eu)
-* Interconnection Benchmarks: [VPNBenachmark](vpnbenchmarklink)
 
 <!--
   References
