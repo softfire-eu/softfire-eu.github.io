@@ -33,7 +33,7 @@ Good, now you are in :smile: You should be able to reach now the [Experiment Man
 -->
 
 [openvpn]:https://openvpn.net/
-[ex-man-link]:http://experiment-manager.vpn.softfire.eu
+[ex-man-link]:http://experiment.vpn.softfire.eu:5080/
 [ex-manager]:experiment-manager.md
 
 <!---
