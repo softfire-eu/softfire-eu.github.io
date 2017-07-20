@@ -23,7 +23,7 @@ pages:
                   - General: 'security-manager.md'
                   - Firewall: 'firewall.md'
                 - Monitoring Manager: 'monitoring-manager.md'
-        - Tutorial:
+        - Tutorials:
                 - Nfv Tutorial:
                   -  Iperf: 'nfv-tutorial-iperf.md'
                   -  Custom: 'nfv-tutorial-custom.md'
