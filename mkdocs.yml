@@ -32,7 +32,9 @@ pages:
                 - Monitoring Tutorial: 'mon-tutorial.md'
                 - Full Tutorial: 'full-tutorial.md'
         - Dev:
-                - Install the SoftFIRE Middleware: 'install-softfire-middleware.md'
+                - Install the SoftFIRE Middleware:
+                  - Code install: 'install-softfire-middleware.md'
+                  - Docker install: 'install-softfire-middleware-docker.md'
                 - Write a sub manager: 'sub-manager.md'
                 - How to generate a certificate: 'gen-certificate.md'
                 - SDN Manager developers: 'sdn-manager-dev.md'
