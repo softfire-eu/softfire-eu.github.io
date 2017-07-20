@@ -23,6 +23,14 @@ pages:
                   - General: 'security-manager.md'
                   - Firewall: 'firewall.md'
                 - Monitoring Manager: 'monitoring-manager.md'
+        - Tutorial:
+                - Nfv Tutorial:
+                  -  Iperf: 'nfv-tutorial-iperf.md'
+                  -  Custom: 'nfv-tutorial-custom.md'
+                - Sdn Tutorial: 'sdn-tutorial.md'
+                - Security Tutorial: 'sec-tutorial.md'
+                - Monitoring Tutorial: 'mon-tutorial.md'
+                - Full Tutorial: 'full-tutorial.md'
         - Dev:
                 - Install the SoftFIRE Middleware: 'install-softfire-middleware.md'
                 - Write a sub manager: 'sub-manager.md'

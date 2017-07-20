@@ -19,9 +19,15 @@ NfvResource:
           type: string
       nsd_name:
         type: string
+        description: "Name of the NS to deploy"
       file_name:
         type: string
+        description: "relative path to the Open Baton CSAR. It is always starting with Files/..."
         required: false
+      ssh_pub_key:
+        type: string
+        required: false
+        description: "the public ssh key that will be injected in the VM in order to give access to the experimenter"
 
 ```
 
@@ -31,12 +37,14 @@ This node type has different properties:
 * **testbeds**: a map where you can define the testbed where each VNF will be deployed. It is defined as vnf **name** and **testbed name**
 * **nsd_name**: the name of the NS
 * **file_name**: in case the preconfigured NS are not sufficient for your experiment you can upload your own NS in CSAR format and place it in the Files folder. This field contains the name of the file
+* **ssh_pub_key**: In order to access via ssh the VMs, you need to add your public key here and when the deployment will be active you will be able to access the VMs via floating ip if any.
 
 ##### Testbed Names
 
 | Alias    | Testbed                          |
 |----------|----------------------------------|
 | fokus    | FOKUS testbed, Berlin            |
+| fokus-dev| FOKUS testbed with SDN support, Berlin            |
 | ericsson | ERICSSON testbed, Rome           |
 | surrey   | SURREY testbed, Surrey           |
 | ads      | ADS testbed, Rome                |
