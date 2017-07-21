@@ -1,6 +1,6 @@
 ## Registration to the Tools
 
-1. Register at the Web Portal (and win the open call :stuck_out_tongue_winking_eye:). From your personal page you will be able to download the OpenVPN certificate configuration file that will allow you to enter the SoftFIRE VPN.
+1. Register at the [Web Portal](https://portal.softfire.eu/login/) (and win the open call :stuck_out_tongue_winking_eye:). From your personal page you will be able to download the OpenVPN certificate configuration file that will allow you to enter the SoftFIRE VPN.
 1. Register to redmine [this page](https://redmine.softfire.eu/) and create an account
 1. Install and configure [openvpn](#openvpn-setup) using the certificate configuration file previously downloaded
 1. Design your experiment
