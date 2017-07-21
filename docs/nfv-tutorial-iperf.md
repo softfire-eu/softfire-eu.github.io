@@ -2,6 +2,9 @@
 
 This tutorial will guide you through the definition of the iperf example and to upload it.
 
+!!! Note
+    This tutorial assumes that you use a Unix system.
+
 First of all create a folder where we can put all the necessary files.
 
 ```sh
