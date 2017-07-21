@@ -9,15 +9,11 @@ You need to install:
 
 For having a real example (fully reproduce the SoftFIRE Middleware), you will also need:
 
-* an [Open Baton](http://openbaton.github.io/documentation/nfvo-installation/) instance
 * an OpenStack instance where executing deployment
-
-!!! Note
-    [Open Baton can run in a docker container](http://openbaton.github.io/documentation/nfvo-installation-docker/) as well. Be careful to have it in the same docker network for being able to use the hostname or simply configure the different components with the correct ip.
 
 ## Deployment
 
-This deployment will be composed by 6 containers:
+This deployment will be composed by these containers:
 
 * Experiment Manager
 * Nfv Manager
@@ -25,8 +21,9 @@ This deployment will be composed by 6 containers:
 * Security Manager
 * Monitoring Manager
 * Physical Device Manager
+* Open Baton Standalone
 
-The **Nfv Manager and Monitoring containers must be able to reach the OpenStack endpoints**. The **Nfv Manager and the Security Manager** must be able to reach the Open Baton APIs.
+The **Nfv Manager and Monitoring containers must be able to reach the OpenStack endpoints**.
 
 ## Get the docker compose folder
 
