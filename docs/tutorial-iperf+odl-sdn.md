@@ -72,12 +72,12 @@ The value contains somethings like this :
 ### REST put flow example - drop all packets with destination ip equals to 10.0.10.2/24:
 
 ```sh
-curl PUT /restconf/config/opendaylight-inventory:nodes/node/openflow:72664714402125/table/2/flow/1 HTTP/1.1
-Host: <URI>
-API-Token: <token>
-Content-Type: application/json
-Accept: application/json
-{
+curl -X PUT \
+  'http://<URI>/restconf/config/opendaylight-inventory:nodes/node/openflow:72664714402125/table/2/flow/1' \
+  -H 'accept: application/json' \
+  -H 'api-token: <token>' \
+  -H 'cache-control: no-cache' \
+  -d '{
       "flow-node-inventory:flow": [
         {
           "id": "1",
@@ -109,7 +109,7 @@ Accept: application/json
           }
         }
       ]
-    }
+    }'
 ```
 
 Then remember always to delete the resources by clicking in the delete button.
