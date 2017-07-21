@@ -426,7 +426,7 @@ References:
 -->
 
 
-[nfv-tutorial-iperf]:etc/softfire_node_types.yaml
-[nfv-tutorial-iperf-last-section]:etc/softfire_node_types.yaml#putting-all-together
+[nfv-tutorial-iperf]:nfv-tutorial-iperf.md
+[nfv-tutorial-iperf-last-section]:nfv-tutorial-iperf#putting-all-together
 [nfv-manager-page]:nfv-manager.md
 [openbaton-csar-tutorial]:http://openbaton.github.io/documentation/tosca-CSAR-onboarding
