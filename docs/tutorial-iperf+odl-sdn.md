@@ -12,7 +12,7 @@ sdn_ads:
       type: SdnResource
 ```
 
-The new file _experiment.yaml_ will be something like this
+The new _experiment.yaml_ file will be something like this
 ```yaml
 
 --- 
@@ -46,6 +46,9 @@ after that create the CSAR file, upload to the Experiment Manager GUI.
 If there are no mistakes, you are able to deploy your resources by clicking deploy.
 Once deployed, in the details of the experiment a section is displayed for sdn-controller-odl-ads
 
+!!! Note
+   To create, upload a CSAR file and deploy your resources view a[tutorial](http://docs.softfire.eu/nfv-tutorial-iperf/)
+
 The value contains somethings like this :
 ```json
 
@@ -60,7 +63,6 @@ The value contains somethings like this :
     "URI": "http://172.20.70.130:8001/"
 }
 ```
-
 - "token" is needed to call the rest API 
 - "flow-table-range" are the tables that odl assigned to the experimenter
 - "URI" is the ODL endpoint used for RESTCONF API requests
@@ -109,7 +111,6 @@ Accept: application/json
       ]
     }
 ```
-
 
 Then remember always to delete the resources by clicking in the delete button.
 !!! Note

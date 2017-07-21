@@ -29,7 +29,7 @@ pages:
                   -  Custom: 'nfv-tutorial-custom.md'
                 - Sdn Tutorial:
                   - Sdn : 'sdn-tutorial.md'
-                  - Iperf + Odl-Snd : 'tutorial-iperf+odl-sdn.md'
+                  - Opendaylight : 'tutorial-iperf+odl-sdn.md'
                 - Security Tutorial: 'sec-tutorial.md'
                 - Monitoring Tutorial: 'mon-tutorial.md'
                 - Full Tutorial: 'full-tutorial.md'
