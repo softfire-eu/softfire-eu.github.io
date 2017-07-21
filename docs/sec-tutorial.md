@@ -92,11 +92,11 @@ zip -r firewall.csar . -x ".*" -x "*/.*"
 Now you have to uploaded this file to the Experiment Manager GUI like the following images.
 Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) and click on "Reserve Resource"
 
-![tutorial firewall 1](tutorial-security-manager-firewall1.png)
+![tutorial firewall 1](img/tutorial-security-manager-firewall1.png)
 
-![tutorial firewall 2](tutorial-security-manager-firewall2.png)
+![tutorial firewall 2](img/tutorial-security-manager-firewall2.png)
 
-![tutorial firewall 3](tutorial-security-manager-firewall3.png)
+![tutorial firewall 3](img/tutorial-security-manager-firewall3.png)
 
 When you click on send, the Managers will validate the resources, in case you did some mistake they should be shown now. If no errors are shown, you are able to deploy your resources by clicking deploy. Please consider that it takes some seconds to deploy the resource dependening in the experiment definition.
 Once deployed, it will take time until reaching the ACTIVE state of the resource. A button on the right enable the automatic refresh of the resources' values or disable it, in the second case you will need to refresh the page.
