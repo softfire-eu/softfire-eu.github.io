@@ -65,7 +65,7 @@ The value contains somethings like this :
 - "flow-table-range" are the tables that odl assigned to the experimenter
 - "URI" is the ODL endpoint used for RESTCONF API requests
 
-![Provide resources](img/iperfodlsdndeploy.png)
+![Provide resources](img/tutorial-iperf+odl-sdn.png)
 
 ### REST put flow example - drop all packets with destination ip equals to 10.0.10.2/24:
 
