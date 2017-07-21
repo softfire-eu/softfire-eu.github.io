@@ -27,7 +27,9 @@ pages:
                 - Nfv Tutorial:
                   -  Iperf: 'nfv-tutorial-iperf.md'
                   -  Custom: 'nfv-tutorial-custom.md'
-                - Sdn Tutorial: 'sdn-tutorial.md'
+                - Sdn Tutorial:
+                  - Sdn : 'sdn-tutorial.md'
+                  - Iperf + Odl-Snd : 'tutorial-ipef+odl-sdn.md'
                 - Security Tutorial: 'sec-tutorial.md'
                 - Monitoring Tutorial: 'mon-tutorial.md'
                 - Full Tutorial: 'full-tutorial.md'
