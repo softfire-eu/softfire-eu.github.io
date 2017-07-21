@@ -1,14 +1,14 @@
 ## Registration to the Tools
 
-1. Register at the Web Portal (and win the open call :stuck_out_tongue_winking_eye:)
+1. Register at the Web Portal (and win the open call :stuck_out_tongue_winking_eye:). From your personal page you will be able to download the OpenVPN certificate configuration file that will allow you to enter the SoftFIRE VPN.
 1. Register to redmine [this page](https://redmine.softfire.eu/) and create an account
-1. Install and configure [openvpn](#openvpn-setup)
+1. Install and configure [openvpn](#openvpn-setup) using the certificate configuration file previously downloaded
 1. Design your experiment
 1. Execute the experiment
 1. Retrieve the results
 1. Terminate the experiment
 
-We invite the experimenters to use the SoftFIRE [Slack channel]() the Issues to address specific problems or support requests. You can also visit the [Forums](https://redmine.softfire.eu/projects/softfire/boards) section to open a new discussion or to find useful information shared in the community
+We invite the experimenters to use the SoftFIRE [Slack channel](https://softfire.slack.com/messages) (if you did not register yet please do so [here](https://softfire-slacking.herokuapp.com/)) the Issues to address specific problems or support requests. You can also visit the [Forums](https://redmine.softfire.eu/projects/softfire/boards) section to open a new discussion or to find useful information shared in the community
 
 ## OpenVPN setup
 
