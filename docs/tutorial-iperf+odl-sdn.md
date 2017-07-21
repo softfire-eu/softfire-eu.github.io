@@ -2,7 +2,7 @@
 
 This tutorial will guide you through the definition of the iperf and odlsdn example.
 
-Take your "experiment.yaml" file, and write something like this :
+Take your _experiment.yaml_ file, and write something like this :
 ```yaml
 
 ---
@@ -12,7 +12,7 @@ sdn_ads:
       type: SdnResource
 ```
 
-The new file "experiment.yaml" will be something like this
+The new file _experiment.yaml_ will be something like this
 ```yaml
 
 --- 
@@ -52,7 +52,7 @@ The value contains somethings like this :
 {
     "resource_id": "sdn-controller-odl-ads",
     "token": "x1x1x1x1x1x1x1x1x1x1x1x1x",
-    "flow-table-range": -[
+    "flow-table-range": [
         2,
         3,
         4
