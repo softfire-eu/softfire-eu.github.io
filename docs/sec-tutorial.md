@@ -48,7 +48,7 @@ vim TOSCA-Metadata/Metadata.yaml
 
 Here you should write something like this:
 
-```
+```yaml
 name: ExperimentIperf
 start-date: "2017-7-2"
 end-date: "2017-7-15"
@@ -57,13 +57,13 @@ end-date: "2017-7-15"
 Change start-date and end-date fields according to your experiment.
 now we can write the definition of the experiment:
 
-```
+```sh
 vim Definitions/experiment.yaml
 ```
 
 Here you should write something like this:
 
-```
+```yaml
 description: "Template for SoftFIRE yaml resource request definition"
 imports:
   - softfire_node_types: "http://docs.softfire.eu/etc/softfire_node_types.yaml"
@@ -76,7 +76,7 @@ topology_template:
         want_agent: false
         lan_name: private
         testbed: fokus
-        default_rule: allow 
+        default_rule: allow
         denied_ips: [172.20.10.138]
         logging: true
 ```
@@ -85,7 +85,7 @@ all the fields are explained in the [Security manager page](security-manager.md)
 
 Create the CSAR file:
 
-```
+```sh
 zip -r firewall.csar . -x ".*" -x "*/.*"
 ```
 
@@ -103,7 +103,7 @@ Once deployed, it will take time until reaching the ACTIVE state of the resource
 Finally the firewall resource reaches the ACTIVE state and also the floating ip are shown in the newly created resource section of the experimenter GUI. Note that the floating ip changes for every deployment.
 You are now able to ssh into the client.
 
-```
+```sh
 ~ $ ssh -i /opt/softfire/key/softfire-key.pem ubuntu@<HERE THE FLOATING IP>
 Warning: Permanently added '172.20.30.91' (ECDSA) to the list of known hosts.
 Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-77-generic x86_64)

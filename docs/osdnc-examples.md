@@ -1,12 +1,13 @@
 # SoftFIRE OpenSDNcore examples
 
-Fraunhofer FOKUS provides two datacenter as part of its testbed for the SoftFIRE Prpject. The testbed identified as `fokus-dev` will provide SDN features based on OpenSDNcore.
+Fraunhofer FOKUS provides two datacenter as part of its testbed for the SoftFIRE Project. The testbed identified as `fokus-dev` will provide SDN features based on OpenSDNcore.
 
 ## Setting up the Experiment
 
 1. Define the experiment to use the `fokus-dev` testbed to launch virtual machines.
 1. Include the resource `sdn-controller-opensdncore-fokus` to enable access to the SDN features.
 1. after the successfill deployment of the experiment the sdn-manager resurnes the details needed to access the OpenSDNcore API.
+
 ```json
 {
 	"resource_id": "sdn-controller-opensdncore-fokus",
@@ -22,6 +23,7 @@ The following example will utilize a custom flow entry to duplicate all network 
 
 1. after all the instances are bootet up correctly use the `ofc.list.channels` command to list all switches in the setup.
 1. in our case there is only one switch with dpid "0x0000000000000001" present
+
 ```json
 {
 	"jsonrpc": "2.0",
