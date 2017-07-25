@@ -39,7 +39,7 @@ Here below some examples of Restconf requests:
 	http://[HSOTNAME]:[PORT]/restconf/config/opendaylight-inventory:nodes/
 * Method: GET
 * Request body: EMPTY
-	
+
 * Response body:
 ```json
 	{
@@ -113,7 +113,7 @@ Here below some examples of Restconf requests:
 		}
 	}
 ```
-	
+
 
 ### REST put flow example - drop all packets with destination ip equals to 10.0.10.2/24:
 
@@ -175,4 +175,18 @@ Examples for XML for various flow matches, instructions & actions can be found [
 
 
 
-
+<!---
+ Script for open external links in a new tab
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>

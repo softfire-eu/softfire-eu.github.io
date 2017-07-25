@@ -15,13 +15,13 @@ sdn_ads:
 The new _experiment.yaml_ file will be something like this
 ```yaml
 
---- 
+---
 description: "Template for SoftFIRE yaml resource request definition"
-imports: 
+imports:
   - softfire_node_types: "http://docs.softfire.eu/etc/softfire_node_types.yaml"
-  
-topology_template: 
-  node_templates: 
+
+topology_template:
+  node_templates:
 
 
     iperf:
@@ -42,7 +42,7 @@ topology_template:
 tosca_definitions_version: tosca_simple_yaml_1_0
 ```
 
-after that create the CSAR file, upload to the Experiment Manager GUI. 
+after that create the CSAR file, upload to the Experiment Manager GUI.
 If there are no mistakes, you are able to deploy your resources by clicking deploy.
 Once deployed, in the details of the experiment a section is displayed for sdn-controller-odl-ads
 
@@ -63,7 +63,7 @@ The value contains somethings like this :
     "URI": "http://172.20.70.130:8001/"
 }
 ```
-- "token" is needed to call the rest API 
+- "token" is needed to call the rest API
 - "flow-table-range" are the tables that odl assigned to the experimenter
 - "URI" is the ODL endpoint used for RESTCONF API requests
 
@@ -115,3 +115,20 @@ curl -X PUT \
 Then remember always to delete the resources by clicking in the delete button.
 !!! Note
     When you delete the experiment, OLD will de-associate and clean the tables that were assigned.
+
+
+<!---
+ Script for open external links in a new tab
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>

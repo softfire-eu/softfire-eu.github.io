@@ -35,6 +35,7 @@ The following image is only for personal knowledge, it is not relevant for the e
 <!---
  Script for open external links in a new tab
 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
 <script type="text/javascript" charset="utf-8">
       // Creating custom :external selector
       $.expr[':'].external = function(obj){

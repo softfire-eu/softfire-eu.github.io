@@ -222,3 +222,20 @@ The next step is to create an experimenter. By creating a user, a long chain of 
 If it goes well, then you are able to logout and then log in with the create username and password and you should be able to see all the available resources.
 
 From now on you can continue with the tutorial in the tutorial section
+
+
+<!---
+ Script for open external links in a new tab
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>

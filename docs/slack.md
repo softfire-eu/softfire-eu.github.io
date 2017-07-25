@@ -25,3 +25,19 @@ If you want, you can also join #random: this is a place for non-work-related fli
 Each Mentor will create a channel, naming it as expname-prv, inviting the proper users to join this channel to dive direct support during the wave. Please, use this channel priorly to ask for directions and starting support on your experimenter.
 
 Please, remember to use [REDMINE](https://redmine.softfire.eu/redmine/projects/softfire/issues/new) only to report any bugs you will find across the platform.
+
+<!---
+ Script for open external links in a new tab
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>

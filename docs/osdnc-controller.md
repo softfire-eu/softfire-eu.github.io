@@ -314,3 +314,19 @@ If later comes a packet_in message, the controller will try to connect to the su
 ### 7 Extensions
 
 The controller developers are able to develop their own extensions for the JSON-RPC-OF protocol by introducing new methods, only if such methods meet the requirements of standard JSON-RPC 2.0, and not violating the rules defined in this specification. By using the JSON format, more expressive data structures and APIs could be defined easily.
+
+<!---
+ Script for open external links in a new tab
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>

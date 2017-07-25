@@ -64,7 +64,7 @@ start-date: "2017-7-2"
 end-date: "2017-7-15"
 ```
 
-Of course you can change the experiment's name, start and end date to your needs, but make sure you stick with the time format.
+Of course you can change the experiment\'s name, start and end date to your needs, but make sure you stick with the time format.
 
 In the last file you specify the real definition of the experiment.
 
@@ -155,7 +155,7 @@ vim_types:
     - openstack
 ```
 
-You can see the NSD's name and description and the NFVO version with which this NSD is compliant.
+You can see the NSD\'s name and description and the NFVO version with which this NSD is compliant.
 Furthermore the used image and the VIM types are defined. You can change those values as you need.
 
 After this we can start to write the NSD.
@@ -169,21 +169,21 @@ In this file we will put all the information about the Network Service that we w
 
 ```yaml
 description: "NS for deploying a clean ubuntu machine"
-metadata: 
+metadata:
   ID: Ubuntu
   vendor: TUB
   version: "3.2.0"
-relationships_template: 
-  rel1: 
-    parameters: 
+relationships_template:
+  rel1:
+    parameters:
       - key_1
       - key_2
       - softfire-internal
     source: ubuntuclient
     target: ubuntuserver
     type: tosca.nodes.relationships.ConnectsTo
-  rel2: 
-    parameters: 
+  rel2:
+    parameters:
       - key_1
       - key_2
       - softfire-internal
@@ -191,81 +191,81 @@ relationships_template:
     source: ubuntuserver
     target: ubuntuclient
     type: tosca.nodes.relationships.ConnectsTo
-topology_template: 
-  node_templates: 
-    CP1: 
+topology_template:
+  node_templates:
+    CP1:
       properties:
-      requirements: 
+      requirements:
         - virtualBinding: VDU1
         - virtualLink: softfire-internal
       type: tosca.nodes.nfv.CP
-    CP2: 
+    CP2:
       properties:
-      requirements: 
+      requirements:
         - virtualBinding: VDU2
         - virtualLink: softfire-internal
       type: tosca.nodes.nfv.CP
-    VDU1: 
-      properties: 
+    VDU1:
+      properties:
         scale_in_out: 10
-      requirements: 
+      requirements:
         - virtual_link: CP1
       type: tosca.nodes.nfv.VDU
-    VDU2: 
-      properties: 
+    VDU2:
+      properties:
         scale_in_out: 10
-      requirements: 
+      requirements:
         - virtual_link: CP2
       type: tosca.nodes.nfv.VDU
-    ubuntuclient: 
-      interfaces: 
-        lifecycle: 
-          INSTANTIATE: 
+    ubuntuclient:
+      interfaces:
+        lifecycle:
+          INSTANTIATE:
             - install.sh
-          CONFIGURE: 
+          CONFIGURE:
             - ubuntuserver_relation.sh
-          START: 
+          START:
             - start.sh
-      properties: 
-        configurations: 
-          configurationParameters: 
+      properties:
+        configurations:
+          configurationParameters:
             - key_1: value_1
             - key_2: value_2
             - key_3: value_3
           name: ubuntuclient-configuration
-        deploymentFlavour: 
+        deploymentFlavour:
           - flavour_key: m1.small
         endpoint: generic
         type: ubuntuclient
         vendor: TUB
         version: 16.04
-      requirements: 
+      requirements:
         - virtualLink: softfire-internal
         - vdu: VDU1
       type: openbaton.type.VNF
-    ubuntuserver: 
-      interfaces: 
-        lifecycle: 
-          INSTANTIATE: 
+    ubuntuserver:
+      interfaces:
+        lifecycle:
+          INSTANTIATE:
             - install.sh
-          CONFIGURE: 
+          CONFIGURE:
             - ubuntuclient_relation.sh
-          START: 
+          START:
             - start.sh
-      properties: 
-        configurations: 
-          configurationParameters: 
+      properties:
+        configurations:
+          configurationParameters:
             - key_1: value_1
             - key_2: value_2
             - key_3: value_3
           name: ubuntuserver-configuration
-        deploymentFlavour: 
+        deploymentFlavour:
           - flavour_key: m1.small
         endpoint: generic
         type: ubuntuserver
         vendor: TUB
         version: 16.04
-      requirements: 
+      requirements:
         - virtualLink: softfire-internal
         - vdu: VDU2
       type: openbaton.type.VNF
@@ -274,7 +274,7 @@ tosca_definitions_version: tosca_clean_ubuntu
 
 As already mentioned for more information about the format of this TOSCA NSD file visit [this][openbaton-csar-tutorial] site, as for now here is a shallow overview of the fields:
 
-An NSD's main components are Virtual Network Function Descriptors (VNFD) which are connected and together form the NSD.
+An NSD\'s main components are Virtual Network Function Descriptors (VNFD) which are connected and together form the NSD.
 Each VNFD has its own functionality and role in a NSD.
 The VNFDs in this example are specified in the yaml keys *ubuntuclient* and *ubuntuserver*.
 In the end our Network Service will be built of a client and a server and the client will connect to the server.  
@@ -289,7 +289,7 @@ Until now we only have the structure of our Network Service which consists of tw
 But what about the functionality of the VNFDs? This is defined in the lifecycle scripts.
 As we saw the VNFDs can have scripts which are executed in their different lifecycles.
 The scripts are stored in the *Scripts* folder.
-Let's create them.
+Let\'s create them.
 
 ```sh
 mkdir -p Scripts/ubuntuserver
@@ -307,6 +307,7 @@ The subfolder names correspond to the VNFD keys in the *Definitions/ubuntu.yaml*
 Here are the contents of the script files:
 
 ###### Scripts/ubuntuserver/install.sh
+
 ```sh
 #!/bin/bash
 
@@ -325,8 +326,9 @@ echo "like this one..."
 This is the first script executed on the server. Here you can install software you need later.
 
 ###### Scripts/ubuntuserver/ubuntu_relation.sh
+
 ```sh
-!#/bin/bash
+#!/bin/bash
 
 echo "Better to redirect output..."
 
@@ -342,12 +344,12 @@ echo "foreign floating ip"
 echo "$ubuntuclient_softfire_internal_floatingIp"
 ```
 
-This script prints out some of the values passed by the dependency, e.g. the client's configuration parameters and floating IP address.
+This script prints out some of the values passed by the dependency, e.g. the client\'s configuration parameters and floating IP address.
 The *CONFIGURE* lifecycle is the only one which has access to the dependency parameters so use it to configure your VNF.
 
 ###### Scripts/ubuntuserver/start.sh
 ```sh
-!#/bin/bash
+#!/bin/bash
 
 echo "start!!!"
 echo "Avoid long outputs! so redirect the output to a file that you can later check, for instance:"
@@ -374,7 +376,7 @@ echo "this one for instance..."
 
 ###### Scripts/ubuntuclient/ubuntuserver_relation.sh
 ```sh
-!#/bin/bash
+#!/bin/bash
 
 sudo apt-get install -y figlet > /tmp/configure.sh
 
@@ -387,16 +389,17 @@ echo "$ubuntuserver_softfire_internal"
 echo "foreign floating ip"
 echo "$ubuntuserver_softfire_internal_floatingIp"
 ```
+
 ###### Scripts/ubuntuclient/start.sh
+
 ```sh
-!#/bin/bash
+#!/bin/bash
 
 echo "start!!!"
 echo "Avoid long outputs! so redirect the output to a file that you can later check, for instance:"
 echo "log description here" > /tmp/start.log
 /usr/games/cowsay -f tux "start finished worked!"
 ```
-
 
 This is everything we need for our NSD. Now we can archive everything as a csar archive.
 
@@ -430,3 +433,19 @@ References:
 [nfv-tutorial-iperf-last-section]:nfv-tutorial-iperf#putting-all-together
 [nfv-manager-page]:nfv-manager.md
 [openbaton-csar-tutorial]:http://openbaton.github.io/documentation/tosca-CSAR-onboarding
+
+<!---
+ Script for open external links in a new tab
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>
