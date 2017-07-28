@@ -21,7 +21,10 @@ We invite the experimenters to use the SoftFIRE [Slack channel](https://softfire
 
 ## The Experiment Manager
 
-Good, now you are in :smile: You should be able to reach now the [Experiment Manager Web page][ex-man-link]. Follow this tutorial on the [next page][ex-manager] for getting more knowledge on how to proceed with your experiment.
+Good, now you are in :smile: You should be able to reach now the [Experiment Manager Web page][ex-man-link]. Anyway we immagine that your experiment could be very complex, involving many components. The most critical part is the definition of the NFV resources, that involves many automated scripts execution. For this reason we suggest to start with a local installation of [Open Baton](http://openbaton.github.io/documentation/) using a local OpenStack instance (this could be also a very small installation for testing purposes). This method will help you and us to interface with the SoftFIRE middleware, having for sure a working NFV resource definition.
+
+After this step you can continue proceeding locally (if you wish) with a small deployment of the SoftFIRE Middleware, for this we suggest to build your own docker container solution using a docker compose file we provide. The tutorial can be fund [here][docker-compose]. Follow this tutorial on the [next page][ex-manager] for getting more knowledge on how to proceed with your experiment.
+
 
 ## Testbeds Information and usage
 
@@ -34,6 +37,7 @@ Good, now you are in :smile: You should be able to reach now the [Experiment Man
 [openvpn]:https://openvpn.net/
 [ex-man-link]:http://experiment.vpn.softfire.eu:5080/
 [ex-manager]:experiment-manager.md
+[docker-compose]:install-softfire-middleware-docker.md
 
 <!---
  Script for open external links in a new tab
