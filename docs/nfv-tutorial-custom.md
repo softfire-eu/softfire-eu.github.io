@@ -195,12 +195,14 @@ topology_template:
   node_templates:
     CP1:
       properties:
+        floatingIP: random
       requirements:
         - virtualBinding: VDU1
         - virtualLink: softfire-internal
       type: tosca.nodes.nfv.CP
     CP2:
       properties:
+        floatingIP: random
       requirements:
         - virtualBinding: VDU2
         - virtualLink: softfire-internal
