@@ -49,9 +49,9 @@ vim TOSCA-Metadata/Metadata.yaml
 Here you should write something like this:
 
 ```yaml
-name: ExperimentIperf
-start-date: "2017-7-2"
-end-date: "2017-7-15"
+name: Experiment Name
+start-date: "2017-08-10"
+end-date: "2017-08-11"
 ```
 
 Change start-date and end-date fields according to your experiment.
@@ -101,27 +101,25 @@ Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) a
 When you click on send, the Managers will validate the resources, in case you did some mistake they should be shown now. If no errors are shown, you are able to deploy your resources by clicking deploy. Please consider that it takes some seconds to deploy the resource dependening in the experiment definition.
 Once deployed, it will take time until reaching the ACTIVE state of the resource. A button on the right enable the automatic refresh of the resources' values or disable it, in the second case you will need to refresh the page.
 Finally the firewall resource reaches the ACTIVE state and also the floating ip are shown in the newly created resource section of the experimenter GUI. Note that the floating ip changes for every deployment.
-You are now able to ssh into the client.
 
-```sh
-~ $ ssh -i /opt/softfire/key/softfire-key.pem ubuntu@<HERE THE FLOATING IP>
-Warning: Permanently added '172.20.30.91' (ECDSA) to the list of known hosts.
-Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-77-generic x86_64)
+![tutorial firewall 4](img/tutorial-security-manager-firewall4.png)
 
-* Documentation:  https://help.ubuntu.com
-* Management:     https://landscape.canonical.com
-* Support:        https://ubuntu.com/advantage
+You are now able to interact with the created VM at the address shown in *api_url*. 
 
-Get cloud support with Ubuntu Advantage Cloud Guest:
-http://www.ubuntu.com/business/services/cloud
+You can for example see the current status of the firewall. 
 
-87 packages can be updated.
-45 updates are security updates.
+![tutorial firewall 5](img/tutorial-security-manager-firewall5.png)
 
+Or add new rules. 
 
-Last login: Thu Jul 20 14:41:18 2017 from 172.20.10.131
-ubuntu@server-9771458:~$
-```
+![tutorial firewall 6](img/tutorial-security-manager-firewall6.png)
+
+You can find the complete list of API on (http://docs.softfire.eu/etc/firewall.adoc). 
+
+If you specified *logging: true*, then you can go to *dashboard_log_link* to see some statistics about the rules that you want to write log messages. Here an example of the dashboard. 
+
+![tutorial firewall 7](img/tutorial-security-manager-firewall7.png)
+
 
 Then remember always to delete the resources by clicking in the delete button.
 
