@@ -2,7 +2,8 @@ site_name: SoftFIRE Software Documentation
 pages:
         - SoftFIRE:
                 - Introduction: 'index.md'
-                - Softfire Middleware: 'softfire-middleware.md'
+                - SoftFIRE Middleware: 'softfire-middleware.md'
+                - SoftFIRE available resources: 'softfire-available-resources.md'
         - Wiki:
                 - Getting Started: 'getting-started.md'
                 - Experiment Manager: 'experiment-manager.md'
