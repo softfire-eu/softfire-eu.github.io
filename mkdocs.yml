@@ -15,7 +15,6 @@ pages:
                     - Introduction: 'opensdncore.md'
                     - Controller: 'osdnc-controller.md'
                     - API Documentation: 'opensdncore-nb-api.md'
-                    - Examples: 'osdnc-examples.md'
                   - OpenDaylight:
                     - Introduction: 'opendaylight.md'
                     - API Documentation: 'opendaylight-openflow-api.md'
@@ -30,6 +29,7 @@ pages:
                   -  Custom: 'nfv-tutorial-custom.md'
                 - Sdn Tutorial:
                   - Sdn : 'sdn-tutorial.md'
+                  - OpenSDNCore: 'osdnc-examples.md'
                   - Opendaylight : 'tutorial-iperf+odl-sdn.md'
                 - Security Tutorial: 'sec-tutorial.md'
                 - Monitoring Tutorial: 'mon-tutorial.md'

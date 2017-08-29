@@ -1,8 +1,11 @@
-# SoftFIRE OpenSDNcore examples
+# SoftFIRE OpenSDNcore Turorial
 
 Fraunhofer FOKUS provides two datacenter as part of its testbed for the SoftFIRE Project. The testbed identified as `fokus-dev` will provide SDN features based on OpenSDNcore.
 
 ## Setting up the Experiment
+
+!!! Note
+    How to create and upload a CSAR file to deploy your resources view a the more generic [NFV tutorial](http://docs.softfire.eu/nfv-tutorial-iperf/).
 
 1. Define the experiment to use the `fokus-dev` testbed to launch virtual machines.
 1. Include the resource `sdn-controller-opensdncore-fokus` to enable access to the SDN features.
@@ -18,7 +21,7 @@ Fraunhofer FOKUS provides two datacenter as part of its testbed for the SoftFIRE
 ```
 1. Copy the `token` value and navigate to the provided `URI` using a web browser. The website provides the needed information and an simple user interface to run JSON-RPC request against the OpenSDNcore [Northbound-API](opensdncore-nb-api). Use the provided token value to identify your experiment when doing API requests.
 
-## Port Mirroring example
+## Port Mirroring tutorial
 The following example will utilize a custom flow entry to duplicate all network traffic directed at a Virtual Machine and forward it to the network interface of another Virtual Machine.
 
 1. after all the instances are bootet up correctly use the `ofc.list.channels` command to list all switches in the setup.
