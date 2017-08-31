@@ -31,6 +31,6 @@ For what concerns the virtual resources quota, each experiment environment canno
 | RAM (MB) | 20480 |
 | Instances | 10 |
 | VCPUs | 10 |
-| Networs | 10 |
+| Networks | 10 |
 
 We believe that this is sufficient for the majority of the most complex experiments. Of course, by request, we could increase the limits per specific experiment. But it requires a valid motivation :wink:.
