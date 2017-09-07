@@ -33,11 +33,11 @@ NfvResource:
 
 This node type has different properties:
 
-* **resource_id**: The resource id that can be found from the list resource table.
-* **testbeds**: a map where you can define the testbed where each VNF will be deployed. It is defined as vnf **name** and **testbed name**
-* **nsd_name**: the name of the NS
-* **file_name**: in case the preconfigured NS are not sufficient for your experiment you can upload your own NS in CSAR format and place it in the Files folder. This field contains the name of the file
-* **ssh_pub_key**: In order to access via ssh the VMs, you need to add your public key here and when the deployment will be active you will be able to access the VMs via floating ip if any.
+* **resource_id**: The resource id that can be found in the dashboard's resource tables.
+* **testbeds**: A map defining on which testbed a VNF's Virtual Deployment Unit will be deployed. It's key value pairs look like this **VDU name**: **testbed name**
+* **nsd_name**: The name of the Network Service (NS). Open Baton will use this name when storing the NSD.
+* **file_name**: In case the preconfigured NS are not sufficient for your experiment you can upload your own NS in CSAR format and place it in the experiment's **Files** folder. This field contains the name of the file.
+* **ssh_pub_key**: In order to access the VMs via SSH, you need to add your public key here so that you can access the deployed experiment's VMs if they have floating IPs.
 
 ##### Testbed Names
 
@@ -54,7 +54,7 @@ This node type has different properties:
 
 ## Technical details
 
-In the following image you can understand the life cycle of the Nfv Manager based on the sequence diagram
+In the following sequence diagram you can see the life cycle of the Nfv Manager.
 
 ![NfvManager sequence diagram](img/nfv-manager.svg)
 
