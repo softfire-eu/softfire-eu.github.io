@@ -31,7 +31,7 @@ The Metadata.yaml contains experiment meta information:
 * the end date
 
 !!! note
-    Please use ISO format dates (YYYY-MM-DD HH:MM).
+    Please use ISO format dates (YYYY-MM-DD).
 
 !!! note
     These dates are general for the whole experiment, but you can specify specific dates per resource. The specific dates of the resources override these ones.
@@ -39,8 +39,8 @@ The Metadata.yaml contains experiment meta information:
 As follows:
 ```yaml
 name: Experiment Name
-start-date: "2017-07-28 10:00"
-end-date: "2017-07-30 10:00"
+start-date: "2017-07-28"
+end-date: "2017-07-30"
 ```
 
 Where:
@@ -52,7 +52,7 @@ Where:
 
 ## Definitions
 
-The experiment.yaml must follow a specific structure. An example is show in the following lines:
+The experiment.yaml must follow a specific structure. An example is shown in the following lines:
 
 ```yaml
 tosca_definitions_version: tosca_simple_yaml_1_0
