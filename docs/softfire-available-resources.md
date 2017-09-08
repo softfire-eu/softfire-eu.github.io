@@ -33,4 +33,4 @@ For what concerns the virtual resources quota, each experiment environment canno
 | VCPUs | 10 |
 | Networks | 10 |
 
-We believe that this is sufficient for the majority of the most complex experiments. Of course, by request, we could increase the limits per specific experiment. But it requires a valid motivation :wink:.
+We believe that this is sufficient for the majority of the most complex experiments. Of course, by request, we could increase the limits per specific experiment. However please, provide the consortion with a good explination why you would need more resources.
