@@ -36,7 +36,7 @@ The following example will utilize a custom flow entry to duplicate all network 
 	"id": 1
 }
 ```
-1. find the port number to which the traffic should be mirrored to by using the `ofc.send.multipart.flow` function to list all rules of flow_table 0x04 and searching for the MAC address of the target instance. ex: `{"jsonrpc": "2.0", "method": "ofc.send.multipart.flow", "params":{"dpid":"0x01","ofp_multipart_flow":{"table_id":"3"}}, "id": 4}`
+1. find the port number to which the traffic should be mirrored to by using the `ofc.send.multipart.flow` function to list all rules of flow_table 0x04 and searching for the MAC address of the target instance. ex: `{"jsonrpc": "2.0", "method": "ofc.send.multipart.flow", "params":{"dpid":"0x01","ofp_multipart_flow":{"table_id":"3"}}, "id": 4}`. 
 1. use the discovered `port_no`, `dpid` and the provate IP-address of the instance which traffic should be duplicted to construct a openflow definition that will duplicate each network-packet to the target port of the monitoring instance.
 1. add the new flow via the following json-rpc query to the switch into one of the flow tables that are assigned to your experiment (ex. 30,31,32).
 
