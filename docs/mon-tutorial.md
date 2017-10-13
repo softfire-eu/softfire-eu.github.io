@@ -85,7 +85,7 @@ Create the CSAR file as following:
 zip -r monitoring.csar . -x ".*" -x "*/.*"
 ```
 
-Now you have to uploaded this file to the Experiment Manager via GUI, as shown in the following screenshots.
+Now you have to upload the zip file to the Experiment Manager via GUI, as shown in the following screenshots.
 Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) and login with your registered credentials, then click on "Reserve Resource"
 
 ![tutorial Monitor 1](img/Monitor_Tutorial-01.PNG)
