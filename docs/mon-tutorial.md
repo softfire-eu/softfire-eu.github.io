@@ -111,8 +111,8 @@ Now you can access your Zabbix Server opening the URL shown in the picture above
 ![tutorial Monitor 7](img/Monitor_Tutorial-07.PNG)
 
 You can access the Zabbix Server using the following credentials:
-Username: #Admin
-Password: #zabbix
+Username: Admin
+Password: zabbix
 
 ![tutorial Monitor 8](img/Monitor_Tutorial-08.PNG)
 
