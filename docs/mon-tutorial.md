@@ -106,9 +106,7 @@ The Managers will validate the resources, in case you did some mistake they shou
 
 Once deployed, it will take time until reaching the ACTIVE state of the resource. A button on the right enable the automatic refresh of the resources' values or disable it, in the second case you will need to refresh the page. Finally the monitoring resource reaches the ACTIVE state and also the floating ip are shown in the newly created resource section of the experimenter GUI. Note that the floating ip changes for every deployment.
 
-Now you can access your Zabbix Server opening the URL shown in the picture above
-
-http://10.44.57.37/zabbix/index.php
+Now you can access your Zabbix Server opening the URL shown in the picture above (http://10.44.57.37/zabbix/index.php)
 
 ![tutorial Monitor 7](img/Monitor_Tutorial-07.PNG)
 
