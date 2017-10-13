@@ -116,9 +116,11 @@ Username: Admin
 
 Password: zabbix
 
+On succesfull login the Zabbix Dashboard is displayed.
+
 ![tutorial Monitor 8](img/Monitor_Tutorial-08.PNG)
 
-On succesfull login the Zabbix Dashboard is displayed.
+If you wish, you can tailor the Dashboard according to you monitoring needs.
 
 <!---
  Script for open external links in a new tab
