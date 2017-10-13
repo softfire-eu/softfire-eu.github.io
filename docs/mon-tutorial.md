@@ -88,7 +88,17 @@ zip -r monitor.csar . -x ".*" -x "*/.*"
 Now you have to uploaded this file to the Experiment Manager GUI like the following images.
 Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) and click on "Reserve Resource"
 
-![tutorial firewall 1](img/tutorial-xxxxxxx.png)
+![tutorial Monitor 1](img/Monitor_Tutorial-01.PNG)
+
+![tutorial Monitor 2](img/Monitor_Tutorial-02.PNG)
+
+![tutorial Monitor 3](img/Monitor_Tutorial-03.PNG)
+
+![tutorial Monitor 4](img/Monitor_Tutorial-04.PNG)
+
+![tutorial Monitor 5](img/Monitor_Tutorial-05.PNG)
+
+![tutorial Monitor 6](img/Monitor_Tutorial-06.PNG)
 
 xxxxxx
 xxxxxx
