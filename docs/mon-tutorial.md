@@ -8,8 +8,8 @@ This tutorial will guide you through the definition of Monitoring example and to
 Create all the folders needded
 
 ```
-$ mkdir monitor-softfire
-$ cd monitor-softfire
+$ mkdir monitoring-softfire
+$ cd monitoring-softfire
 $ mkdir TOSCA-Metadata
 $ mkdir Definitions
 ```
@@ -82,17 +82,21 @@ all the fields are explained in the [Monitoring manager page](monitoring-manager
 Create the CSAR file:
 
 ```sh
-zip -r monitor.csar . -x ".*" -x "*/.*"
+zip -r monitoring.csar . -x ".*" -x "*/.*"
 ```
 
 Now you have to uploaded this file to the Experiment Manager GUI like the following images.
-Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) and click on "Reserve Resource"
+Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) and login with your registered credentials, then click on "Reserve Resource"
 
 ![tutorial Monitor 1](img/Monitor_Tutorial-01.PNG)
 
 ![tutorial Monitor 2](img/Monitor_Tutorial-02.PNG)
 
+Now you can select the zip file to upload and then click on Start Upload
+
 ![tutorial Monitor 3](img/Monitor_Tutorial-03.PNG)
+
+The Managers will validate the resources, in case you did some mistake they should be shown now. If no errors are shown, you are able to deploy your resources by clicking deploy. Please consider that it takes some seconds to deploy the resource dependening in the experiment definition. Once deployed, it will take time until reaching the ACTIVE state of the resource. A button on the right enable the automatic refresh of the resources' values or disable it, in the second case you will need to refresh the page. Finally the firewall resource reaches the ACTIVE state and also the floating ip are shown in the newly created resource section of the experimenter GUI. Note that the floating ip changes for every deployment.
 
 ![tutorial Monitor 4](img/Monitor_Tutorial-04.PNG)
 
