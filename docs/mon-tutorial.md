@@ -8,9 +8,8 @@ This tutorial will guide you through the definition of Monitoring example and to
 Create all the folders needded
 
 ```
-$ mkdir xxxxx-softfire
-$ cd xxxxx-softfire
-$ mkdir Files
+$ mkdir monitor-softfire
+$ cd monitor-softfire
 $ mkdir TOSCA-Metadata
 $ mkdir Definitions
 ```
@@ -69,14 +68,13 @@ imports:
   - softfire_node_types: "http://docs.softfire.eu/etc/softfire_node_types.yaml"
 topology_template:
   node_templates:
-    f:
-      type: xxxxxxx
+    m:
+      type: MonitoringResource
       properties:
-        resource_id: xxxxxx
-        xxxxx
-        xxxxx
-        xxxxx
-        xxxxx
+        testbed: ericsson
+        lan_name: Zabbix_Lan
+        resource_id: monitor
+
 ```
 
 all the fields are explained in the [Monitoring manager page](monitoring-manager.md)
@@ -84,7 +82,7 @@ all the fields are explained in the [Monitoring manager page](monitoring-manager
 Create the CSAR file:
 
 ```sh
-zip -r xxxxxx.csar . -x ".*" -x "*/.*"
+zip -r monitor.csar . -x ".*" -x "*/.*"
 ```
 
 Now you have to uploaded this file to the Experiment Manager GUI like the following images.
