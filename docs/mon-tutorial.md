@@ -108,6 +108,8 @@ Once deployed, it will take time until reaching the ACTIVE state of the resource
 
 Now you can access your Zabbix Server opening the URL shown in the picture above
 
+http://10.44.57.37/zabbix/index.php
+
 ![tutorial Monitor 7](img/Monitor_Tutorial-07.PNG)
 
 You can access the Zabbix Server using the following credentials:
