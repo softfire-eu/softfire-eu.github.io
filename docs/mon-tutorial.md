@@ -92,18 +92,21 @@ Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) a
 
 ![tutorial Monitor 2](img/Monitor_Tutorial-02.PNG)
 
-Now you can select the zip file to upload and then click on Start Upload
-
 ![tutorial Monitor 3](img/Monitor_Tutorial-03.PNG)
 
-The Managers will validate the resources, in case you did some mistake they should be shown now. If no errors are shown, you are able to deploy your resources by clicking deploy. Please consider that it takes some seconds to deploy the resource dependening in the experiment definition. Once deployed, it will take time until reaching the ACTIVE state of the resource. A button on the right enable the automatic refresh of the resources' values or disable it, in the second case you will need to refresh the page. Finally the firewall resource reaches the ACTIVE state and also the floating ip are shown in the newly created resource section of the experimenter GUI. Note that the floating ip changes for every deployment.
+Now you can select the zip file to upload and then click on Start Upload
 
 ![tutorial Monitor 4](img/Monitor_Tutorial-04.PNG)
 
 ![tutorial Monitor 5](img/Monitor_Tutorial-05.PNG)
 
+The Managers will validate the resources, in case you did some mistake they should be shown now. If no errors are shown, you are able to deploy your resources by clicking deploy. Please consider that it takes some seconds to deploy the resource dependening in the experiment definition.
+
 ![tutorial Monitor 6](img/Monitor_Tutorial-06.PNG)
 
+Once deployed, it will take time until reaching the ACTIVE state of the resource. A button on the right enable the automatic refresh of the resources' values or disable it, in the second case you will need to refresh the page. Finally the monitoring resource reaches the ACTIVE state and also the floating ip are shown in the newly created resource section of the experimenter GUI. Note that the floating ip changes for every deployment.
+
+Now you can access your Zabbix Server opening the URL shown in the picture above
 xxxxxx
 xxxxxx
 xxxxxx
