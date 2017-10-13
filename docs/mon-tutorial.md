@@ -14,7 +14,7 @@ $ mkdir TOSCA-Metadata
 $ mkdir Definitions
 ```
 
-now we need to create the necessary files.
+Then you need to create the necessary files.
 
 ```
 touch TOSCA-Metadata/TOSCA.meta
@@ -39,7 +39,7 @@ Entry-Definitions: Definitions/experiment.yaml
 
 If you wish, you can change the Created-By property.
 
-then we do the same with TOSCA-Metadata/Metadata.yaml that contains Metadata info of the experiment
+Then you do the same with TOSCA-Metadata/Metadata.yaml, that contains Metadata info of the experiment.
 
 ```
 vim TOSCA-Metadata/Metadata.yaml
@@ -54,7 +54,7 @@ end-date: "2017-08-11"
 ```
 
 Change start-date and end-date fields according to your experiment.
-now we can write the definition of the experiment:
+Now you can write the definition of the experiment:
 
 ```sh
 vim Definitions/experiment.yaml
@@ -77,15 +77,15 @@ topology_template:
 
 ```
 
-all the fields are explained in the [Monitoring manager page](monitoring-manager.md)
+All fields are explained in the [Monitoring manager page](monitoring-manager.md)
 
-Create the CSAR file:
+Create the CSAR file as following:
 
 ```sh
 zip -r monitoring.csar . -x ".*" -x "*/.*"
 ```
 
-Now you have to uploaded this file to the Experiment Manager GUI like the following images.
+Now you have to uploaded this file to the Experiment Manager via GUI, as shown in the following screenshots.
 Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) and login with your registered credentials, then click on "Reserve Resource"
 
 ![tutorial Monitor 1](img/Monitor_Tutorial-01.PNG)
@@ -94,7 +94,7 @@ Go to [experimenter page](http://experiment.vpn.softfire.eu:5080/experimenter) a
 
 ![tutorial Monitor 3](img/Monitor_Tutorial-03.PNG)
 
-Now you can select the zip file to upload and then click on Start Upload
+Now you can select the zip file to upload and then click on Start Upload.
 
 ![tutorial Monitor 4](img/Monitor_Tutorial-04.PNG)
 
