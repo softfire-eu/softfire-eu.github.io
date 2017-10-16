@@ -1,6 +1,6 @@
 # Monitoring Manager
 The Monitoring Manager provides proper resources to experimenters requiring monitoring service.
-For experimenters requiring monitoring services, the Monitoring Manager provides, via OpenBaton, the
+For experimenters requiring monitoring services, the Monitoring Manager provides, via Openstack, the
 installation of an additional Virtual Machine pre-configured with Zabbix
 Server.
 All Virtual Machines requested by the experimenter will be installed with Zabbix Agent, per-configured to
@@ -10,26 +10,31 @@ server according the specific needs of the experimenter.
 ## Monitoring resource
 
 
-The MonitoringResource node type is defined as follows, as per node types page: [node_types]:
+The MonitoringResource node type is defined as follows, as per node types page: [node_types]:
 
 ```yaml
 MonitoringResource:
   derived_from: eu.softfire.BaseResource
-  description: "Defines the Zabbix monitoring resource requested"
-  properties:
-    testbed:
-      type: string
-      required: false
-      description: "Location where to deploy the monitoring server"
+  description: "Defines the Zabbix monitoring resource requested"
+  properties:
+    testbed:
+      type: string
+      required: true
+      description: "Location where to deploy the monitoring server"
+    lan_name:
+      type: string
+      required: true
+      description: "Openstack lan name where to deploy the monitoring server"
 ```
 
-This node type has a single property:
+This node type has two properties:
 
 * **testbed**: in case the experimenter requires deployment of VMs on more than one testbed is it possible to define on which testbed the Zabbix Server VM will be deployed
 
- 
+* **lan_name**: it possible to define on which Openstack lan the Zabbix Server VM will be deployed
+ 
 <!--
-References:  
+References:  
 -->
 
 
