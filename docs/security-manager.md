@@ -169,7 +169,7 @@ This sequence diagram specifies the operations performed by the Security Manager
 [suricata]:suricata.md
 [pfsense]:pfsense.md
 [docu_url]:http://docs.softfire.eu/security-manager/
-[sequence]:security-manager.png
+[sequence]:img/security-manager.png
 
 
 
