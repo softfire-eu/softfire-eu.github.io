@@ -48,46 +48,89 @@ SecurityResource:
     derived_from: eu.softfire.BaseResource
     description: "Defines a Security agent to be deployed. More details on [docu_url]"
     properties:
+
         resource_id:
             type: string
-            required: true
+            required: trueù
+
         testbed:
             type: string
             required: false
-        want_agent:
-            type: boolean
-            required: true
-        lan_name:
+
+        lan_name:This node type
             type: string
             required: false
+
+        wan_name: 
+            type: string
+            required: false
+            description: valid for pfsense
+
+        ssh_key:This node type
+            type: string
+            required: false
+            description: valid for firewall and suricata
+
+        want_agent:
+            type: boolean
+            required: false
+            description: valid for firewall and suricata
+       
         logging:
             type: boolean
-            required: true
+            required: false
+            description: valid for firewall and suricata
+        
         allowed_ips:
             type: list
             entry_schema:
-                type: string
+                type: stringThis node type
             required: false
+            description: valid for firewall
+        
         denied_ips:
             type: list
             entry_schema:
                 type: string
             required: false
+            description: valid for firewall
+        
         default_rule:
             type: string
-            required: true
+            required: false
+            description: valid for firewall
+        
+        rules: 
+            type: 
+            required: false
+            description: valid for suricata
 ```
 
-This node type has different properties:
+Every node has different properties. Here they are listed for each type of resource:
 
-* **resource_id**: Defines the type of the Security Resource. To date only [firewall][firewall] is accepted
+**resource_id: [firewall][firewall]**
+[comment]: <> (* **resource_id**: Defines the type of the Security Resource. To date only [firewall][firewall] is accepted)
 * **testbed**: Defines where to deploy the Security Resource selected. It is ignored if want_agent is True
 * **want_agent**: Defines if the Experimenter wants the security resource to be an agent directly installed on the VM that he wants to monitor
+* **ssh_key**: Defines the SSH public key to be pushed on the VM in order to be able to log into it
 * **lan_name**: Select the network on which the VM is deployed (if __want_agent__ is False). If no value is entered, __softfire-internal__ is chosen
 * **logging**: Defines if the Experimenter wants the security resource to send its log messages to a collector and he wants to see them on a dashboard
 * **allowed_ips**: List of IPs (or CIDR  masks) allowed by the firewall. [allow from *IP*]
 * **denied_ips**: List of IPs (or CIDR masks) denied by the firewall [deny from *IP*]
 * **default_rule**: Default rule applied by the firewall (allow/deny)
+
+**resource_id: [suricata][suricata]**
+* **testbed**: Defines where to deploy the Security Resource selected. It is ignored if want_agent is True
+* **want_agent**: Defines if the Experimenter wants the security resource to be an agent directly installed on the VM that he wants to monitor
+* **ssh_key**: Defines the SSH public key to be pushed on the VM in order to be able to log into it
+* **lan_name**: Select the network on which the VM is deployed (if __want_agent__ is False). If no value is entered, __softfire-internal__ is chosen
+* **logging**: Defines if the Experimenter wants the security resource to send its log messages to a collector and he wants to see them on a dashboard
+* **rules**: Defines the list of rules to be configured in Suricata VM. These rules follow the syntax 
+
+**resource_id: [pfsense][pfsense]**
+* **testbed**: Defines where to deploy the Security Resource selected
+* **wan_name**: Selects the network on which the first interface of the VM is attached. It is configured as WAN on pfSense. It must be a network connected to the SoftFIRE-public network 
+* **lan_name**: Selects the network on which the second interface of the VM is attached. It is configured as LAN on pfSense
 
 
 ##### Testbed Names
@@ -98,7 +141,6 @@ This node type has different properties:
 | ericsson | ERICSSON testbed, Rome           |
 | surrey   | SURREY testbed, Surrey           |
 | ads      | ADS testbed, Rome                |
-| dt       | Deutsche Telekom testbed, Berlin |
 
 ## Technical details
 This sequence diagram specifies the operations performed by the Security Manager based on the inputs received by the Experimenter.
@@ -112,6 +154,8 @@ This sequence diagram specifies the operations performed by the Security Manager
 
 [node_types]:etc/softfire_node_types.yaml
 [firewall]:firewall.md
+[suricata]:suricata.md
+[pfsense]:pfsense.md
 [docu_url]:http://docs.softfire.eu/security-manager/
 [sequence]: img/security-manager.png
 
@@ -120,7 +164,7 @@ This sequence diagram specifies the operations performed by the Security Manager
  Script for open external links in a new tab
 -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript" charset="utf-This node type8">
       // Creating custom :external selector
       $.expr[':'].external = function(obj){
           return !obj.href.match(/^mailto\:/)

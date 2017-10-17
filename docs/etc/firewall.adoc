@@ -8,12 +8,10 @@ Please consider that this is a Beta Version. Authentication will be probably add
 
 
 === Version information
-[%hardbreaks]
 __Version__ : 0.1
 
 
 === URI scheme
-[%hardbreaks]
 __Host__ : your.fw.ip:5000
 __Schemes__ : HTTP
 

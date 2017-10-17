@@ -22,6 +22,8 @@ pages:
                 - Security Manager:
                   - General: 'security-manager.md'
                   - Firewall: 'firewall.md'
+                  - Suricata NIPS: 'suricata.md'
+                  - pfSense router/FW: 'pfsense.md'
                 - Monitoring Manager: 'monitoring-manager.md'
         - Tutorials:
                 - Nfv Tutorial:
