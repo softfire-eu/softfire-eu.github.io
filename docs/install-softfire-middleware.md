@@ -39,7 +39,7 @@ Then cd into the directory and run the bootstrap commands:
 
 ```text
 $-> cd bootstrap
-$-> ./boostrap.sh
+$-> ./bootstrap.sh
 
 ./bootstrap.sh <action>
 
@@ -61,7 +61,7 @@ purge:        completely remove the SoftFIRE Middleware
 For installing the source code just run:
 
 ```sh
-$-> ./boostrap.sh codeinstall
+$-> ./bootstrap.sh codeinstall
 ```
 
 ## Install the python packages
@@ -69,7 +69,7 @@ $-> ./boostrap.sh codeinstall
 For installing the python packages just run:
 
 ```sh
-$-> ./boostrap.sh install
+$-> ./bootstrap.sh install
 
 ```
 
@@ -87,13 +87,13 @@ After running these commands the script will:
 If everything went well, you are able to start the SoftFIRE Middleware by running
 
 ```sh
-$-> ./boostrap.sh codestart
+$-> ./bootstrap.sh codestart
 ```
 
 in case you installed via source code, or
 
 ```sh
-$-> ./boostrap.sh start
+$-> ./bootstrap.sh start
 ```
 
 in case you installed via python packages.
