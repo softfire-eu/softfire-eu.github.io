@@ -67,6 +67,8 @@ extra:
       link: 'https://hub.docker.com/r/softfire/softfire-middleware/'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company-beta/15145251/'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/channel/UCYEe_8W-0vJ97-1OXsSjU8A'
 
 repo_url: https://github.com/SoftFIRE-eu/experiment-manager
 repo_name: SoftFIRE Experiment Manager
