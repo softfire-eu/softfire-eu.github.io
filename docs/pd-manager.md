@@ -8,9 +8,16 @@ The PhysicalResource node type is defined as follows, as per [node types page][n
 PhysicalResource:
     derived_from: eu.softfire.BaseResource
     description: "Defines a Physical resource request in the SoftFIRE Middleware"
+	properties:
+      resource_name:
+        required: true
+        type: string
 ```
 
-As such, the only parameter that needs to be specified is the **resource_id** which is derived from the BaseResource type. 
+As such, the only parameters that need to be specified are the **resource_name**, as well as the **resource_id** which is a required parameter of the BaseResource type.
+
+!!! note
+    Due to the limited number of physical resources, it is recommended to specify a start and end date as defined in the BaseResource type, to avoid unnecessarily holding up resources for an extended period of time. Failure to specify this may result in your experiment being rejected.
 
 ## UE Physical Resource
 ### UE Reservation
@@ -20,6 +27,9 @@ In the case of a UE reservation, the resource_id is **surrey-ue**. Therefore, re
 <resource-name>:
 	properties:
 		resource_id: surrey-ue
+		resource_name: <resource-name>
+		start-date: <YYYY-MM-DD>
+		end-date: <YYYY-MM-DD>
 	type: PhysicalResource
 ```
 
