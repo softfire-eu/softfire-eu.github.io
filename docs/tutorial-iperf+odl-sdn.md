@@ -6,9 +6,9 @@ Take your _experiment.yaml_ file, and write something like this :
 ```yaml
 
 ---
-sdn_ads:
+sdn_ericsson:
       properties:
-        resource_id: sdn-controller-odl-ads
+        resource_id: sdn-controller-odl-ericsson
       type: SdnResource
 ```
 
@@ -29,13 +29,13 @@ topology_template:
       properties:
         resource_id: iperf
         nsd_name: The Iperf NSD
-        testbeds: { ANY: ads }
+        testbeds: { ANY: ericsson }
         ssh_pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNo3y5JdeIzeIBbpQEEtjn/BgBjTzyAo7HeSPAy9tZfXpOt0P/rGaflRSiAOTk+P+kHs9GMFQrA3nfk6z9Ass18BTUmtNvovyQphqcEAAAADAQABAAABAQDNDtULVF+n3/znwENEga+5Fl6qvVzWWMepb02q41VvaZy/NoMHnw9+NwNiM1BY9AAy2+Z6AIg8CJ1EvIZTPlD7a7RveSjLHZLuVeBGZdOky1EQf+m8VpPvM2axrdtluch/bJXPKVJQhF7Wc4HSFxdAhxhGPSeyNMPqQ/EcevZQMic0qJ82GKsWFm5M+Fy4x1wsOG5aJ918Za29aiKMrUv8Borod7b2YCBb"
 
 
-    sdn_ads:
+    sdn_ericsson:
       properties:
-        resource_id: sdn-controller-odl-ads
+        resource_id: sdn-controller-odl-ericsson
       type: SdnResource
 
 
@@ -44,7 +44,7 @@ tosca_definitions_version: tosca_simple_yaml_1_0
 
 after that create the CSAR file, upload to the Experiment Manager GUI.
 If there are no mistakes, you are able to deploy your resources by clicking deploy.
-Once deployed, in the details of the experiment a section is displayed for sdn-controller-odl-ads
+Once deployed, in the details of the experiment a section is displayed for sdn-controller-odl-ericsson
 
 !!! Note
     To create, upload a CSAR file and deploy your resources view a [tutorial](http://docs.softfire.eu/nfv-tutorial-iperf/).
@@ -53,7 +53,7 @@ The value contains somethings like this :
 ```json
 
 {
-    "resource_id": "sdn-controller-odl-ads",
+    "resource_id": "sdn-controller-odl-ericsson",
     "token": "x1x1x1x1x1x1x1x1x1x1x1x1x",
     "flow-table-range": [
         2,
