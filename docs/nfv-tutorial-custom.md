@@ -146,7 +146,7 @@ The *TOSCA-Metadata/Metadata.yaml* file contains information about the NSD.
 name: Ubuntu Example
 description: Ubuntu Example.
 provider: TUB
-nfvo_version: 3.2.0
+nfvo_version: 5.0.1
 image:
     upload: false
     names:
@@ -172,7 +172,7 @@ description: "NS for deploying a clean ubuntu machine"
 metadata:
   ID: Ubuntu
   vendor: TUB
-  version: "3.2.0"
+  version: "5.0.1"
 relationships_template:
   rel1:
     parameters:
@@ -304,7 +304,7 @@ touch Scripts/ubuntuclient/start.sh
 touch Scripts/ubuntuclient/install.sh
 ```
 
-The subfolder names correspond to the VNFD keys in the *Definitions/ubuntu.yaml* file.
+The subfolder names correspond to the VNFD types in the *Definitions/ubuntu.yaml* file.
 
 Here are the contents of the script files:
 
