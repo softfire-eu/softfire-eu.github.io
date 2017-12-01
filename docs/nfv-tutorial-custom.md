@@ -122,14 +122,14 @@ cd Files
 and create the folder structure and the necessary files:
 
 ```sh
-mkdir TOSCA-Metadata
+mkdir tosca-metadata
 mkdir Scripts
 mkdir Definitions
-touch TOSCA-Metadata/TOSCA.meta
-touch TOSCA-Metadata/Metadata.yaml
+touch tosca-metadata/TOSCA.meta
+touch tosca-metadata/Metadata.yaml
 ```
 
-In the *TOSCA-Metadata/TOSCA.meta* file reside TOSCA related meta information.
+In the *tosca-metadata/TOSCA.meta* file reside TOSCA related meta information.
 
 ```sh
 TOSCA-Meta-File-Version: 1.0
@@ -140,7 +140,7 @@ Entry-Definitions: Definitions/ubuntu.yaml
 
 You can modify the *Created-By* property and the *Entry-Definition*, which points to the TOSCA file describing the NSD.
 
-The *TOSCA-Metadata/Metadata.yaml* file contains information about the NSD.
+The *tosca-metadata/Metadata.yaml* file contains information about the NSD.
 
 ```yaml
 name: Ubuntu Example
@@ -296,7 +296,7 @@ Let\'s create them.
 ```sh
 mkdir -p Scripts/ubuntuserver
 mkdir -p Scripts/ubuntuclient
-touch Scripts/ubuntuserver/ubuntu_relation.sh
+touch Scripts/ubuntuserver/ubuntuclient_relation.sh
 touch Scripts/ubuntuserver/start.sh
 touch Scripts/ubuntuserver/install.sh
 touch Scripts/ubuntuclient/ubuntuserver_relation.sh
@@ -327,7 +327,7 @@ echo "like this one..."
 
 This is the first script executed on the server. Here you can install software you need later.
 
-###### Scripts/ubuntuserver/ubuntu_relation.sh
+###### Scripts/ubuntuserver/ubuntuclient_relation.sh
 
 ```sh
 #!/bin/bash
