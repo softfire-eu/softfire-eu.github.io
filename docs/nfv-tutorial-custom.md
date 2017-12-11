@@ -193,6 +193,8 @@ relationships_template:
     type: tosca.nodes.relationships.ConnectsTo
 topology_template:
   node_templates:
+    softfire-internal:
+      type: tosca.nodes.nfv.VL
     CP1:
       properties:
         floatingIP: random
