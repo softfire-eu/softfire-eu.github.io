@@ -65,9 +65,9 @@ imports:
 topology_template:
   node_templates:
     zabbix_server:
-      type: MonitoringNode
+      type: MonitoringResource
       properties:
-        resource_id: monitoring
+        resource_id: monitor
         testbed: ericsson
 
     sdn_ericsson:

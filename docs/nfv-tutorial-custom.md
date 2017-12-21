@@ -69,7 +69,7 @@ Of course you can change the experiment\'s name, start and end date to your need
 In the last file you specify the real definition of the experiment.
 
 ```sh
-vim Definition/experiment.yaml
+vim Definitions/experiment.yaml
 ```
 
 Here is an example for the file's content:
@@ -122,14 +122,14 @@ cd Files
 and create the folder structure and the necessary files:
 
 ```sh
-mkdir tosca-metadata
+mkdir TOSCA-Metadata
 mkdir Scripts
 mkdir Definitions
-touch tosca-metadata/TOSCA.meta
-touch tosca-metadata/Metadata.yaml
+touch TOSCA-Metadata/TOSCA.meta
+touch TOSCA-Metadata/Metadata.yaml
 ```
 
-In the *tosca-metadata/TOSCA.meta* file reside TOSCA related meta information.
+In the *TOSCA-Metadata/TOSCA.meta* file reside TOSCA related meta information.
 
 ```sh
 TOSCA-Meta-File-Version: 1.0
@@ -140,7 +140,7 @@ Entry-Definitions: Definitions/ubuntu.yaml
 
 You can modify the *Created-By* property and the *Entry-Definition*, which points to the TOSCA file describing the NSD.
 
-The *tosca-metadata/Metadata.yaml* file contains information about the NSD.
+The *TOSCA-Metadata/Metadata.yaml* file contains information about the NSD.
 
 ```yaml
 name: Ubuntu Example
@@ -150,7 +150,7 @@ nfvo_version: 5.0.1
 image:
     upload: false
     names:
-            - ubuntu_14.04
+            - Ubuntu-16.04
 vim_types:
     - openstack
 ```
