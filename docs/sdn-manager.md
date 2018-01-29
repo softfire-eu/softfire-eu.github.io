@@ -1,22 +1,22 @@
 # SDN Manager
 
-The SDN manager is in charge of managing access to the SDN resources provided by some testbeds.
+The SDN Manager is in charge of managing access to the SDN resources provided by some testbeds.
 
-The SDN manager keeps track of the API endpoints towards the SDN proxy services.
+The SDN Manager keeps track of the API endpoints towards the SDN proxy services.
 
-The SDN manager uses the following Experiment LifeCycles:
+The SDN Manager uses the following Experiment Lifecycles:
 
  * List
  * Provision
  * Release
 
-Upon list resources the SDN manager returns a list of available SDN endpoints to the Experimenter.
+Upon list resources the SDN Manager returns a list of available SDN endpoints to the Experimenter.
 
-To actually use an SDN resopurce in an experiment a SDNResource has to be included into the experiment descripton that matches an resource id returned by list resources.
+To actually use an SDN resopurce in an experiment an SDNResource has to be included in the experiment descripton that matches a resource ID returned by list resources.
 
 ![svg](img/sdn-man-seq-dia.svg)
 
-## SDN Resource type
+## SDN Resource Type
 
 The SdnResource node type is defined as follows, as per [node types page][node_types]:
 
@@ -36,9 +36,9 @@ SdnResource:
 
 This Resource has the following properties:
 
-* **resource_id**: Defines the type of the SDN Resource. Depending on this id the testbed that is used to provide the SDN resource implicit is chosen.
+* **resource_id**: Defines the type of the SDN Resource. Depending on this ID the testbed that is used to provide the SDN resource implicit is chosen.
 
-## Assigned Resource data
+## Assigned Resource Data
 
 After successful instantiation of the resource the experimenter receives an JSON object with the following information to actually use the provided SDN resource.
 
@@ -51,10 +51,10 @@ List of resource objects
 
 ## Currently supported SDN endpoints
 
-Each testbed can provide a different imlementation of SDN resources. The current version of the SoftFIRE sdn middleware provides access to two types of SDN controllers:
+Each testbed can provide a different imlementation of SDN resources. The current version of the SoftFIRE SDN middleware provides access to two types of SDN controllers:
 
-* The Frauhofer FOKUS testbed uses its own Implementation of an SDN controller named [OpenSDNCore][opensdncore-www].
-  Specification of the provided API features can be found in its [Documentation pages][opensdncore]
+* The Frauhofer FOKUS testbed uses its own implementation of an SDN controller named [OpenSDNCore][opensdncore-www].
+  Specification of the provided API features can be found in its [documentation pages][opensdncore]
 * The Ericsson testbed provides access to [OpenDayLight][odl-www] SDN controllers.
 
 <!--
