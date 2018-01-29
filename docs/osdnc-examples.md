@@ -19,7 +19,7 @@ Fraunhofer FOKUS provides two datacenter as part of its testbed for the SoftFIRE
 	"URI": "http://172.20.30.5:8001/api"
 }
 ```
-1. Copy the `token` value and navigate to the provided `URI` using a web browser. The website provides the needed information and an simple user interface to run JSON-RPC request against the OpenSDNcore [Northbound-API](opensdncore-nb-api). Use the provided token value to identify your experiment when doing API requests.
+1. Copy the `token` value and navigate to the provided `URI` using a web browser (please remove the /api at the end). The website provides the needed information and an simple user interface to run JSON-RPC request against the OpenSDNcore [Northbound-API](opensdncore-nb-api). Use the provided token value to identify your experiment when doing API requests.
 
 ## Port Mirroring tutorial
 The following example will utilize a custom flow entry to duplicate all network traffic directed at a Virtual Machine and forward it to the network interface of another Virtual Machine.
