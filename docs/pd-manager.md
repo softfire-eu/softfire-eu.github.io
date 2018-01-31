@@ -49,3 +49,8 @@ Using these credentials, the experimenter can log in to TeamViewer and view the 
 [![UE Reservation - TeamViewer](img/ue-reservation-tv.png)](img/ue-reservation-tv.png)
 
 To connect to a UE, click the "Connect" button. If TeamViewer is installed on your system, the connection to the UE will be displayed using the installed client. Otherwise, it will be displayed using a brower-based TeamViewer client. Once connected, the UE can be controlled by the mouse as if physically in front of the device.
+
+
+
+
+[node_types]:etc/softfire_node_types.yaml
