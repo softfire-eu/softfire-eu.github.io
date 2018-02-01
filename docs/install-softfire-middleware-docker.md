@@ -119,6 +119,9 @@ Now it is time to deploy:
 HOST_IP=<youriphere> docker-compose -f softfire-middleware.yaml up -d
 ```
 
+!!! Note
+    <yourip> stands for the ip where the rabbitmq container runs, the VMs will contact this ip when registering to Open Baton.
+
 The Experiment Manager is available at http://localhost:5080. You can access the admin portal by using admin/admin.
 
 Please bear in mind that each container takes different time to be up and running, the Experiment Manager usually is up before the NFVO. Please wait until you can reach localhost:8080.
