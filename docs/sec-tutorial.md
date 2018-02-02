@@ -114,7 +114,7 @@ Or add new rules.
 
 ![tutorial firewall 6](img/tutorial-security-manager-firewall6.png)
 
-You can find the complete list of API on [this page](etc/firewall_api.md). 
+You can find the complete list of API on [this page](etc/firewall_api.adoc). 
 
 If you specified *logging: true*, then you can go to *dashboard_log_link* to see some statistics about the rules that you want to write log messages. Here an example of the dashboard. 
 
