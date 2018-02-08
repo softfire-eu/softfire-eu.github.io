@@ -16,10 +16,10 @@ Each resource is available to all the Experimenters. Some of them are preconfigu
 | Resource | Description |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NfvResource | The NFV Resource represents a Network Service in the ETSI NFV terminology. It can be one of the provided by the SoftFIRE Middleware or you can define your own that will be deployed in the SoftFIRE platform. More details can be found in the [NFV Manager](nfv-manager.md) page. The limitation on the virtual resources applies on this kind of resource. |
-| SdnResource | The SDN Resource represents a SDN endpoint api, it can be an ODL endpoint or an OpenSDNCore endpoint protected by password. There is no limitation on usage of this resource. More details can be found on the [SDN Manager](sdn-manager.md) page |
+| SdnResource | The SDN Resource represents a SDN endpoint api, it can be an ODL endpoint or an OpenSDNCore endpoint protected by password. There is no limitation on usage of this resource. More details can be found on the [SDN Manager](sdn-manager.md) page. |
 | SecurityResource | The Security Resource provides a firewall or a set of scripts for configuring a firewall. In the first case, The limitation on the virtual resources will be applied. |
-| MonitoringResource | The Monitoring Resource provides a Zabbix Server to the deployed experiment and configure the Nfv Resource to register to this server. There can only be one monitoring server per deployment |
-| PhysicalResource | The Physical Resources only provides reservation of a physical cell and can be only accessed in the location of the cell |
+| MonitoringResource | The Monitoring Resource provides a Zabbix Server to the deployed experiment and configure the Nfv Resource to register to this server. There can only be one monitoring server per deployment. |
+| PhysicalResource | The Physical Resource provides reservation of a physical cell, which can be only accessed in the location of the cell. It also provides remote access to UEs located at the surrey test bed. |
 
 
 ## Virtual Resource limits
