@@ -29,6 +29,7 @@ pages:
                 - Nfv Tutorial:
                   -  Iperf: 'nfv-tutorial-iperf.md'
                   -  Custom: 'nfv-tutorial-custom.md'
+                  -  Monitoring-VNF: 'nfv-tutorial-monitoring-vnf.md'
                 - Sdn Tutorial:
                   - Sdn : 'sdn-tutorial.md'
                   - OpenSDNCore: 'osdnc-examples.md'
