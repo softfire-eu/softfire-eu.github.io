@@ -137,7 +137,8 @@ vim_types:
 
 Here are the contents of the script files:
 
-###### Scripts/client/install.sh and ###### Scripts/server/install.sh
+###### Scripts/client/install.sh 
+###### Scripts/server/install.sh
 ```sh
 #!/bin/bash
 
@@ -157,7 +158,8 @@ echo " iperf is installed"
 ```
 This is the first script executed on the iperf-server and iperf-client VNFs.
 
-###### Scripts/client/zabbix_configure_agent.sh and ###### Scripts/server/zabbix_configure_agent.sh
+###### Scripts/client/zabbix_configure_agent.sh 
+###### Scripts/server/zabbix_configure_agent.sh
 ```sh
 #!/bin/bash
 
