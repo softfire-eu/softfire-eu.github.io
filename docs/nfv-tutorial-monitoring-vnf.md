@@ -1,7 +1,7 @@
 # Nfv tutorial Monitoring-VNF
 
 This tutorial will show you how to create a monitoring resources as a Virtual Network Funtion (VNF).
-The Network Service that we write will be very simple and contain of three VNFs, one acting as an iperf-server, one acting as an iperf-client and one acting as a monitoring resource (Zabbix-server).
+The Network Service that we write will be very simple and contains three VNFs, one acting as an iperf-server, one acting as an iperf-client and one acting as a monitoring resource (Zabbix-server).
 
 This tutorial focuses on creating the Network Service Descriptor (NSD) which you can use in your experiement. 
 
@@ -12,7 +12,7 @@ This tutorial focuses on creating the Network Service Descriptor (NSD) which you
 
 ## Defining the Network Service
   
-We are assuming that you know how to create a custom NFV resource from the NFV cutom tutorial, so we will focus on the main differences that you should consider when defining the network service.
+We are assuming that you know how to create a custom NFV resource from the NFV custom tutorial, so we will focus on the main differences that you should consider when defining the network service.
 
 !!! Note
     In-depth information about how to write a NSD with TOSCA and build a CSAR file with it can be found [here][openbaton-csar-tutorial].
@@ -46,9 +46,9 @@ The structure of the zabbix server VNF descriptor in the nsd yaml file should be
               - install.sh
 ```
 
-The most important parameters should be configured in the zabbix server VNF descriptor example are: type, ConfigurationParameters, and the lifecycle INSTANTIATE script (install.sh) to install and configure the zabbix server.
+The most important parameters should be configured in the zabbix server VNF descriptor example are: *type*, *ConfigurationParameters*, and the *lifecycle INSTANTIATE* script (*install.sh*) to install and configure the zabbix server.
 
-For all other VNFs who will need to be monitored, a lifecycle event CONFIGURE script (zabbix_configure_agent.sh) should be added to install and configure zabbix agent as shown in example below for the iperf-client:
+For all other VNFs who will need to be monitored, a lifecycle event *CONFIGURE* script (zabbix_configure_agent.sh) should be added to install and configure zabbix agent as shown in example below for the iperf-client:
 
 ```yaml
     iperf-client:
@@ -87,10 +87,12 @@ relationships_template:
         - softfire-internal_floatingIp
         - name
 ```
+The above relationship should be replicated with all other VNFs (iperf-server VNF in this example) that you need to monitor.
 
-For the relation dependency, the zabbixserver should be the source and other VNFs should be the target. Also adding the floating ip and the name paramaters is a must, as the zabbix_agent_configuration script will be based on them.
 
-For this solution, Ubuntu-14.04 image should be used for the zabbix-server VNF. That can be configured in the nsd yaml in the VDU part by adding the artifacts paramter including the image file required as shown in the example below. This way will add more flexibility in using different images per the VNFs.
+For the relation dependency, the zabbixserver should be the source and other VNFs should be the target. Also adding the floating ip and the name parameters is a must, as the zabbix_agent_configuration script will be based on them.
+
+For this solution, Ubuntu-14.04 image should be used for the zabbix-server VNF that can be configured in the nsd yaml in the VDU part by adding the artifacts parameter including the image file required as shown in the example below. This way will add more flexibility in using different images per VNFs.
 
 ```yaml
     VDU2: # This VDU is used by other VNF
@@ -135,7 +137,7 @@ vim_types:
 
 ### The required Scripts files:
 
-Here are the contents of the script files:
+Here are the contents of the scripts' files:
 
 ###### Scripts/client/install.sh 
 ###### Scripts/server/install.sh
@@ -158,8 +160,11 @@ echo " iperf is installed"
 ```
 This is the first script executed on the iperf-server and iperf-client VNFs.
 
+This following scripts are executed for configuring the zabbix-agent for the iperf-server and iperf-client VNFs.
+
 ###### Scripts/client/zabbix_configure_agent.sh 
 ###### Scripts/server/zabbix_configure_agent.sh
+
 ```sh
 #!/bin/bash
 
@@ -177,10 +182,9 @@ sudo sed -i -e "s/ServerActive=127.0.0.1/ServerActive=$MONITORING_IP:10051/g" -e
 sudo service zabbix-agent restart
 echo "finished installing zabbix-agent!"
 ```
-This is the second script executed for configuring the zabbix-agent for the iperf-server and iperf-client VNFs.
 This script uses the values passed by the dependency to configure the zabbix-agent, e.g. the zabbix-server configuration parameters and floating IP address.
 
-The scripts needed to install zabbix-server are:
+The scripts below are needed to install zabbix-server:
 
 ###### Scripts/zabbix/install.sh 
 ```sh
