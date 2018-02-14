@@ -107,9 +107,6 @@ modify the file in order to match your openstack endpoint.
 !!! Note
     please let as key _fokus_ since it is needed to be one of the SoftFIRE testbed names.
 
-### Sdn Manager
-
-Coming soon!
 
 ## Deploy!
 
