@@ -1,10 +1,11 @@
-[![Build Status](https://travis-ci.org/softfire-eu/softfire-eu.github.io.svg?branch=sitecode)](https://travis-ci.org/softfire-eu/softfire-eu.github.io)
 
   <img src="https://www.softfire.eu/wp-content/uploads/SoftFIRE_Logo_Fireball-300x300.png" width="120"/>
 
   Copyright © 2016-2018 [SoftFIRE](https://www.softfire.eu/) and [TU Berlin](http://www.av.tu-berlin.de/next_generation_networks/).
   Licensed under [Apache v2 License](http://www.apache.org/licenses/LICENSE-2.0).
   
+[![Build Status](https://travis-ci.org/softfire-eu/softfire-eu.github.io.svg?branch=sitecode)](https://travis-ci.org/softfire-eu/softfire-eu.github.io)
+
 # softfire-eu.github.io
 This repository contains the documentation for the SoftFIRE framework hosted at http://docs.softfire.eu
 
