@@ -82,6 +82,38 @@ After running these commands the script will:
 1. downloading the source code or installing python packages of all the managers (depending on what installation procedure you chose)
 1. downloading configuration files
 
+## Configuration
+
+Each manager has its own configuration. Some are very simple some are more complex. You can find each manager configuration under the `etc` folder. You can tune them as you like. Most of the configuration files can be updated without stopping the middleware.
+First of all, change the `etc/openstack-credentials.json` file.
+
+```sh
+vim etc/openstack-credentials.json
+```
+modify the file in order to match your openstack endpoint.
+
+!!! Note
+    At the moment only v3 is supported
+
+```json
+{
+  "fokus": {
+    "username": "admin",
+    "password": "password",
+    "auth_url": "http://openstack:5000/v3",
+    "ext_net_name": "whatever",
+    "admin_tenant_name": "admin",
+    "allocate-fip": 0,
+    "api_version": 3,
+    "admin_project_id": "ea45bf4462864832a75ece4c4cc33c11",
+    "user_domain_name": "default"
+  }
+}
+```
+
+!!! Note
+    please let key as _fokus_ since it is needed to be one of the SoftFIRE testbed names.
+
 ## Start the Middleware
 
 If everything went well, you are able to start the SoftFIRE Middleware by running
@@ -104,21 +136,6 @@ In both cases, a tmux session will run in background and you can check the outpu
 tmux a
 ```
 
-## Docker installation
-
-After having installed [Docker](https://www.docker.com/) you can run:
-
-```sh
-docker pull softfire/softfire-middleware
-```
-
-and then run the container by typing:
-
-```sh
-docker run --rm -i --name soffifire --env "LC_ALL=C" -p 5180:5080 -t softfire-middleware
-```
-
-then you should be able to access http://localhost:5180
 
 <!---
  Script for open external links in a new tab
