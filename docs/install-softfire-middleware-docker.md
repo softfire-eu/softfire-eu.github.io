@@ -32,7 +32,7 @@ The **Nfv Manager and Monitoring containers must be able to reach the OpenStack 
 Just clone the repository containing the docker compose file and the configurations:
 
 ```sh
-git clone https://github.com/softfire-eu/docker-softfire.git
+git clone --recursive https://github.com/softfire-eu/docker-softfire.git
 ```
 
 after this command you can go in the folder and check that everything is there:
