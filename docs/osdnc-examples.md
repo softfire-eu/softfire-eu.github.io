@@ -57,12 +57,12 @@ The following example will utilize a custom flow entry to duplicate all network 
         "ofp_instructions":{
            "apply_actions":{
               "output": {
-                 "port": "0x05"				/* port number of the mirror port */
+                 "port_no": "0x05"				/* port number of the mirror port */
               }
            },
            "write_actions":{
               "output": {
-                 "port": "0x01"				/* port number of the original destination instance */
+                 "port_no": "0x01"				/* port number of the original destination instance */
               }
            }
         },
