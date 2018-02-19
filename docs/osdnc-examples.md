@@ -55,16 +55,18 @@ The following example will utilize a custom flow entry to duplicate all network 
         ],
         "idle_timeout":100,
         "ofp_instructions":{
-           "apply_actions":{
-              "output": {
-                 "port_no": "0x05"				/* port number of the mirror port */
+           "apply_actions":[
+	      {
+                 "output": {
+                    "port_no": "0x05"				/* port number of the mirror port */
+                 }
+              },
+              "write_actions":{
+                 "output": {
+                    "port_no": "0x01"				/* port number of the original destination instance */
+                 }
               }
-           },
-           "write_actions":{
-              "output": {
-                 "port_no": "0x01"				/* port number of the original destination instance */
-              }
-           }
+	   ]
         },
         "ofp_match":[
            {
