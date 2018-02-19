@@ -42,43 +42,45 @@ The following example will utilize a custom flow entry to duplicate all network 
 
 ```json
 {
-  "id":2342,
-  "jsonrpc":"2.0",
-  "method":"ofc.send.flow_mod",
-  "params":{
-     "dpid":"0x0000000000000001",			/* address of the target switch */
-     "ofp_flow_mod":{
-        "command":"add",
-        "flags":[
-           "reset_counts",
-           "send_flow_rem"
-        ],
-        "idle_timeout":100,
-        "ofp_instructions":{
-           "apply_actions":[
-	      {
-                 "output": {
-                    "port_no": "0x05"				/* port number of the mirror port */
-                 }
-              },
-              "write_actions":{
-                 "output": {
-                    "port_no": "0x01"				/* port number of the original destination instance */
-                 }
-              }
-	   ]
-        },
-        "ofp_match":[
-           {
-             "match_class": "openflow_basic",
-                "field": "ipv4_dst",
-                "value": "192.168.66.22"	/* the private ip address of the target virtual machine */
-           }
-        ],
-        "priority":400,
-        "table_id":"0x1e" 					/* flow_table 30 in hex notation */
-     }
-  }
+   "id":2342,
+   "jsonrpc":"2.0",
+   "method":"ofc.send.flow_mod",
+   "params":{
+      "dpid":"0x0000000000000001",         /* address of the target switch */
+      "ofp_flow_mod":{
+         "command":"add",
+         "flags":[
+            "reset_counts",
+            "send_flow_rem"
+         ],
+         "idle_timeout":100,
+         "ofp_instructions":{
+            "apply_actions":[
+               {
+                  "output":{
+                     "port_no":"0x10"           /* port number of the mirror port */
+                  }
+               }
+            ],
+            "write_actions":[
+               {
+                  "output":{
+                     "port_no":"0x12"           /* port number of the original destination instance */
+                  }
+               }
+            ]
+         },
+         "ofp_match":[
+            {
+               "match_class":"openflow_basic",
+               "field":"ipv4_dst",
+               "value":"192.168.100.4"  /* the private ip address of the target virtual machine */
+            }
+         ],
+         "priority":400,
+         "table_id":"0x1e"              /* flow_table 30 in hex notation */
+      }
+   }
 }
 ```
 
