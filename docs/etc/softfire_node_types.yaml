@@ -1,82 +1,105 @@
+--- 
 description: "SoftFIRE Node Types definitions"
-tosca_definitions_version: tosca_simple_yaml_1_0
-node_types:
-  MonitoringResource:
+node_types: 
+  MonitoringResource: 
     derived_from: eu.softfire.BaseResource
     description: "Defines the Zabbix monitoring resource requested"
-    properties:
-      lan_name:
+    properties: 
+      lan_name: 
         description: "Network to attach the server"
         type: string
-      testbed:
+      testbed: 
         description: "Location where to deploy the monitoring server"
         required: false
         type: string
-  NfvResource:
+  NfvResource: 
     derived_from: eu.softfire.BaseResource
     description: "Defines a NFV resoruce request in the SoftFIRE Middleware"
-    properties:
-      ssh_pub_key:
+    properties: 
+      file_name: 
         required: false
         type: string
-      file_name:
+      nsd_name: 
+        type: string
+      ssh_pub_key: 
         required: false
         type: string
-      nsd_name:
-        type: string
-      testbeds:
-        entry_schema:
+      testbeds: 
+        entry_schema: 
           description: "mapping between vnf types and testbed. Or 'all':<testbed_name> for all in one"
           type: string
         type: map
-  SdnResource:
-    derived_from: eu.softfire.BaseResource
-    description: "Defines a SDN resource request in the SoftFIRE Middleware"
-  PhysicalResource:
+  PhysicalResource: 
     derived_from: eu.softfire.BaseResource
     description: "Defines a Physical resource request in the SoftFIRE Middleware"
-    properties:
-      resource_name:
+    properties: 
+      resource_name: 
         required: true
         type: string
-  SecurityResource:
+  SdnResource: 
     derived_from: eu.softfire.BaseResource
-    description: "Defines a Security agent to be deployed. More details on *docu_URL*"
-    properties:
-      allowed_ips:
-        entry_schema:
+    description: "Defines a SDN resource request in the SoftFIRE Middleware"
+  SecurityResource: 
+    derived_from: eu.softfire.BaseResource
+    description: "Defines a Security agent to be deployed. More details on [docu_url]"
+    properties: 
+      allowed_ips: 
+        description: "valid for firewall"
+        entry_schema: 
           type: string
         required: false
         type: list
-      default_rule:
-        required: true
+      default_rule: 
+        description: "valid for firewall"
+        required: false
         type: string
-      denied_ips:
-        entry_schema:
+      denied_ips: 
+        description: "valid for firewall"
+        entry_schema: 
           type: string
         required: false
         type: list
-      logging:
-        required: true
-        type: boolean
-      testbed:
+      lan_name: 
         required: false
         type: string
-      want_agent:
-        required: true
+      logging: 
+        description: "valid for firewall and suricata"
+        required: false
         type: boolean
-      lan_name:
+      resource_id: 
+        required: true
+        type: string
+      rules: 
+        description: "valid for suricata"
+        entry_schema: 
+          type: string
+        required: false
+        type: list
+      ssh_key: 
+        description: "valid for firewall and suricata"
         required: false
         type: string
-  eu.softfire.BaseResource:
+      testbed: 
+        required: false
+        type: string
+      wan_name: 
+        description: "valid for pfsense"
+        required: false
+        type: string
+      want_agent: 
+        description: "valid for firewall and suricata"
+        required: false
+        type: boolean
+  eu.softfire.BaseResource: 
     derived_from: tosca.nodes.Root
-    properties:
-      resource_id:
+    properties: 
+      end-date: 
+        required: false
+        type: string
+      resource_id: 
         required: true
         type: string
-      start-date:
+      start-date: 
         required: false
         type: string
-      end-date:
-        required: false
-        type: string
+tosca_definitions_version: tosca_simple_yaml_1_0
