@@ -36,7 +36,6 @@ pages:
                   - Opendaylight : 'tutorial-iperf+odl-sdn.md'
                 - Security Tutorial: 'sec-tutorial.md'
                 - Monitoring Tutorial: 'mon-tutorial.md'
-                - Full Tutorial: 'full-tutorial.md'
         - Dev:
                 - Install the SoftFIRE Middleware:
                   - Code install: 'install-softfire-middleware.md'
@@ -93,7 +92,7 @@ markdown_extensions:
           - pymdownx.tasklist(custom_checkbox=true)
           - pymdownx.tilde
 
-copyright: Copyright (c) 2016-2017 SoftFIRE (http://softfire.eu)
+copyright: Copyright (c) 2016-2018 SoftFIRE (http://softfire.eu)
 
 extra_javascript:
           - 'javascripts/extra.js'
