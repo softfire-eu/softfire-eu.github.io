@@ -12,13 +12,10 @@ SoftFIRE federates different European testbeds owned by the partners of the proj
 * **RMED** Cloud Lab from Ericsson, located in Rome;
 * **FUSECO Playground** from FOKUS Fraunhofer/TUB, located in Berlin;
 * **5GIC** from University of Surrey, located in Guildford, Surrey;
+* **Assembly Data System** cloud lab;
+* **Deutsche Telekom** cloud lab integrated on demand;
 
-New testbeds are now in the integration phase and may soon join the Federation, e.g.,
-
-* **Deutsche Telekom**;
-* **Assembly Data System** (ADS).
-
-In the past other Testbed were integrate (and currently not available):
+In the past other Testbed were integrated (and currently not available):
 
 * **JoLNet** from TIM, spread over several Italian cities;
 
