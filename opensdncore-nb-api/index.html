@@ -1,0 +1,3690 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-1.6.1">
+    
+    
+      
+        <title>API Documentation - SoftFIRE Software Documentation</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-4d0d3f2fbf.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-f78e5cb881.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="deep-orange" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href=".." title="SoftFIRE Software Documentation" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  SDN Manager
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  OpenSDNCore
+                </span>
+              
+            
+            API Documentation
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/SoftFIRE-eu/experiment-manager/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SoftFIRE Experiment Manager
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    SoftFIRE Software Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/SoftFIRE-eu/experiment-manager/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      SoftFIRE Experiment Manager
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      SoftFIRE
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        SoftFIRE
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../softfire-middleware/" title="SoftFIRE Middleware" class="md-nav__link">
+      SoftFIRE Middleware
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../softfire-available-resources/" title="SoftFIRE available resources" class="md-nav__link">
+      SoftFIRE available resources
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Wiki
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Wiki
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../experiment-manager/" title="Experiment Manager" class="md-nav__link">
+      Experiment Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../experiment-definition/" title="Define your experiment" class="md-nav__link">
+      Define your experiment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nfv-manager/" title="NFV Manager" class="md-nav__link">
+      NFV Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" checked>
+    
+    <label class="md-nav__link" for="nav-2-5">
+      SDN Manager
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        SDN Manager
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdn-manager/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5-2" type="checkbox" id="nav-2-5-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-5-2">
+      OpenSDNCore
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-5-2">
+        OpenSDNCore
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../opensdncore/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../osdnc-controller/" title="Controller" class="md-nav__link">
+      Controller
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        API Documentation
+      </label>
+    
+    <a href="./" title="API Documentation" class="md-nav__link md-nav__link--active">
+      API Documentation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notations" title="Notations" class="md-nav__link">
+    Notations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hex" title="hex" class="md-nav__link">
+    hex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid" title="hybrid" class="md-nav__link">
+    hybrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum" title="enum" class="md-nav__link">
+    enum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitmap" title="bitmap" class="md-nav__link">
+    bitmap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bytearray" title="bytearray" class="md-nav__link">
+    bytearray
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-structures" title="Data Structures" class="md-nav__link">
+    Data Structures
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ofp_match" title="ofp_match" class="md-nav__link">
+    ofp_match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofp_oxm" title="ofp_oxm" class="md-nav__link">
+    ofp_oxm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofp_instructions" title="ofp_instructions" class="md-nav__link">
+    ofp_instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofp_actions" title="ofp_actions" class="md-nav__link">
+    ofp_actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-management" title="Switch Management" class="md-nav__link">
+    Switch Management
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#listchannels" title="list.channels" class="md-nav__link">
+    list.channels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller-to-switch-messaging" title="Controller-to-Switch Messaging" class="md-nav__link">
+    Controller-to-Switch Messaging
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendget_config" title="ofc.send.get_config" class="md-nav__link">
+    ofc.send.get_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendflow_mod" title="ofc.send.flow_mod" class="md-nav__link">
+    ofc.send.flow_mod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendbarrier" title="ofc.send.barrier" class="md-nav__link">
+    ofc.send.barrier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendrole_request" title="ofc.send.role_request" class="md-nav__link">
+    ofc.send.role_request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendmultipartflow" title="ofc.send.multipart.flow" class="md-nav__link">
+    ofc.send.multipart.flow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendmultipartport_stats" title="ofc.send.multipart.port_stats" class="md-nav__link">
+    ofc.send.multipart.port_stats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendmultipartport_description" title="ofc.send.multipart.port_description" class="md-nav__link">
+    ofc.send.multipart.port_description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5-3" type="checkbox" id="nav-2-5-3">
+    
+    <label class="md-nav__link" for="nav-2-5-3">
+      OpenDaylight
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-5-3">
+        OpenDaylight
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../opendaylight/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../opendaylight-openflow-api/" title="API Documentation" class="md-nav__link">
+      API Documentation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pd-manager/" title="Physical Device Manager" class="md-nav__link">
+      Physical Device Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Security Manager
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Security Manager
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../security-manager/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../firewall/" title="Firewall" class="md-nav__link">
+      Firewall
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../suricata/" title="Suricata NIPS" class="md-nav__link">
+      Suricata NIPS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pfsense/" title="pfSense router/FW" class="md-nav__link">
+      pfSense router/FW
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../monitoring-manager/" title="Monitoring Manager" class="md-nav__link">
+      Monitoring Manager
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Nfv Tutorial
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Nfv Tutorial
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nfv-tutorial-iperf/" title="Iperf" class="md-nav__link">
+      Iperf
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nfv-tutorial-custom/" title="Custom" class="md-nav__link">
+      Custom
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nfv-tutorial-monitoring-vnf/" title="Monitoring-VNF" class="md-nav__link">
+      Monitoring-VNF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Sdn Tutorial
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Sdn Tutorial
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdn-tutorial/" title="Sdn" class="md-nav__link">
+      Sdn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../osdnc-examples/" title="OpenSDNCore" class="md-nav__link">
+      OpenSDNCore
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorial-iperf+odl-sdn/" title="Opendaylight" class="md-nav__link">
+      Opendaylight
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sec-tutorial/" title="Security Tutorial" class="md-nav__link">
+      Security Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mon-tutorial/" title="Monitoring Tutorial" class="md-nav__link">
+      Monitoring Tutorial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Dev
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Dev
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      Install the SoftFIRE Middleware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        Install the SoftFIRE Middleware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install-softfire-middleware/" title="Code install" class="md-nav__link">
+      Code install
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install-softfire-middleware-docker/" title="Docker install" class="md-nav__link">
+      Docker install
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sub-manager/" title="Write a sub manager" class="md-nav__link">
+      Write a sub manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gen-certificate/" title="How to generate a certificate" class="md-nav__link">
+      How to generate a certificate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdn-manager-dev/" title="SDN Manager developers" class="md-nav__link">
+      SDN Manager developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integration-test/" title="SoftFIRE Integration Tests" class="md-nav__link">
+      SoftFIRE Integration Tests
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../openvpnconfig/" title="OpenVPN Manual configuration" class="md-nav__link">
+      OpenVPN Manual configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../slack/" title="Slack User Guide" class="md-nav__link">
+      Slack User Guide
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notations" title="Notations" class="md-nav__link">
+    Notations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hex" title="hex" class="md-nav__link">
+    hex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid" title="hybrid" class="md-nav__link">
+    hybrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum" title="enum" class="md-nav__link">
+    enum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitmap" title="bitmap" class="md-nav__link">
+    bitmap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bytearray" title="bytearray" class="md-nav__link">
+    bytearray
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-structures" title="Data Structures" class="md-nav__link">
+    Data Structures
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ofp_match" title="ofp_match" class="md-nav__link">
+    ofp_match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofp_oxm" title="ofp_oxm" class="md-nav__link">
+    ofp_oxm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofp_instructions" title="ofp_instructions" class="md-nav__link">
+    ofp_instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofp_actions" title="ofp_actions" class="md-nav__link">
+    ofp_actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-management" title="Switch Management" class="md-nav__link">
+    Switch Management
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#listchannels" title="list.channels" class="md-nav__link">
+    list.channels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller-to-switch-messaging" title="Controller-to-Switch Messaging" class="md-nav__link">
+    Controller-to-Switch Messaging
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendget_config" title="ofc.send.get_config" class="md-nav__link">
+    ofc.send.get_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendflow_mod" title="ofc.send.flow_mod" class="md-nav__link">
+    ofc.send.flow_mod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendbarrier" title="ofc.send.barrier" class="md-nav__link">
+    ofc.send.barrier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendrole_request" title="ofc.send.role_request" class="md-nav__link">
+    ofc.send.role_request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendmultipartflow" title="ofc.send.multipart.flow" class="md-nav__link">
+    ofc.send.multipart.flow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendmultipartport_stats" title="ofc.send.multipart.port_stats" class="md-nav__link">
+    ofc.send.multipart.port_stats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofcsendmultipartport_description" title="ofc.send.multipart.port_description" class="md-nav__link">
+    ofc.send.multipart.port_description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/SoftFIRE-eu/experiment-manager/edit/master/docs/opensdncore-nb-api.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                <h1 id="json-rpc-openflow">JSON-RPC-OpenFlow<a class="headerlink" href="#json-rpc-openflow" title="Permanent link">&para;</a></h1>
+<h2 id="notations">Notations<a class="headerlink" href="#notations" title="Permanent link">&para;</a></h2>
+<p>In addition to the standard JSON data types, several special types are defined to improve the expressiveness of parameters in a RPC call. The following table shows the detail of each type.</p>
+<h3 id="hex">hex<a class="headerlink" href="#hex" title="Permanent link">&para;</a></h3>
+<p>a hex number given as a JSON string. The "0x" prefix is optional here.</p>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>        &quot;hex&quot;:&quot;0xabcd1234&quot;
+</pre></div>
+
+
+<h3 id="hybrid">hybrid<a class="headerlink" href="#hybrid" title="Permanent link">&para;</a></h3>
+<p>could be either a hex or a string. Must be given as a JSON string.
+ Example</p>
+<div class="codehilite"><pre><span></span>        &quot;hybrid&quot;:&quot;0xabcd1234&quot;
+        &quot;hybrid&quot;:&quot;max&quot;
+</pre></div>
+
+
+<h3 id="enum">enum<a class="headerlink" href="#enum" title="Permanent link">&para;</a></h3>
+<p>a JSON string whose value can just be in a limit range. The range will be defined in an array with each possible value and its meaning, and the name of the array will be given in upper case.
+ Example</p>
+<div class="codehilite"><pre><span></span>        &quot;enum&quot;:&quot;in_port&quot;
+
+        where the range is given in
+        &quot;OFPP&quot;: [
+            {
+                &quot;enum_value&quot;: &quot;max&quot;,
+                &quot;enum_meaning&quot;: &quot;max port the switch can support&quot;
+            },
+            {
+                &quot;enum_value&quot;: &quot;in_port&quot;,
+                &quot;enum_meaning&quot;: &quot;send the packet out the inpurt port. This reserved port must be explicitly used in order to send back out of the input port&quot;
+            },
+            {
+                &quot;enum_value&quot;: &quot;table&quot;,
+                &quot;enum_meaning&quot;: &quot;submit the packet to the first flow table. Can used only in packet out message&quot;
+            }
+            ...
+        ]
+</pre></div>
+
+
+<h3 id="bitmap">bitmap<a class="headerlink" href="#bitmap" title="Permanent link">&para;</a></h3>
+<p>a JSON array that consists of enum values
+ Example</p>
+<div class="codehilite"><pre><span></span>        &quot;bitmap&quot;:[
+            &quot;port_down&quot;,
+            &quot;no_fwd&quot;,
+            &quot;no_packet_in&quot;
+        ]
+
+        where the range is given in
+        &quot;OFPPC&quot;: [
+            {
+                &quot;enum_value&quot;: &quot;port_down&quot;,
+                &quot;enum_meaning&quot;: &quot;port is administratively down&quot;
+            },
+            {
+                &quot;enum_value&quot;: &quot;no_recv&quot;,
+                &quot;enum_meaning&quot;: &quot;drop all packets received by port&quot;
+            },
+            {
+                &quot;enum_value&quot;: &quot;no_fwd&quot;,
+                &quot;enum_meaning&quot;: &quot;drop packets forwarded to port&quot;
+            },
+            {
+                &quot;enum_value&quot;: &quot;no_packet_in&quot;,
+                &quot;enum_meaning&quot;: &quot;do not send packet-in message for port &quot;
+            }
+            ...
+        ]
+</pre></div>
+
+
+<h3 id="bytearray">bytearray<a class="headerlink" href="#bytearray" title="Permanent link">&para;</a></h3>
+<p>a JSON array that consists of decimal numbers, with each number between <a href="../i.e. a byte">0, 255</a>, or a hex byte string with the first byte being the first element of the array. Notice that by using hex representation, one byte consists of two hex digits.
+ Example</p>
+<div class="codehilite"><pre><span></span>        The following two fields represent the same byte array:
+        &quot;bytearray&quot;:[1,2,3,4,5,6]
+        &quot;bytearray&quot;:&quot;0x010203040506&quot;
+</pre></div>
+
+
+<hr />
+<h2 id="data-structures">Data Structures<a class="headerlink" href="#data-structures" title="Permanent link">&para;</a></h2>
+<h3 id="ofp_match">ofp_match<a class="headerlink" href="#ofp_match" title="Permanent link">&para;</a></h3>
+<p>an array consists of ofp_oxm objects</p>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    [
+        {
+            &quot;match_class&quot;: &quot;openflow_basic&quot;,
+            &quot;field&quot;: &quot;ipv4_src&quot;,
+            &quot;mask&quot;: &quot;255.255.255.0&quot;,
+            &quot;value&quot;: &quot;192.168.1.1&quot;
+        },
+        {
+            &quot;match_class&quot;: &quot;openflow_basic&quot;,
+            &quot;field&quot;: &quot;tcp_src&quot;,
+            &quot;value&quot;: &quot;5566&quot;
+        }
+    ]
+</pre></div>
+
+
+<hr />
+<h3 id="ofp_oxm">ofp_oxm<a class="headerlink" href="#ofp_oxm" title="Permanent link">&para;</a></h3>
+<p>ofp_oxm</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>match_class</td>
+<td>oxm matching class</td>
+<td>enum</td>
+<td>one of OFPXMC enumeration</td>
+</tr>
+<tr>
+<td>field</td>
+<td>match field</td>
+<td>enum</td>
+<td>one of OFPXMT_OFB enumeration</td>
+</tr>
+<tr>
+<td>value</td>
+<td>match value</td>
+<td>string</td>
+<td>Unless specified, this value should be given in conventional form according to its type(e.g. TCP/UDP/SCTP ports should be given in decimal but as string</td>
+</tr>
+<tr>
+<td>mask</td>
+<td>match mask</td>
+<td>string</td>
+<td>the same length as value</td>
+</tr>
+</tbody>
+</table>
+<p>OFPXMC</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nxm0</td>
+<td>backward compatibility with NXM</td>
+</tr>
+<tr>
+<td>nxm1</td>
+<td>backward compatibility with NXM</td>
+</tr>
+<tr>
+<td>openflow_basic</td>
+<td>basic class for OpenFlow</td>
+</tr>
+<tr>
+<td>experimenter</td>
+<td>experimenter class</td>
+</tr>
+</tbody>
+</table>
+<p>OFPXMT_OFB</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in_port</td>
+<td>switch input port</td>
+</tr>
+<tr>
+<td>in_phy_port</td>
+<td>switch physical input port</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>metadata passed between tables</td>
+</tr>
+<tr>
+<td>eth_dst</td>
+<td>ethernet destination address</td>
+</tr>
+<tr>
+<td>eth_src</td>
+<td>ethernet source address</td>
+</tr>
+<tr>
+<td>eth_type</td>
+<td>ethernet frame type</td>
+</tr>
+<tr>
+<td>vlan_id</td>
+<td>VLAN id</td>
+</tr>
+<tr>
+<td>vlan_pcp</td>
+<td>VLAN priority</td>
+</tr>
+<tr>
+<td>ip_dscp</td>
+<td>IP DSCP(6 bits in ToS field)</td>
+</tr>
+<tr>
+<td>ip_ecn</td>
+<td>IP ECN(2 bits in ToS field)</td>
+</tr>
+<tr>
+<td>ip_proto</td>
+<td>IP protocol</td>
+</tr>
+<tr>
+<td>ipv4_src</td>
+<td>IPv4 source address</td>
+</tr>
+<tr>
+<td>ipv4_dst</td>
+<td>IPv4 destination address</td>
+</tr>
+<tr>
+<td>tcp_src</td>
+<td>tcp source port</td>
+</tr>
+<tr>
+<td>tcp_dst</td>
+<td>tcp destination port</td>
+</tr>
+<tr>
+<td>udp_src</td>
+<td>udp source port</td>
+</tr>
+<tr>
+<td>udp_dst</td>
+<td>udp destination port</td>
+</tr>
+<tr>
+<td>sctp_src</td>
+<td>sctp source port</td>
+</tr>
+<tr>
+<td>sctp_dst</td>
+<td>sctp destination port</td>
+</tr>
+<tr>
+<td>icmpv4_type</td>
+<td>ICMP type</td>
+</tr>
+<tr>
+<td>icmpv4_code</td>
+<td>ICMP code</td>
+</tr>
+<tr>
+<td>arp_op</td>
+<td>ARP opcode</td>
+</tr>
+<tr>
+<td>arp_spa</td>
+<td>ARP source IPv4 address</td>
+</tr>
+<tr>
+<td>arp_tpa</td>
+<td>ARP target IPv4 address</td>
+</tr>
+<tr>
+<td>arp_sha</td>
+<td>ARP source hardware address</td>
+</tr>
+<tr>
+<td>arp_tha</td>
+<td>ARP target hardware address</td>
+</tr>
+<tr>
+<td>ipv6_src</td>
+<td>IPv6 source address</td>
+</tr>
+<tr>
+<td>ipv6_dst</td>
+<td>IPv6 destination address</td>
+</tr>
+<tr>
+<td>ipv6_flabel</td>
+<td>IPv6 flow label</td>
+</tr>
+<tr>
+<td>icmpv6_type</td>
+<td>ICMP type</td>
+</tr>
+<tr>
+<td>icmpv6_code</td>
+<td>ICMP code</td>
+</tr>
+<tr>
+<td>ipv6_nd_target</td>
+<td>target address for ND</td>
+</tr>
+<tr>
+<td>ipv6_nd_sll</td>
+<td>source link-layer for ND</td>
+</tr>
+<tr>
+<td>ipv6_nd_tll</td>
+<td>target link-layer for ND</td>
+</tr>
+<tr>
+<td>mpls_label</td>
+<td>MPLS lable</td>
+</tr>
+<tr>
+<td>mpls_tc</td>
+<td>MPLS TC</td>
+</tr>
+<tr>
+<td>mpls_bos</td>
+<td>MPLS BoS bit</td>
+</tr>
+<tr>
+<td>pbb_isid</td>
+<td>PBB I-SID</td>
+</tr>
+<tr>
+<td>tunnel_id</td>
+<td>logical port metadata</td>
+</tr>
+<tr>
+<td>ipv6_exthdr</td>
+<td>IPv6 extension header pseudo-field</td>
+</tr>
+<tr>
+<td>pbb_uca</td>
+<td>PBB UCA header fields</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>        {
+            &quot;match_class&quot;: &quot;openflow_basic&quot;,
+            &quot;field&quot;: &quot;ipv4_src&quot;,
+            &quot;mask&quot;: &quot;255.255.255.0&quot;,
+            &quot;value&quot;: &quot;192.168.1.1&quot;
+        }
+</pre></div>
+
+
+<hr />
+<h3 id="ofp_instructions">ofp_instructions<a class="headerlink" href="#ofp_instructions" title="Permanent link">&para;</a></h3>
+<p>consists of several objects which represent different kinds of instructions.
+Notice that each instruction can appear only once in an instruction list.</p>
+<p>goto_table</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>table_id</td>
+<td>set next table in the lookup pipeline</td>
+<td>number</td>
+<td>a number between [0, 255]</td>
+</tr>
+</tbody>
+</table>
+<p>write_metadata</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>metadata</td>
+<td>metadata value to write</td>
+<td>hex</td>
+<td>a 64-bit hex number</td>
+</tr>
+<tr>
+<td>metadata_mask</td>
+<td>metadata write bitmask</td>
+<td>hex</td>
+<td>a 64-bit hex number</td>
+</tr>
+</tbody>
+</table>
+<p>meter</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>meter_id</td>
+<td>meter instance</td>
+<td>hybrid</td>
+<td>a 32-bit hex number between [0,0xffff0000] or one of OFPM enumeration</td>
+</tr>
+</tbody>
+</table>
+<p>experimenter</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exp_id</td>
+<td>experimenter id</td>
+<td>hex</td>
+<td>a 32-bit hex number</td>
+</tr>
+<tr>
+<td>exp_data</td>
+<td>experimenter-defined additional data</td>
+<td>bytearray</td>
+<td>a byte array</td>
+</tr>
+</tbody>
+</table>
+<p>apply_actions</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ofp_actions</td>
+<td>actions to apply</td>
+<td>object</td>
+<td>the same form as ofp_actions object</td>
+</tr>
+</tbody>
+</table>
+<p>write_actions</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ofp_actions</td>
+<td>actions to write</td>
+<td>object</td>
+<td>the same form as ofp_actions object</td>
+</tr>
+</tbody>
+</table>
+<p>clear_actions</p>
+<p>null</p>
+<p>OFPM</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>max</td>
+<td>last usable meter</td>
+</tr>
+<tr>
+<td>slowpath</td>
+<td>meter for slow datapath</td>
+</tr>
+<tr>
+<td>controller</td>
+<td>meter for controller connection</td>
+</tr>
+<tr>
+<td>all</td>
+<td>represents all meters for stat requests commands</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    &quot;ofp_instructions&quot;: {
+        &quot;write_actions&quot;: {
+            &quot;output&quot;: {
+                &quot;port_no&quot;: &quot;0x0f&quot;
+            }
+        },
+        &quot;meter&quot;:{
+            &quot;meter_id&quot;:&quot;0x01020304&quot;
+        }
+    }
+</pre></div>
+
+
+<hr />
+<h3 id="ofp_actions">ofp_actions<a class="headerlink" href="#ofp_actions" title="Permanent link">&para;</a></h3>
+<p>consists of several objects which represent different kinds of actions.
+Notice that each action can appear only once in an action list.</p>
+<p>output</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>port_no</td>
+<td>output port</td>
+<td>hybrid</td>
+<td>a 32-bit number between [0, 0xffffff00] or one of OFPP enumeration</td>
+</tr>
+<tr>
+<td>max_len</td>
+<td>max length to send to controller</td>
+<td>hybrid</td>
+<td>a 16-bit hex number between [0, 0xffe5] or one of OFPCML enumeration</td>
+</tr>
+</tbody>
+</table>
+<p>group</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>group_id</td>
+<td>group id</td>
+<td>hybrid</td>
+<td>a 32-bit hex number between [0, 0xffffff00] or one of OFPG enumeration</td>
+</tr>
+</tbody>
+</table>
+<p>set_queue</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>queue_id</td>
+<td>queue id for the packet</td>
+<td>hex</td>
+<td>a 32-bit hex number</td>
+</tr>
+</tbody>
+</table>
+<p>set_mpls_ttl</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mpls_ttl</td>
+<td>the MPLS TTL to set</td>
+<td>number</td>
+<td>a number between [0, 255]</td>
+</tr>
+</tbody>
+</table>
+<p>set_nw_ttl</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nw_ttl</td>
+<td>the NW TTL to set</td>
+<td>number</td>
+<td>a number between [0, 255]</td>
+</tr>
+</tbody>
+</table>
+<p>push_vlan</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ethertype</td>
+<td>the Ethertype of the new tag</td>
+<td>hex</td>
+<td>a 16-bit hex number</td>
+</tr>
+</tbody>
+</table>
+<p>push_pbb</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ethertype</td>
+<td>the Ethertype of the new tag</td>
+<td>hex</td>
+<td>a 16-bit hex number</td>
+</tr>
+</tbody>
+</table>
+<p>push_mpls</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ethertype</td>
+<td>the Ethertype of the new tag</td>
+<td>hex</td>
+<td>a 16-bit hex number</td>
+</tr>
+</tbody>
+</table>
+<p>pop_mpls</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ethertype</td>
+<td>the Ethertype of the MPLS payload</td>
+<td>hex</td>
+<td>a 16-bit hex number</td>
+</tr>
+</tbody>
+</table>
+<p>set_field</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ofp_oxm</td>
+<td>the field to set described by a single oxm</td>
+<td>object</td>
+<td>a single object having the same form as ofp_oxm object</td>
+</tr>
+</tbody>
+</table>
+<p>experimenter</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exp_id</td>
+<td>experimenter id</td>
+<td>hex</td>
+<td>a 32-bit hex number</td>
+</tr>
+<tr>
+<td>exp_data</td>
+<td>experimenter-defined additional data</td>
+<td>bytearray</td>
+<td>a byte array</td>
+</tr>
+</tbody>
+</table>
+<p>copy_ttl_out</p>
+<p>null</p>
+<p>copy_ttl_in</p>
+<p>null</p>
+<p>dec_mpls_ttl</p>
+<p>null</p>
+<p>dec_nw_ttl</p>
+<p>null</p>
+<p>pop_pbb</p>
+<p>null</p>
+<p>pop_vlan</p>
+<p>null</p>
+<p>OFPCML</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>max</td>
+<td>maximun max_len value which can be used to request a specific byte length</td>
+</tr>
+<tr>
+<td>no_buffer</td>
+<td>indicates that no buffering should be applied and the whole packet is to be sent to the controller</td>
+</tr>
+</tbody>
+</table>
+<p>OFPG</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>max</td>
+<td>last usable group</td>
+</tr>
+<tr>
+<td>all</td>
+<td>represents all groups for group delete commands</td>
+</tr>
+<tr>
+<td>any</td>
+<td>wildcard group used only for flow stats requests. selects all flows regardless of group (including flows with no group)</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>                &quot;ofp_instructions&quot;: {
+                    &quot;write_actions&quot;: [
+                        {
+                            &quot;set_field&quot;: {
+                                &quot;ofp_oxm&quot;: {
+                                    &quot;match_class&quot;: &quot;openflow_basic&quot;,
+                                    &quot;field&quot;: &quot;ipv4_src&quot;,
+                                    &quot;value&quot;: &quot;11.0.0.1&quot;
+                                }
+                            }
+                        },
+                        {
+                            &quot;set_field&quot;: {
+                                &quot;ofp_oxm&quot;: {
+                                    &quot;match_class&quot;: &quot;openflow_basic&quot;,
+                                    &quot;field&quot;: &quot;ipv4_dst&quot;,
+                                    &quot;value&quot;: &quot;11.0.0.2&quot;
+                                }
+                            }
+                        },
+                        {
+                            &quot;output&quot;: {
+                                &quot;port_no&quot;: &quot;0x02&quot;
+                            }
+                        }
+                    ]
+                }
+</pre></div>
+
+
+<hr />
+<h2 id="switch-management">Switch Management<a class="headerlink" href="#switch-management" title="Permanent link">&para;</a></h2>
+<h3 id="listchannels">list.channels<a class="headerlink" href="#listchannels" title="Permanent link">&para;</a></h3>
+<p>list datapath id of switches connecting to this controller
+  Params</p>
+<p>null</p>
+<p>Result</p>
+<p>a JSON array consists of dpids(64-bit hex number given as string)</p>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;method&quot;: &quot;list.channels&quot;,
+        &quot;params&quot;: null
+    }
+
+    &lt;--
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;result&quot;: [
+            &quot;0xaabb000102030405&quot;,
+            &quot;0xccdd000102030405&quot;,
+            &quot;0x1234567890abcdef&quot;
+         ]
+    }
+</pre></div>
+
+
+<hr />
+<h2 id="controller-to-switch-messaging">Controller-to-Switch Messaging<a class="headerlink" href="#controller-to-switch-messaging" title="Permanent link">&para;</a></h2>
+<h3 id="ofcsendget_config">ofc.send.get_config<a class="headerlink" href="#ofcsendget_config" title="Permanent link">&para;</a></h3>
+<p>get switch configuration</p>
+<p>Params</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpid</td>
+<td>switch datapath id</td>
+<td>hex</td>
+<td>64-bit hex number given as string</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Result</p>
+<p>a JSON object containing switch configuration information</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flags</td>
+<td>set of configuration flags</td>
+<td>bitmap</td>
+<td>possible values enumerated in OFPC_FRAG</td>
+</tr>
+<tr>
+<td>miss_send_len</td>
+<td>max bytes of packet that datapath should send to the controller.</td>
+<td>hybrid</td>
+<td>a 16-bit hex number between [0, 0xffe5] or one of OFPCML enumeration</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;method&quot;: &quot;ofc.send.get_config&quot;,
+        &quot;params&quot;: {
+            &quot;dpid&quot;: &quot;0xaabb000102030405&quot;
+        }
+    }
+
+    &lt;--
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;result&quot;: {
+            &quot;flags&quot;: [
+                &quot;normal&quot;,
+                &quot;reasm&quot;
+            ],
+            &quot;miss_send_len&quot;: &quot;no_buffer&quot;
+        }
+    }
+</pre></div>
+
+
+<p>OFPCML</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>max</td>
+<td>max byte length</td>
+</tr>
+<tr>
+<td>no_buffer</td>
+<td>indicates that no buffering should be applied and the whole packet is to be sent to the controller</td>
+</tr>
+</tbody>
+</table>
+<p>OFPC_FRAG</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>normal</td>
+<td>no special handling for fragments</td>
+</tr>
+<tr>
+<td>drop</td>
+<td>drop fragments</td>
+</tr>
+<tr>
+<td>reasm</td>
+<td>reassemble</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="ofcsendflow_mod">ofc.send.flow_mod<a class="headerlink" href="#ofcsendflow_mod" title="Permanent link">&para;</a></h3>
+<p>send a flow_mod message</p>
+<p>Params</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpid</td>
+<td>switch datapath id</td>
+<td>hex</td>
+<td>64-bit hex number given as string</td>
+<td>true</td>
+</tr>
+<tr>
+<td>ofp_flow_mod</td>
+<td>the flow_mod message</td>
+<td>object</td>
+<td>the same as described in ofp_flow_mod object</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Result</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>msg_id</td>
+<td>a unique ID identifying this request</td>
+<td>hex</td>
+<td>global unique to the controller</td>
+</tr>
+</tbody>
+</table>
+<p>"ofp_flow_mod"::</p>
+<p>a JSON object representing a flow_mod message</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>table_id</td>
+<td>table id to be modified</td>
+<td>hybrid</td>
+<td>a 8-bit hex number between [0, 0xfe] or "all" for all tables</td>
+<td>true</td>
+</tr>
+<tr>
+<td>command</td>
+<td>command to apply</td>
+<td>enum</td>
+<td>one of OFPFC enumeration</td>
+<td>true</td>
+</tr>
+<tr>
+<td>idle_timeout</td>
+<td>idle time before discarding (seconds)</td>
+<td>number</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>hard_timeout</td>
+<td>max time before discarding (seconds)</td>
+<td>number</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>priority</td>
+<td>priority level of flow entry</td>
+<td>number</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>cookie</td>
+<td>require matching entries to contain this cookie value</td>
+<td>hex</td>
+<td>a 64-bit hex number</td>
+<td>false</td>
+</tr>
+<tr>
+<td>cookie_mask</td>
+<td>cookie mask</td>
+<td>hex</td>
+<td>a 64-bit hex number</td>
+<td>false</td>
+</tr>
+<tr>
+<td>buffer_id</td>
+<td>buffered packet to apply to. Not meaningful for delete commands</td>
+<td>hybrid</td>
+<td>a 32-bit hex number or "no_buffer"</td>
+<td>false</td>
+</tr>
+<tr>
+<td>out_port</td>
+<td>for delete commands, require matching entries to include this as an output port</td>
+<td>hybrid</td>
+<td>a 32-bit hex number as described in ofp_port object, or "any" which indicates no restriction</td>
+<td>false</td>
+</tr>
+<tr>
+<td>out_group</td>
+<td>for delete commands, require matching entries to include this as an output group</td>
+<td>hybrid</td>
+<td>a 32-bit hex number, or "any" which indicates no restriction</td>
+<td>false</td>
+</tr>
+<tr>
+<td>flags</td>
+<td>flow entry configuration flags</td>
+<td>bitmap</td>
+<td>possible values enumerated in OFPFF</td>
+<td>false</td>
+</tr>
+<tr>
+<td>importance</td>
+<td>eviction precedence</td>
+<td>number</td>
+<td>a number between [0, 2^ 16 ]</td>
+<td>false</td>
+</tr>
+<tr>
+<td>ofp_match</td>
+<td>matching rules</td>
+<td>array</td>
+<td>consists of ofp_oxm objects</td>
+<td>false</td>
+</tr>
+<tr>
+<td>ofp_instructions</td>
+<td>instructions to apply when matched</td>
+<td>object</td>
+<td>the same as  object</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>OFPFF</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>send_flow_rem</td>
+<td>send flow removed message when flow expires or is deleted</td>
+</tr>
+<tr>
+<td>check_overlap</td>
+<td>check for overlapping entries first</td>
+</tr>
+<tr>
+<td>reset_counts</td>
+<td>reset flow packet and byte counts</td>
+</tr>
+<tr>
+<td>no_pkt_counts</td>
+<td>don't keep track of packet count</td>
+</tr>
+<tr>
+<td>no_byt_counts</td>
+<td>don't keep track of byte count</td>
+</tr>
+</tbody>
+</table>
+<p>OFPFC</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add</td>
+<td>new flow</td>
+</tr>
+<tr>
+<td>modify</td>
+<td>modify all matching flows</td>
+</tr>
+<tr>
+<td>modify_strict</td>
+<td>modify entry strictly matching wildcards and priority</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>delete all matching flows</td>
+</tr>
+<tr>
+<td>delete_strict</td>
+<td>delete entry strictly matching wildcars and priority</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;method&quot;: &quot;ofc.send.flow_mod&quot;,
+        &quot;params&quot;: {
+            &quot;dpid&quot;: &quot;0xaabb000102030405&quot;,
+            &quot;ofp_flow_mod&quot;: {
+                &quot;command&quot;: &quot;add&quot;,
+                &quot;flags&quot;: [
+                    &quot;reset_counts&quot;,
+                    &quot;send_flow_rem&quot;
+                ],
+                &quot;idle_timeout&quot;: 14,
+                &quot;ofp_instructions&quot;: {
+                    &quot;apply_actions&quot;: {
+                        &quot;output&quot;: {
+                            &quot;port_no&quot;: &quot;0x0f&quot;
+                        }
+                    }
+                },
+                &quot;ofp_match&quot;: [
+                    {
+                        &quot;match_class&quot;: &quot;openflow_basic&quot;,
+                        &quot;field&quot;: &quot;ipv4_src&quot;,
+                        &quot;mask&quot;: &quot;255.255.255.0&quot;,
+                        &quot;value&quot;: &quot;192.168.1.1&quot;
+                    }
+                ],
+                &quot;priority&quot;: 18,
+                &quot;table_id&quot;: &quot;0x0f&quot;
+            }
+        }
+    }
+
+    &lt;--
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;result&quot;: {
+            &quot;msg_id&quot;: &quot;0x01020304&quot;
+        }
+    }
+</pre></div>
+
+
+<hr />
+<h3 id="ofcsendbarrier">ofc.send.barrier<a class="headerlink" href="#ofcsendbarrier" title="Permanent link">&para;</a></h3>
+<p>send barrier message, used to ensure message dependencies have been met or wants to receive notifications for completed operations.
+The switch will continue to execute new commands only if all the messages before the barrier have been processed</p>
+<p>Params</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"dpid"</td>
+<td>switch datapath id</td>
+<td>string</td>
+<td>64-bit hex number given as string</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Result</p>
+<p>a JSON String. "Barrier Reply" on success.</p>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;method&quot;: &quot;ofc.send.barrier&quot;,
+        &quot;params&quot;: {
+            &quot;dpid&quot;: &quot;0xaabb000102030405&quot;
+        }
+    }
+
+    &lt;--
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;result&quot;: &quot;Barrier Reply&quot;
+    }
+</pre></div>
+
+
+<hr />
+<h3 id="ofcsendrole_request">ofc.send.role_request<a class="headerlink" href="#ofcsendrole_request" title="Permanent link">&para;</a></h3>
+<p>used to query or change the role of controller</p>
+<p>Params</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpid</td>
+<td>switch datapath id</td>
+<td>hex</td>
+<td>64-bit hex number given as string</td>
+<td>true</td>
+</tr>
+<tr>
+<td>role</td>
+<td>new role that the controller wants to assume</td>
+<td>enum</td>
+<td>one of OFPCR enumeration</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Result</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>role</td>
+<td>new role that accepted by switch. if the request is no_change, then the original role will be returned</td>
+<td>enum</td>
+<td>one of OFPCR enumeration. This field exists only if the new role is accepted by switch.</td>
+</tr>
+</tbody>
+</table>
+<p>OFPCR</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nochange</td>
+<td>don't change current role</td>
+</tr>
+<tr>
+<td>equal</td>
+<td>default role, full access</td>
+</tr>
+<tr>
+<td>master</td>
+<td>full access, at most one master</td>
+</tr>
+<tr>
+<td>slave</td>
+<td>read-only access</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;method&quot;: &quot;ofc.send.role_request&quot;,
+        &quot;params&quot;: {
+            &quot;dpid&quot;: &quot;0xaabb000102030405&quot;,
+            &quot;role&quot;: &quot;no_change&quot;
+        }
+    }
+
+    &lt;--
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;result&quot;: {
+            &quot;role&quot;: &quot;equal&quot;
+        }
+    }
+</pre></div>
+
+
+<hr />
+<h3 id="ofcsendmultipartflow">ofc.send.multipart.flow<a class="headerlink" href="#ofcsendmultipartflow" title="Permanent link">&para;</a></h3>
+<p>get statistic information about individual flow entries</p>
+<p>Params</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpid</td>
+<td>switch datapath id</td>
+<td>hex</td>
+<td>64-bit hex number given as string</td>
+<td>true</td>
+</tr>
+<tr>
+<td>ofp_multipart_flow</td>
+<td>a multipart_flow message</td>
+<td>object</td>
+<td>format described in</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Result</p>
+<p>a JSON object consists of ofp_flow_stats object, whose format is introduced below</p>
+<p>Properties of "ofp_multipart_flow" object</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>table_id</td>
+<td>table id</td>
+<td>hybrid</td>
+<td>a 8-bit hex number between [0, 0xfe] or "all" for all tables</td>
+<td>true</td>
+</tr>
+<tr>
+<td>out_port</td>
+<td>Require matching entries to include this as an output port.</td>
+<td>hybrid</td>
+<td>a 32-bit hex number as described in ofp_port object, or "any" which indicates no restriction</td>
+<td>false</td>
+</tr>
+<tr>
+<td>out_group</td>
+<td>Require matching entries to include this as an output group</td>
+<td>hybrid</td>
+<td>a 32-bit hex number, or "any" which indicates no restriction</td>
+<td>false</td>
+</tr>
+<tr>
+<td>cookie</td>
+<td>Require matching entries to contain this cookie value</td>
+<td>hex</td>
+<td>a 64-bit hex number</td>
+<td>false</td>
+</tr>
+<tr>
+<td>cookie_mask</td>
+<td>Require matching entries to contain this cookie value</td>
+<td>hex</td>
+<td>a 64-bit hex number,mask used to restrict the cookie bits that must match.</td>
+<td>false</td>
+</tr>
+<tr>
+<td>ofp_match</td>
+<td>matching rules</td>
+<td>array</td>
+<td>consists of ofp_oxm objects</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Properties of "ofp_flow_stats" object</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>table_id</td>
+<td>table id the flow came from</td>
+<td>hybrid</td>
+<td>a 8-bit hex number between [0, 0xfe] or "all" for all tables</td>
+</tr>
+<tr>
+<td>packet_count</td>
+<td>number of packet in flow</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>byte_count</td>
+<td>number of byte in flow</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>idle_timeout</td>
+<td>idle time before discarding (seconds)</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>hard_timeout</td>
+<td>max time before discarding (seconds)</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>duration_sec</td>
+<td>time flow has been alive in seconds</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>duration_nsec</td>
+<td>time flow has been alive in nanoseconds beyond duration_sec</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>priority</td>
+<td>priority level of flow entry</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>flags</td>
+<td>flow entry configuration flags</td>
+<td>bitmap</td>
+<td>possible values enumerated in OFPFF</td>
+</tr>
+<tr>
+<td>cookie</td>
+<td>require matching entries to contain this cookie value</td>
+<td>hex</td>
+<td>a 64-bit hex number</td>
+</tr>
+<tr>
+<td>importance</td>
+<td>eviction precedence</td>
+<td>number</td>
+<td>a number between [0, 2^ 16 ]</td>
+</tr>
+<tr>
+<td>ofp_match</td>
+<td>matching rules</td>
+<td>array</td>
+<td>consists of ofp_oxm objects</td>
+</tr>
+<tr>
+<td>ofp_instructions</td>
+<td>instructions to apply when matched</td>
+<td>object</td>
+<td>the same as ofp_instructions object</td>
+</tr>
+</tbody>
+</table>
+<p>OFPFF</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>send_flow_rem</td>
+<td>send flow removed message when flow expires or is deleted</td>
+</tr>
+<tr>
+<td>check_overlap</td>
+<td>check for overlapping entries first</td>
+</tr>
+<tr>
+<td>reset_counts</td>
+<td>reset flow packet and byte counts</td>
+</tr>
+<tr>
+<td>no_pkt_counts</td>
+<td>don't keep track of packet count</td>
+</tr>
+<tr>
+<td>no_byt_counts</td>
+<td>don't keep track of byte count</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;method&quot;: &quot;ofc.send.multipart.flow&quot;,
+        &quot;params&quot;: {
+            &quot;dpid&quot;: &quot;0xaabb000102030405&quot;,
+            &quot;ofp_multipart_flow&quot;: {
+                &quot;ofp_match&quot;: [
+                    {
+                        &quot;match_class&quot;: &quot;openflow_basic&quot;,
+                        &quot;field&quot;: &quot;ipv4_src&quot;,
+                        &quot;mask&quot;: &quot;255.255.255.0&quot;,
+                        &quot;value&quot;: &quot;192.168.1.1&quot;
+                    }
+                ],
+                &quot;table_id&quot;: &quot;0x0f&quot;
+            }
+        }
+    }
+
+    &lt;--
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;result&quot;: [
+            {
+                &quot;table_id&quot;: &quot;0xe0&quot;,
+                &quot;packet_count&quot;: 29348,
+                &quot;byte_count&quot;: 7039684,
+                &quot;idle_timeout&quot;: 3,
+                &quot;hard_timeout&quot;: 15,
+                &quot;duration_sec&quot;: 10,
+                &quot;duration_nsec&quot;: 56,
+                &quot;priority&quot;: 19,
+                &quot;importance&quot;: 28,
+                &quot;cookie&quot;: &quot;0x1234567890abcdef&quot;,
+                &quot;flags&quot;: [
+                    &quot;check_overlap&quot;,
+                    &quot;send_flow_rem&quot;
+                ],
+                &quot;ofp_match&quot;: [
+                    {
+                        &quot;match_class&quot;: &quot;openflow_basic&quot;,
+                        &quot;field&quot;: &quot;ipv4_src&quot;,
+                        &quot;mask&quot;: &quot;255.255.255.0&quot;,
+                        &quot;value&quot;: &quot;192.168.1.1&quot;
+                    },
+                    {
+                        &quot;match_class&quot;: &quot;openflow_basic&quot;,
+                        &quot;field&quot;: &quot;tcp_src&quot;,
+                        &quot;value&quot;: &quot;5566&quot;
+                    }
+                ],
+                &quot;ofp_instructions&quot;: {
+                    &quot;apply_actions&quot;: {
+                        &quot;output&quot;: {
+                            &quot;port_no&quot;: &quot;0x0f&quot;
+                        }
+                    }
+                }
+            },
+            {
+                &quot;table_id&quot;: &quot;0xe0&quot;,
+                &quot;packet_count&quot;: 29348,
+                &quot;byte_count&quot;: 7039684,
+                &quot;idle_timeout&quot;: 7,
+                &quot;hard_timeout&quot;: 9,
+                &quot;duration_sec&quot;: 2,
+                &quot;duration_nsec&quot;: 99,
+                &quot;priority&quot;: 37,
+                &quot;importance&quot;: 89,
+                &quot;cookie&quot;: &quot;0x000000000000000f&quot;,
+                &quot;flags&quot;: [],
+                &quot;ofp_match&quot;: [
+                    {
+                        &quot;match_class&quot;: &quot;openflow_basic&quot;,
+                        &quot;field&quot;: &quot;ipv4_src&quot;,
+                        &quot;mask&quot;: &quot;255.255.255.0&quot;,
+                        &quot;value&quot;: &quot;192.168.1.1&quot;
+                    }
+                ],
+                &quot;ofp_instructions&quot;: {
+                    &quot;goto_table&quot;: {
+                        &quot;table_id&quot;: &quot;0x0f&quot;
+                    }
+                }
+            }
+        ]
+    }
+</pre></div>
+
+
+<hr />
+<h3 id="ofcsendmultipartport_stats">ofc.send.multipart.port_stats<a class="headerlink" href="#ofcsendmultipartport_stats" title="Permanent link">&para;</a></h3>
+<p>get aggregate statistic information about ports</p>
+<p>Params</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpid</td>
+<td>switch datapath id</td>
+<td>hex</td>
+<td>64-bit hex number given as string</td>
+<td>true</td>
+</tr>
+<tr>
+<td>port_no</td>
+<td>port that this queue attaching to, should refer to a valid physical port</td>
+<td>hybrid</td>
+<td>a 32-bit number between [0, 0xffffff00) or "all" for all ports</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Result</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>port_no</td>
+<td>port that this queue attaching to, should refer to a valid physical port</td>
+<td>hybrid</td>
+<td>a 32-bit number between [0, 0xffffff00) or "any" for all ports</td>
+</tr>
+<tr>
+<td>tx_packets</td>
+<td>number of transmitted packets</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>rx_packets</td>
+<td>number of received packets</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>tx_bytes</td>
+<td>number of transmitted bytes</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>rx_bytes</td>
+<td>number of received bytes</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>tx_dropped</td>
+<td>number of dropped packets</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>rx_dropped</td>
+<td>number of dropped packets</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>tx_errors</td>
+<td>Number of transmit errors.</td>
+<td>number</td>
+<td>a super-set of more specific transmit errors and should be greater than or equal to the sum of all tx_*_err values (none currently defined.)</td>
+</tr>
+<tr>
+<td>rx_errors</td>
+<td>Number of receive errors.</td>
+<td>number</td>
+<td>a super-set of more specific receive errors and should be greater than or equal to the sum of all rx_*_err values (none currently defined.)</td>
+</tr>
+<tr>
+<td>duration_sec</td>
+<td>time port has been alive in seconds</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>duration_nsec</td>
+<td>time port has been alive in nanoseconds beyond duration_sec</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>properties</td>
+<td>property list of port type specific statistics</td>
+<td>array</td>
+<td>consists of ofp_port_stats_prop objects</td>
+</tr>
+</tbody>
+</table>
+<p>Properties of ofp_port_stats_prop object</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>port type</td>
+<td>enum</td>
+<td>one of OFPPSPT enumeration</td>
+</tr>
+<tr>
+<td>rx_frame_err</td>
+<td>number of frame alignment errors</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_ETHERNET</td>
+</tr>
+<tr>
+<td>rx_crc_err</td>
+<td>number of CRC errors</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_ETHERNET</td>
+</tr>
+<tr>
+<td>rx_over_err</td>
+<td>number of packets with RX overrun</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_ETHERNET</td>
+</tr>
+<tr>
+<td>collisions</td>
+<td>number of collisions</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_ETHERNET</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>flags</th>
+<th>features enabled by the port</th>
+<th>bitmap</th>
+<th>possible values enumerated in OFPOSF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tx_freq_lmda</td>
+<td>current TX frequency/Wavelength</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>tx_offset</td>
+<td>TX offset</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>tx_grid_span</td>
+<td>TX grid spacing</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>rx_freq_lmda</td>
+<td>current RX frequency/Wavelength</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>rx_offset</td>
+<td>RX offset</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>rx_grid_span</td>
+<td>RX grid spacing</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>tx_pwr</td>
+<td>current TX power</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>rx_pwr</td>
+<td>current RX power</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>tx_grid_span</td>
+<td>TX grid spacing</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>bias_current</td>
+<td>TX Bias current</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+<tr>
+<td>temperature</td>
+<td>TX laser temperature</td>
+<td>number</td>
+<td>only valid for type OFPPSPT_OPTICAL</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>exp_id</th>
+<th>id of the Experimenter</th>
+<th>hex</th>
+<th>a 32-bit hex number, only valid for type OFPPSPT_EXPERIMENTER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exp_type</td>
+<td>experimenter defined type</td>
+<td>hex</td>
+<td>a 32-bit hex number, only valid for type OFPPSPT_EXPERIMENTER</td>
+</tr>
+<tr>
+<td>exp_data</td>
+<td>experiment data</td>
+<td>bytearray</td>
+<td>only valid for type OFPPSPT_EXPERIMENTER</td>
+</tr>
+</tbody>
+</table>
+<p>OFPPSPT</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ethernet</td>
+<td>ethernet property</td>
+</tr>
+<tr>
+<td>optical</td>
+<td>optical property</td>
+</tr>
+<tr>
+<td>experimenter</td>
+<td>experimenter property</td>
+</tr>
+</tbody>
+</table>
+<p>OFPOSF</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rx_tune</td>
+<td>receiver tune info valid</td>
+</tr>
+<tr>
+<td>tx_tune</td>
+<td>transmit tune info valid</td>
+</tr>
+<tr>
+<td>tx_pwr</td>
+<td>TX power is valid</td>
+</tr>
+<tr>
+<td>rx_pwr</td>
+<td>RX power is valid</td>
+</tr>
+<tr>
+<td>tx_bias</td>
+<td>transmit bias is valid</td>
+</tr>
+<tr>
+<td>tx_temp</td>
+<td>TX temp is valid</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;method&quot;: &quot;ofc.send.multipart.port_stats&quot;,
+        &quot;params&quot;: {
+            &quot;dpid&quot;: &quot;0xaabb000102030405&quot;,
+            &quot;port_no&quot;: &quot;0xe0&quot;
+        }
+    }
+
+    &lt;--
+    {
+        &quot;id&quot;: 1,
+        &quot;jsonrpc&quot;: &quot;2.0&quot;,
+        &quot;result&quot;: [
+            {
+                &quot;port_no&quot;: &quot;0xe0&quot;,
+                &quot;tx_packets&quot;: 28290,
+                &quot;rx_packets&quot;: 29348,
+                &quot;tx_bytes&quot;: 7039684,
+                &quot;rx_bytes&quot;: 7200243,
+                &quot;tx_dropped&quot;: 609,
+                &quot;rx_dropped&quot;: 534,
+                &quot;tx_errors&quot;: 97,
+                &quot;rx_errors&quot;: 80,
+                &quot;duration_sec&quot;: 2,
+                &quot;duration_nsec&quot;: 56,
+                &quot;properties&quot;: [
+                    {
+                        &quot;type&quot;: &quot;OFPPSPT_ETHERNET&quot;,
+                        &quot;rx_frame_err&quot;: 8,
+                        &quot;rx_crc_err&quot;: 15,
+                        &quot;rx_over_err&quot;: 57,
+                        &quot;collisions&quot;: 18
+                    }
+                ]
+            }
+        ]
+    }
+</pre></div>
+
+
+<hr />
+<h3 id="ofcsendmultipartport_description">ofc.send.multipart.port_description<a class="headerlink" href="#ofcsendmultipartport_description" title="Permanent link">&para;</a></h3>
+<p>get a description of all the ports in the system that support OpenFlow</p>
+<p>Params</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+<th>required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dpid</td>
+<td>switch datapath id</td>
+<td>hex</td>
+<td>64-bit hex number given as string</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Result</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>port_no</td>
+<td>port that this queue attaching to, should refer to a valid physical port</td>
+<td>hybrid</td>
+<td>a 32-bit number between [0, 0xffffff00) or "any" for all ports</td>
+</tr>
+<tr>
+<td>hw_addr</td>
+<td>Hardware address of the interface</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Name of the interface</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>config</td>
+<td>Bitmap of OFPPC_* flags</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>state</td>
+<td>Bitmap of OFPPS_* flags</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>properties</td>
+<td>property list of port type specific statistics</td>
+<td>array</td>
+<td>consists of ofp_port_desc_prop objects</td>
+</tr>
+</tbody>
+</table>
+<p>Properties of ofp_port_desc_prop object</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>JSON type</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>port type</td>
+<td>enum</td>
+<td></td>
+</tr>
+<tr>
+<td>curr</td>
+<td>number of frame alignment errors</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>advertised</td>
+<td>Features being advertised by the port</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>supported</td>
+<td>Features supported by the port</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>peer</td>
+<td>Features advertised by peer</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>curr_speed</td>
+<td>Current port bitrate in kbps</td>
+<td>number</td>
+<td></td>
+</tr>
+<tr>
+<td>max_speed</td>
+<td>Max port bitrate in kbps</td>
+<td>number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<div class="codehilite"><pre><span></span>    --&gt;
+   {
+     &quot;jsonrpc&quot;: &quot;2.0&quot;,
+     &quot;method&quot;: &quot;ofc.send.multipart.port_description&quot;,
+     &quot;params&quot;: {
+        &quot;dpid&quot;: &quot;0x0000000000000001&quot;
+     },
+     &quot;id&quot;: 1
+   }
+
+    &lt;--
+   {
+  &quot;jsonrpc&quot;: &quot;2.0&quot;,
+  &quot;result&quot;: [
+    {
+      &quot;port_no&quot;: &quot;1&quot;,
+      &quot;hw_addr&quot;: &quot;ea:68:7d:44:9:75&quot;,
+      &quot;name&quot;: &quot;s1-eth1&quot;,
+      &quot;config&quot;: [],
+      &quot;state&quot;: [],
+      &quot;properties&quot;: [
+        {
+          &quot;type&quot;: &quot;ETHERNET&quot;,
+          &quot;curr&quot;: [],
+          &quot;advertised&quot;: [],
+          &quot;supported&quot;: [],
+          &quot;peer&quot;: [],
+          &quot;curr_speed&quot;: 0,
+          &quot;max_speed&quot;: 102400
+        }
+      ]
+    },
+    {
+      &quot;port_no&quot;: &quot;2&quot;,
+      &quot;hw_addr&quot;: &quot;22:9d:cb:f9:97:cd&quot;,
+      &quot;name&quot;: &quot;s1-eth2&quot;,
+      &quot;config&quot;: [],
+      &quot;state&quot;: [],
+      &quot;properties&quot;: [
+        {
+          &quot;type&quot;: &quot;ETHERNET&quot;,
+          &quot;curr&quot;: [],
+          &quot;advertised&quot;: [],
+          &quot;supported&quot;: [],
+          &quot;peer&quot;: [],
+          &quot;curr_speed&quot;: 0,
+          &quot;max_speed&quot;: 102400
+        }
+      ]
+    }
+  ],
+  &quot;id&quot;: 1
+}
+</pre></div>
+
+
+<hr />
+<!---
+ Script for open external links in a new tab
+-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+      // Creating custom :external selector
+      $.expr[':'].external = function(obj){
+          return !obj.href.match(/^mailto\:/)
+                  && (obj.hostname != location.hostname);
+      };
+      $(function(){
+        $('a:external').addClass('external');
+        $(".external").attr('target','_blank');
+      })
+</script>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../osdnc-controller/" title="Controller" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Controller
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../opendaylight/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright (c) 2016-2018 SoftFIRE (http://softfire.eu)
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/SoftFIRE-eu" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://softfire.slack.com/" class="md-footer-social__link fa fa-slack"></a>
+    
+      <a href="https://hub.docker.com/r/softfire/softfire-middleware/" class="md-footer-social__link fa fa-docker"></a>
+    
+      <a href="https://www.linkedin.com/company-beta/15145251/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://www.youtube.com/channel/UCYEe_8W-0vJ97-1OXsSjU8A" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-6b599127bc.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+        <script src="../search/require.js"></script>
+      
+        <script src="../search/search.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
